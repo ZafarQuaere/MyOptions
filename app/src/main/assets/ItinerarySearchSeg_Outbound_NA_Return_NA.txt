@@ -1,0 +1,37 @@
+{
+  "airlineLogo": "https:\/\/www.optiontown.com\/images\/VN_Logo.gif",
+  "productHeading": "Preferred Flight Option (PFo) ",
+  "outboundLabel": "",
+  "segmentArray": [
+    {
+      "flightArrivalCode": "SGN",
+      "outboundStartRange": -14,
+      "FlightAvailabilityMsg": "PFo is unavailable for this flight.Please do check for your future flights. ",
+      "flightArrivalName": "H.C.Minh City",
+      "flightDepartureName": "Sydney",
+      "journeytypeLbl": "Outbound",
+      "outboundEndRange": 13,
+      "flightDeparturedate": "Jul 24 10:15 AM",
+      "flightDepartureCode": "SYD"
+    },
+    {
+      "flightArrivalCode": "SYD",
+      "FlightAvailabilityMsg": "PFo is unavailable for this flight.Please do check for your future flights. ",
+      "returnStartRange": -1,
+      "flightArrivalName": "Sydney",
+      "returnEndRange": 14,
+      "flightDepartureName": "H.C.Minh City",
+      "journeytypeLbl": "Return",
+      "flightDeparturedate": "Aug 6 9:00 PM",
+      "flightDepartureCode": "SGN"
+    }
+  ],
+  "ErrorMessage": "Input is mandatory.",
+  "selectFlightLabel": "",
+  "bothLabel": "",
+  "returnLabel": "",
+  "pnr": "STLZJM",
+  "journyCount": 0,
+  "airlineDisplayName": "Vietnam Airlines",
+  "productTagLine": "Stuck with your second choice flight? Fly on preferred flight!"
+}

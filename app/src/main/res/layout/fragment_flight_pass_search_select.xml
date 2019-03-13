@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lytSelectDone"
+        layout="@layout/layout_select_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lytAppBottomBar"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_below="@id/lytSelectDone"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/svTravelPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@+id/view"
+        android:layout_below="@id/lytSelectDone"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/lytTravelPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtTravelValidFromLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/string_travel_valid_from"
+                android:textColor="@color/color_font_gray_dark"
+                android:textSize="@dimen/size_font_15"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTravelValidFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/rounded_cornor_10"
+                    android:clickable="true"
+                    android:padding="@dimen/dp_10"
+                    android:text="9 Sep 2016"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_15" />
+
+            </RelativeLayout>
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtTravelPeriodLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="@string/string_travel_period"
+                android:textColor="@color/color_font_gray_dark"
+                android:textSize="@dimen/size_font_15"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtTravelPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/rounded_cornor_10"
+                android:padding="@dimen/dp_10"
+                android:text="1 Month"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_15" />
+
+            <LinearLayout
+                android:id="@+id/lytMonthList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_stroke"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_3"
+                android:visibility="gone">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/lytAdvanceBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_below="@id/lytSelectDone"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroupAdvanceBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytFlexibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_below="@id/lytSelectDone"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupFliexibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytFMMatrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_below="@id/lytSelectDone"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupFMMatrix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_100" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_1"
+        android:layout_above="@+id/lytAppBottomBar"/>
+-->
+    <include
+        layout="@layout/app_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

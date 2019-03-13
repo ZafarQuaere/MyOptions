@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20">
+
+    <include
+        layout="@layout/layout_title_expand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_20">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_testimonial"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/testimonials_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/testimonial_viewflip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </ViewFlipper>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

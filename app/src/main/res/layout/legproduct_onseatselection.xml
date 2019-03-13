@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_corner_0_radius_filled_white"
+    app:cardElevation="@dimen/dp_10"
+    android:id="@+id/legproduct_onseatselection"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10">
+
+        <LinearLayout
+            android:id="@+id/lyt_top_txtheading"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_seat_toplabel_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="D4"
+                android:textColor="@color/caldroid_black"
+                android:textSize="@dimen/size_font_30"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txt_label_regularseat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Regular Seat"
+                    android:textColor="@color/caldroid_black"
+                    android:textSize="@dimen/size_font_11"
+                    android:textStyle="bold" />
+
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txt_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Rs 450"
+                    android:textColor="@color/caldroid_black"
+                    android:textSize="@dimen/size_font_15"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_popseat"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_200"
+            android:layout_below="@+id/lyt_top_txtheading"
+            />
+
+        <LinearLayout
+            android:id="@+id/lyt_benefit"
+            android:layout_width="@dimen/dp_200"
+            android:layout_below="@+id/img_popseat"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/lyt_top_txtheading"
+                android:src="@drawable/plus_icon" />
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_seatBenefit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Increased Leg Room"
+                android:textColor="@color/color_font_green"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_bulkhead"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_benefit"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/lyt_top_txtheading"
+                android:src="@drawable/plus_icon" />
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Bulkhead/Seat in front do not recline"
+                android:textColor="@color/color_font_green"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_drawBacks"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_bulkhead"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/lyt_top_txtheading"
+                android:src="@drawable/minus_icon" />
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_seatDrawBacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Heavy Traffic"
+                android:textColor="@color/color_font_red"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_close"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_drawBacks"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="Close"
+            android:background="@drawable/rounded_corner_0_radius_filled_white"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size_font_11"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

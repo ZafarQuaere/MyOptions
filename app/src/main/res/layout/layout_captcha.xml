@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytCaptchaParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtCaptchaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/captcha"
+        android:textSize="@dimen/size_font_14" />
+
+    <LinearLayout
+        android:id="@+id/lytCaptcha"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtCaptchaLabel"
+        android:background="@color/color_font_black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:textColor="@color/color_font_white"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnCaptchaRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtCaptcha"
+        android:layout_toRightOf="@+id/lytCaptcha"
+        android:background="@drawable/recaptcha_30dp" />
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtCaseSensitiveInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCaptchaRefresh"
+        android:layout_toRightOf="@+id/lytCaptcha"
+        android:paddingLeft="@dimen/dp_5"
+        android:text="@string/captcha_case_sensitive"
+        android:textSize="@dimen/size_font_10" />
+
+
+    <com.optiontown.app.view.customview.OTEditText
+        android:id="@+id/edtCaptcha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lytCaptcha"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/rounded_stroke_light_blue"
+        android:hint="@string/enter_captcha"
+        android:padding="@dimen/dp_6"
+        android:singleLine="true"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/size_font_11" />
+
+
+</RelativeLayout>

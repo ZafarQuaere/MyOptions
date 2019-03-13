@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pass_level_summary_row"
+    android:orientation="horizontal">
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/color_common_border"/>
+
+    <TextView
+        android:id="@+id/txtFlight_detail"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/dp_3"
+        android:textColor="@color/color_font_black"
+        android:gravity="center"
+        android:textSize="@dimen/size_font_12"
+        android:text="UK 797  May 19  Bangalore - New Delhi"/>
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/color_common_border"/>
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtCreditRqrd"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="@dimen/size_font_12"
+        android:textColor="@color/color_font_black"
+        android:gravity="center"
+        android:text="1"/>
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/color_common_border"/>
+
+</LinearLayout>

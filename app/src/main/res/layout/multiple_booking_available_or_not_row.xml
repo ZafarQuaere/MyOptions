@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytContent"
+        android:background="@drawable/background_suggestion_airlines"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_suggestion_airlines"
+            android:padding="@dimen/dp_5">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgMbo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/empty_seat2by4" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMBoAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMbo"
+                android:layout_centerInParent="true"
+                android:text="Multiple Booking"
+                android:textColor="#0038AB"
+                android:textSize="@dimen/size_font_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLytSelectMbo"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/empty_seat_gradiant_button"
+            android:padding="@dimen/dp_5">
+
+            <CheckBox
+                android:id="@+id/chkselectMbo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMboPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="$4"
+                android:textColor="#CD3301"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMboLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMboPrice"
+                android:layout_centerHorizontal="true"
+                android:text="Select MBo"
+                android:textColor="#CD3301"
+                android:textSize="@dimen/size_font_12" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLytMboNotAvailable"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/empty_seat_gradiant_button"
+            android:padding="@dimen/dp_5">
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMboNotAVailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="MBo not available"
+                android:textColor="@color/caldroid_black"
+                android:textSize="@dimen/size_font_10" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    >
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to book flight as display above and redeem the equivalent number of flights from my Flight Pass, subject to the FPo Rules and Terms of Service."
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_gray"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                />
+
+            <LinearLayout
+                android:id="@+id/lytBookingSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_below="@+id/txtMessage">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtBookingSummaryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Summary"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_font_black"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_2">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtConfirmation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Optiontown Confirmation # 1006858631"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:textColor="@color/color_font_black"
+                        android:layout_weight="7"/>
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtAirline"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Airline : Vistara"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:textColor="@color/color_font_black"
+                        android:layout_weight="3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_2">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtFlightPass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Optiontown Fight Pass : 1006858631"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:textColor="@color/color_font_black"
+                        android:layout_weight="7"/>
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtPNR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Airline PNR : 5QKMR"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:textColor="@color/color_font_black"
+                        android:layout_weight="3"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/separator1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/color_common_border"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_below="@+id/lytBookingSummary"
+                android:visibility="visible"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/lytPassengers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerView"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtPassengersLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passengers"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_font_black"
+                    android:layout_marginLeft="@dimen/dp_15"/>
+
+                <LinearLayout
+                    android:id="@+id/lytPassengersName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytTransaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtTransactionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction History"
+                        android:textSize="@dimen/size_font_13"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_font_black"
+                        />
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtBookMoreFlights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book More Flights"
+        android:textSize="@dimen/size_font_18"
+        android:textStyle="bold"
+        android:textColor="@color/color_font_white"
+        android:gravity="center"
+        android:background="@color/color_red"
+        android:padding="@dimen/dp_10"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

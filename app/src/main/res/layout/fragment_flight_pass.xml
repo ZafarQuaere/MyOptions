@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/lytParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lytTopBanner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_banner_top"
+                android:background="@drawable/fpo_home_slide_four">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTopBanner"
+                    android:layout_width="@dimen/dp_170"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:shadowColor="#99000000"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="8"
+                    android:text="@string/string_one_flight_pass_for_multiple_destinations_more_vacations_more_fun_more_savings"
+                    android:textColor="#FBFBFB"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:id="@+id/lytBuyFlightPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:minWidth="@dimen/dp_100"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_bottom_buy_redeem"
+                    android:layout_marginLeft="@dimen/margin_left_buy_flight_pass"
+                    android:background="@drawable/rounded_corner_home"
+                    android:clickable="true"
+                    android:onClick="onClickBuyFlightPass">
+
+                    <ImageView
+                        android:id="@+id/img_buy"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/passbuy_button"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"/>
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtBuyFlightPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_buy"
+                        android:padding="@dimen/dp_5"
+                        android:text="@string/string_buy_flight_pass"
+                        android:textColor="@color/color_font_white"
+                        android:textSize="@dimen/size_font_11"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytRedeemBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/margin_bottom_buy_redeem"
+                    android:minWidth="@dimen/dp_100"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/lytBuyFlightPass"
+                    android:layout_alignTop="@+id/lytBuyFlightPass"
+                    android:background="@drawable/rounded_corner_home">
+
+                    <ImageView
+                        android:id="@+id/img_redeem"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:src="@drawable/redeem_button" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtRedeemBook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_5"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_redeem"
+                        android:text="@string/string_redeem_book"
+                        android:textColor="@color/color_font_white"
+                        android:textSize="@dimen/size_font_11"
+                        android:textStyle="normal"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lytDeals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_fragment"
+                android:layout_marginRight="@dimen/margin_right_fragment"
+                android:layout_marginTop="@dimen/margin_top_deals"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+            </LinearLayout>
+
+            <!-- Layout Leg Products Benefit -->
+            <LinearLayout
+                android:id="@+id/lytLegBenefits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_fragment"
+                android:layout_marginRight="@dimen/margin_right_fragment"
+                android:layout_marginTop="@dimen/margin_top_deals"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/lytLegProductBenefits"
+                    layout="@layout/layout_title_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:id="@+id/recyclerViewBenefit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:fadeScrollbars="false"
+                    android:fadingEdge="none"
+                    android:fadingEdgeLength="0dp"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+
+
+            <!-- Layout Optionpass Benefit -->
+            <include
+                android:id="@+id/lytFlightPassBenefits"
+                layout="@layout/layout_flight_pass_benefits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <include
+                android:id="@+id/lytLearnAboutFlightPass"
+                layout="@layout/layout_learn_about_flight_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <include
+                android:id="@+id/lytHowPurchase"
+                layout="@layout/layout_how_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <include
+                android:id="@+id/lytHowBook"
+                layout="@layout/layout_how_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <include
+                android:id="@+id/lytFAQ"
+                layout="@layout/layout_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <include
+                android:id="@+id/lytTestimonials"
+                layout="@layout/layout_testimonials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/lytAppBottomBar"
+        layout="@layout/app_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

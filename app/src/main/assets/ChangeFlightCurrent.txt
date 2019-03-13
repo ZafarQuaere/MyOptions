@@ -1,0 +1,74 @@
+{
+	"Back_Button_Label" : "Back",
+	"Top_Message" : "Please select any flight of your choice from the list below.",
+	"Passenger_Label" : "Passenger(s)",
+	"LABL_Airline_Label" : "Airline",
+	"Itinerarry" : [{
+			"Segments" : [{
+					"legList" : [{
+							"Flight_Full_View" : {
+								"ArrivalAirline_Date" : "Tue",
+								"Stations" : "BLR - DEL",
+								"Depart_Airport_Display_Name" : "Bangalore",
+								"Display_Name" : "Vistara UK 797",
+								"dpart_plane_icon" : "https:\/\/www.optiontown.com\/images\/passes\/book_dpart_plane_icon.jpg",
+								"Close_Label" : "Close",
+								"Depart_Airport_Label" : "Depart",
+								"Arrival_Airport_Display_Name" : "New Delhi",
+								"LayOverTime" : "",
+								"Airbus_Label" : "Premium Economy|Airbus",
+								"Flight_Landing_Label" : "Arrival",
+								"Payment_Account_Detail_Label" : "",
+								"DepartAirline_Date" : "Tue, Dec 27",
+								"OverNight" : "Day\/Night",
+								"Flight_Logo" : "https:\/\/www.optiontown.com\/images\/Vistara_Logo.gif",
+								"Dept_FormattedTime" : "11:10 am",
+								"ArrivalAirline_Time" : "1:50 pm",
+								"Dept_AirportCode" : "BLR",
+								"Arrival_AirportCode" : "DEL",
+								"Take_off_Label" : "Departure",
+								"Non_Stop_Label" : "Non-Stop"
+							},
+							"flight_small_view" : {
+								"flight_arrow" : "www.optiontown.com\/images\/passes\/book_flight_arrow.jpg",
+								"Departure_Data" : "Bangalore Int'l",
+								"Close_Label" : "Close",
+								"Airline_Dis_Name" : "Vistara",
+								"ArrivalAirlineCode" : "DEL",
+								"Departure_Date" : "Dec 27",
+								"Flight_Duration_Min" : 160,
+								"Airline_Logo" : "https:\/\/www.optiontown.com\/images\/Vistara_Logo.gif",
+								"DepartAirlineCode" : "BLR",
+								"Indexes" : 0,
+								"ArrivalAirlineTime" : "1:50 pm",
+								"DepartAirlineDate" : "Dec 27",
+								"AirlineCode_FLightNum" : "797",
+								"Flight_Duration" : "2h 40m",
+								"No_Of_Stops" : "Non-Stop",
+								"DisplayReturn_Flag" : "",
+								"Arrival_Data" : "",
+								"DepartAirlineTime" : "11:10 am",
+								"AirlineCode" : "UK",
+								"Footer_Label" : ""
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"Passengers_List" : ["sdfgsdfg \/ forty  Mr."],
+	"Airline_Name_Label" : "Vistara",
+	"Max_Range_Days" : 44,
+	"Journey_Type_Label" : "Outbound",
+	"Continue_Button_Label" : "Continue",
+	"Advance_Booking_MMB_Desc_Label" : "Book flights at anytime till 7 days before travel.",
+	"Booking_Ref_Pnr" : "36N25B",
+	"New_Depart_Date_Label" : "New Depart Date",
+	"Booking_Ref_Label" : "Airline Booking Reference",
+	"New_Dept_Date_Label" : "Select your new desired Depart Date",
+	"Booking_Days_Value" : 7,
+	"Current_Flight_Label" : "Current Flight",
+	"Advance_Booking_Label" : "Advance Booking",
+	"Change_Flight_Heading_Label" : "Change Flight"
+}

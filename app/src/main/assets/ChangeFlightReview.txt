@@ -1,0 +1,135 @@
+{
+	"LABL_Pay_Amount_Now_Label" : "You need to pay this amount now",
+	"transaction_CurrencyCode" : "$",
+	"passNewPrice_Farediff()" : 0,
+	"LABL_MMB_New_Flight_Label" : "New Flight",
+	"LABL_MMB_Change_Flight_Heading_Label" : "Change Flight",
+	"ChangeFlightDetail" : {
+		"legDetails" : [{
+				"Flight_Cabin_name" : "Premium Economy",
+				"Carrier_FlightNumber" : "868",
+				"Flight_Departure_Datetimeformat" : "Wed,7 Dec 6:30 AM",
+				"Flight_Arrival_Datetimeformat" : "9:10 AM",
+				"Flight_Departure_Cityname" : "Bangalore",
+				"Flight_Departure_Code" : "BLR",
+				"Flight_Arrival_Cityname" : "New Delhi",
+				"Flight_Airline_Code" : "UK",
+				"Flight_Arrival_Code" : "DEL"
+			}
+		]
+	},
+	"passNewPrice_Feevalue()" : 32,
+	"LABL_Review_New_Flight_Label" : "Review your New Flight",
+	"LABL_Total_Label" : "Total",
+	"LABL_MMB_Current_Flight_Label" : "Current Flight",
+	"Top_Message" : "Please select any flight of your choice from the list below.",
+	"LABL_Pass_Change_Fee_Label" : "Change Fee",
+	"Itinerarry" : [{
+			"Segments" : [{
+					"legList" : [{
+							"flight_small_view" : {
+								"flight_arrow" : "www.optiontown.com\/images\/passes\/book_flight_arrow.jpg",
+								"Departure_Data" : "Bangalore Int'l",
+								"Close_Label" : "Close",
+								"Airline_Dis_Name" : "Vistara",
+								"Departure_Date" : "Dec 27",
+								"ArrivalAirlineCode" : "DEL",
+								"Flight_Duration_Min" : 160,
+								"DepartAirlineCode" : "BLR",
+								"Airline_Logo" : "https:\/\/www.optiontown.com\/images\/Vistara_Logo.gif",
+								"Indexes" : "0_0_0",
+								"DepartAirlineDate" : "Dec 27",
+								"ArrivalAirlineTime" : "1:50 pm",
+								"AirlineCode_FLightNum" : "797",
+								"Flight_Duration" : "2h 40m",
+								"No_Of_Stops" : "Non-Stop",
+								"Arrival_Data" : "Indira Gandhi Int'l",
+								"DisplayReturn_Flag" : true,
+								"AirlineCode" : "UK",
+								"DepartAirlineTime" : "11:10 am",
+								"Footer_Label" : ""
+							},
+							"Flight_Full_View" : {
+								"ArrivalAirline_Date" : "Tue",
+								"Display_Name" : "Vistara UK 797",
+								"Depart_Airport_Display_Name" : "Bangalore",
+								"Stations" : "BLR - DEL",
+								"Close_Label" : "Close",
+								"dpart_plane_icon" : "https:\/\/www.optiontown.com\/images\/passes\/book_dpart_plane_icon.jpg",
+								"Depart_Airport_Label" : "Depart",
+								"Arrival_Airport_Display_Name" : "New Delhi",
+								"LayOverTime" : "",
+								"Payment_Account_Detail_Label" : "Details",
+								"Flight_Landing_Label" : "Arrival",
+								"Airbus_Label" : "Premium Economy|Airbus",
+								"DepartAirline_Date" : "Tue, Dec 27",
+								"OverNight" : "Day\/Night",
+								"Flight_Logo" : "https:\/\/www.optiontown.com\/images\/Vistara_Logo.gif",
+								"Dept_FormattedTime" : "11:10 am",
+								"Dept_AirportCode" : "BLR",
+								"ArrivalAirline_Time" : "1:50 pm",
+								"Arrival_AirportCode" : "DEL",
+								"Take_off_Label" : "Departure",
+								"Non_Stop_Label" : "Non-Stop"
+							}
+						}
+					]
+				}, {
+					"legList" : [{
+							"flight_small_view" : {
+								"flight_arrow" : "www.optiontown.com\/images\/passes\/book_flight_arrow.jpg",
+								"Departure_Data" : "Indira Gandhi Int'l",
+								"Close_Label" : "Close",
+								"Airline_Dis_Name" : "Vistara",
+								"Departure_Date" : "Jan 20",
+								"ArrivalAirlineCode" : "BLR",
+								"Flight_Duration_Min" : 165,
+								"DepartAirlineCode" : "DEL",
+								"Airline_Logo" : "https:\/\/www.optiontown.com\/images\/Vistara_Logo.gif",
+								"Indexes" : "0_1_0",
+								"DepartAirlineDate" : "Jan 20",
+								"ArrivalAirlineTime" : "8:05 pm",
+								"AirlineCode_FLightNum" : "813",
+								"Flight_Duration" : "2h 45m",
+								"No_Of_Stops" : "Non-Stop",
+								"Arrival_Data" : "Bangalore Int'l",
+								"DisplayReturn_Flag" : true,
+								"AirlineCode" : "UK",
+								"DepartAirlineTime" : "5:20 pm",
+								"Footer_Label" : ""
+							},
+							"Flight_Full_View" : {
+								"ArrivalAirline_Date" : "Fri",
+								"Display_Name" : "Vistara UK 813",
+								"Depart_Airport_Display_Name" : "New Delhi",
+								"Stations" : "DEL - BLR",
+								"Close_Label" : "Close",
+								"dpart_plane_icon" : "https:\/\/www.optiontown.com\/images\/passes\/book_dpart_plane_icon.jpg",
+								"Depart_Airport_Label" : "Depart",
+								"Arrival_Airport_Display_Name" : "Bangalore",
+								"LayOverTime" : "",
+								"Payment_Account_Detail_Label" : "Details",
+								"Flight_Landing_Label" : "Arrival",
+								"Airbus_Label" : "Premium Economy|Airbus",
+								"DepartAirline_Date" : "Fri, Jan 20",
+								"OverNight" : "Day\/Night",
+								"Flight_Logo" : "https:\/\/www.optiontown.com\/images\/Vistara_Logo.gif",
+								"Dept_FormattedTime" : "5:20 pm",
+								"Dept_AirportCode" : "DEL",
+								"ArrivalAirline_Time" : "8:05 pm",
+								"Arrival_AirportCode" : "BLR",
+								"Take_off_Label" : "Departure",
+								"Non_Stop_Label" : "Non-Stop"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"CurrentFlightDetail" : {},
+	"LABL_Proceed_To_Payment_Label" : "Proceed to payment",
+	"LABL_MMO_Fare_Difference_Label" : "Fare Difference",
+	"ERR_Back_Button_Label" : "Back",
+	"Totalamount()" : 32
+}

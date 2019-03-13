@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/lytBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/app_bottom_bar_fpo_redeem"
+            layout="@layout/app_bottom_bar_fpo_redeem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+        <include
+            android:id="@+id/app_bottom_bar_fpo_redeem_more"
+            layout="@layout/app_bottom_bar_fpo_redeem_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/lytBottom">
+
+        <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"
+            android:layout_marginBottom="@dimen/dp_20">
+
+        </WebView>
+
+
+    </LinearLayout>
+
+
+
+
+    </RelativeLayout>

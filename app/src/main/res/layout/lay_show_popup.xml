@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:background="@color/color_gray_light"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal"
+            android:textColor="@color/color_font_black"
+            android:layout_alignParentLeft="true"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal"
+            android:textColor="@color/color_font_blue"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txt_show_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test test test tseyt"
+        android:padding="@dimen/dp_20"
+        />
+
+
+</LinearLayout>

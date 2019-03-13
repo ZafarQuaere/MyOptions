@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true">
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem"
+        layout="@layout/app_bottom_bar_fpo_redeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem_more"
+        layout="@layout/app_bottom_bar_fpo_redeem_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/lytMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_margin="@dimen/dp_20"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:id="@+id/lytPassInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtSelectedPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asia OCN : 5648795124"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal"/>
+
+                <ImageView
+                    android:id="@+id/imgEdit"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="left"
+                    android:src="@drawable/edit_icon_black"
+                    android:layout_marginLeft="@dimen/dp_10"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPassFareDifferenceLabel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:text="Pass Fare Difference"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="normal"
+                android:layout_weight="5"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPassFareDifference"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="normal"
+                android:layout_weight="5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtChangeFeeLabel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:text="Change fee"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="normal"
+                android:layout_weight="5"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtChangeFee"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="normal"
+                android:layout_weight="5"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/color_common_border"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtTotalAmountToPayLabel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:text="Total Amount to pay now"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="bold"
+                android:layout_weight="5"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtTotalAmountToPay"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="bold"
+                android:layout_weight="5"/>
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtProceedToPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytHelpAndNew"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@drawable/rounded_small_corner_search"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="Process to Payment"
+            android:textColor="@color/color_font_white"
+            android:textSize="@dimen/size_font_18"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMyOptiontownLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="@string/string_my_optiontown"
+                android:textColor="@color/color_font_blue"
+                android:textSize="@dimen/size_font_14"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_dark_gray_stroke"
+                android:padding="@dimen/dp_5"
+                android:text="@string/string_users"
+                android:textColor="@color/color_font_blue"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_20"
+                android:adjustViewBounds="true"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Welcome, User!"
+            android:textColor="@color/color_font_blue"
+            android:textSize="@dimen/size_font_11"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtUsernameEmailLabel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/string_username_email"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="normal" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtUsernameEmail"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="pep1439@gmail.com"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtEmailAddressLabel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/string_email_address"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="normal" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtEmailAddress"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="pep1439@gmail.com"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMyProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_my_profile"
+                android:textColor="@color/color_font_blue"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMyProfileDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="@string/string_view_and_update_your_profile"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMyTrips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_my_trips"
+                android:textColor="@color/color_font_blue"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMyTripsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="View your saved trips"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/m_email_alert" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txt_joinbuz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join the buzz!"
+                    android:textColor="@color/color_font_red"
+                    android:textSize="@dimen/size_font_11"
+                    android:textStyle="normal" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txt_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Sign-up Availability"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_11"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_chkbox_fingerprint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox_fingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable fingerprint authentication"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/rounded_dark_gray_stroke"
+                android:padding="@dimen/dp_5"
+                android:text="@string/string_logout"
+                android:textColor="@color/color_font_blue"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_blue" />
+
+</LinearLayout>

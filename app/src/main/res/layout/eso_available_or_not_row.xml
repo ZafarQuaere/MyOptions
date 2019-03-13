@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytContent"
+        android:background="@drawable/background_suggestion_airlines"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rlytImgAvailable"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_suggestion_airlines"
+            android:padding="@dimen/dp_5">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgEmtpySeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_2"
+                android:src="@drawable/empty_seat2by4" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtEsoavailableSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgEmtpySeat"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:text="4 Empty Seats"
+                android:textColor="#0038AB"
+                android:textSize="@dimen/size_font_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLytSelectEso"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/empty_seat_gradiant_button"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/chk_selectEso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_white" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_esoPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="$4"
+                android:textColor="#CD3301"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_selectEsoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_esoPrice"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="#CD3301"
+                android:textSize="@dimen/size_font_12" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLytEsoNotAvailable"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/empty_seat_gradiant_button"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone">
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_esoNotAVailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="sdfasdf"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLytBeforePnd"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgDecisionPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/dp_4"
+                />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtBeforePnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgDecisionPending"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/color_font_red"
+                android:textSize="@dimen/size_font_11"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rLytAfterPnd"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgAfterPnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/dp_4"
+                android:src="@drawable/uto_selected"
+                android:visibility="gone"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtAfterPnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/color_font_red"
+                android:textSize="@dimen/size_font_11" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlytPickASeat"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:background="@drawable/rounded_small_corner_search"
+                android:id="@+id/txtPickASeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_7"
+                android:paddingTop="@dimen/dp_7"
+                android:text="Pick A Seat"
+                android:textColor="@color/color_font_white"
+                android:textSize="@dimen/size_font_14" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

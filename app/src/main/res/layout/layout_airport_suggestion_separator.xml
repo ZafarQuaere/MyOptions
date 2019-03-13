@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="25dp">
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtAirportSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_12"
+        android:includeFontPadding="false"
+        android:text="-------------------------------------------------------------------------------------------------------------------"
+        android:textSize="@dimen/size_font_12"
+        android:textStyle="normal"
+        android:textColor="@color/color_font_black"
+        android:layout_alignParentLeft="true"
+        android:maxLines="1"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSuggestionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="@dimen/size_font_10"
+            android:textStyle="normal"
+            android:textColor="@color/color_font_black"
+            android:layout_alignParentLeft="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/imgSuggestionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cities_icon"
+            android:layout_marginLeft="@dimen/dp_5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

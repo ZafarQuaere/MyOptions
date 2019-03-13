@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytFragmentFlightPassSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_app_background"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/lytSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtBAMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BA Message BA Message BA Message BA Message BA Message BA Message "
+                    android:gravity="center"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/lytAirlines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/airline" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtAirlineLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Airline"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_12"
+                            android:textStyle="normal" />
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtAirlineName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@android:color/transparent"
+                            android:text=""
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_20"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/color_common_border" />
+
+                <LinearLayout
+                    android:id="@+id/lytTravelZone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/newzone_icon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtTravelZoneLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Travel Zone"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_12"
+                            android:textStyle="normal" />
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtTravelZoneName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@android:color/transparent"
+                            android:text="All Routes"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_20"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/color_common_border" />
+
+                <LinearLayout
+                    android:id="@+id/lytCabin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:orientation="horizontal">>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cabin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtCabinLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cabin"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_12"
+                            android:textStyle="normal" />
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtCabinName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@android:color/transparent"
+                            android:text=""
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_20"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewSeparatorCabin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/color_common_border"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytAdvanceSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/lytPassengers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/newpassenger_icon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtPassengersLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="How many will use this pass ?"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_12"
+                            android:textStyle="normal" />
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtPassengerCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@android:color/transparent"
+                            android:text=""
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_20"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/color_common_border" />
+
+                <LinearLayout
+                    android:id="@+id/lytFlights"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/flight" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtFlightsLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Flights for all passengers?"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_12"
+                            android:textStyle="normal" />
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtFlightsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@android:color/transparent"
+                            android:text=""
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_20"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/color_common_border" />
+
+                <LinearLayout
+                    android:id="@+id/lytTravelPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/depart_date" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtTravelPeriodLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Travel Period"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_12"
+                            android:textStyle="normal" />
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtTravelPeriod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@android:color/transparent"
+                            android:text=""
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_20"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/color_common_border" />
+
+                <LinearLayout
+                    android:id="@+id/lytAdvanceBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/earlybook_icon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtAdvanceBookingLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="How early can you book flights?"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_12"
+                            android:textStyle="normal" />
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtAdvanceBooking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@android:color/transparent"
+                            android:text=""
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_20"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/lytAdvanceBookingSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/color_common_border" />
+
+                <LinearLayout
+                    android:id="@+id/lytFlexibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_35"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/travel_flexibility_customize" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txtFlexibilityLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="How flexible is your schedule?"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txtFlexibility"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:background="@android:color/transparent"
+                                android:text=""
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_20"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@color/color_common_border" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytFMMatrix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_40"
+                android:orientation="horizontal">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtSearch"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_small_corner_search"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_15"
+                    android:text="@string/string_search"
+                    android:textColor="@color/color_font_white"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtAdvanceSearch"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_stroke_corner_search"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_15"
+                    android:text="@string/string_advance_search"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/app_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

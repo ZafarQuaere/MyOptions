@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lytThreeColumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtToFromAp"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5"
+            android:text="Goa - New Delhi"
+            android:textColor="@color/color_font_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_font_12" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_common_border" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSignUpPriceP"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5"
+            android:singleLine="false"
+            android:text=" $ 2"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"/>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_common_border" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtUpgradePriceT"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:singleLine="false"
+            android:text=" $ 27 "
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_common_border" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lytTwoColumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtToFromApTwoColumn"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5"
+            android:text="Goa - New Delhi"
+            android:textStyle="bold"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_common_border" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtUpgradePriceTwoColumn"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:singleLine="false"
+            android:text=" $ 2"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_common_border" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_common_border" />
+</LinearLayout>

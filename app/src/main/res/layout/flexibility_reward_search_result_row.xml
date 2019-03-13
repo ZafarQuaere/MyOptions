@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_5"
+    android:layout_marginTop="@dimen/dp_10">
+
+
+    <RelativeLayout
+        android:id="@+id/lytHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/empty_seat_search_header_bg">
+
+        <LinearLayout
+            android:id="@+id/lyt_airlineIdImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5">
+
+            <ImageView
+                android:id="@+id/txtSignUpPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:src="@drawable/vistara"
+                android:text="Sign Up price Euro 200" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtFroAirlineId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="@dimen/dp_5"
+                android:textSize="@dimen/size_font_12"
+                android:text="VN 300 " />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewHead"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/lyt_airlineIdImg"
+            android:background="@color/color_gray_dark"></View>
+
+        <RelativeLayout
+            android:id="@+id/lytAirlineFromToHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/viewHead"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="@dimen/dp_5"
+                android:textSize="@dimen/size_font_12"
+                android:text="Singapore (SIN)" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/dp_5"
+                android:text=" - " />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:textSize="@dimen/size_font_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="@dimen/dp_5"
+                android:text="H.C.Minh City (SGN)" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyt_airlineFromToDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytAirlineFromToHead"
+            android:layout_toRightOf="@+id/viewHead"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="@dimen/dp_5"
+                android:textSize="@dimen/size_font_12"
+                android:text="Fri, Feb 24 20:25 " />
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/dp_5"
+                android:text=" - " />
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:textSize="@dimen/size_font_12"
+                android:id="@+id/txtFlightFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="@dimen/dp_5"
+                android:text="Fri, Feb 24 21:30" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_singup_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytHeader"
+        android:layout_marginTop="@dimen/dp_2">
+
+        <!--<com.optiontown.app.view.customview.OTTextView
+            android:textSize="@dimen/size_font_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:text="Sign-up Price $ 1"
+           />-->
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_50"
+            android:text="Flexibility Reward Summary"
+            android:textColor="@color/caldroid_black"
+            android:textSize="@dimen/size_font_10"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lytContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_singup_price"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyViewFlexRewardRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lytFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytContent">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:visibility="gone"
+            android:id="@+id/txtNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/string_empty_seat_price_refund"
+            android:textSize="@dimen/size_font_10"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

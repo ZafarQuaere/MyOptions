@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lytContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lytSelectUpgrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_3"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/size_font_14"
+                android:layout_weight="2"
+                android:text=""
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/color_common_border" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtSelectUpgrade"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="Select Upgrade"
+                android:textColor="@color/color_font_blue"
+                android:textSize="@dimen/size_font_14" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtConfrmUpgrade"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_font_14"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="Select Upgrade" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytOptions11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtClassName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/size_font_14"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/color_common_border" />
+
+            <LinearLayout
+                android:id="@+id/lytStandBy"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:paddingLeft="@dimen/dp_2"
+                android:layout_weight="2"
+                android:background="@drawable/gradiant_button"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtActualRateStandBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="$ 1200"
+                    android:textColor="@color/color_font_white"
+                    android:textSize="@dimen/size_font_12"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/chkStandBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:buttonTint="#000000"
+                    android:text="  "
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_font_15"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/lytConfirmedBooking"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_weight="2"
+                android:background="@drawable/gradiant_button"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtActualRateConfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="$ 1200"
+                    android:textColor="#C8C8CA"
+                    android:textSize="@dimen/size_font_12"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rdpConfirmedBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:buttonTint="#000000"
+                    android:text="0000"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_font_15"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_common_border" />
+
+    <LinearLayout
+        android:id="@+id/lytBeforePND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytContent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_5">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtClassPND"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=" "
+                android:textColor="@color/caldroid_holo_blue_dark" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_common_border"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_5">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgPNDIcon"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_above="@+id/txtPNDMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:src="@drawable/icn_dropdown_open" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPNDMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="    "
+                android:textColor="@color/color_red" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

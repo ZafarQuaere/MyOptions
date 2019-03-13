@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:padding="@dimen/dp_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <include
+        layout="@layout/layout_airline_info"
+        android:id="@+id/lytAirlineInfo"/>
+
+    <LinearLayout
+        android:id="@+id/lytRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When do you want a Preferred Flight?"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbOutbounds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outbound"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_font_11"/>
+
+            <RadioButton
+                android:id="@+id/rbReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_font_11"/>
+
+            <RadioButton
+                android:id="@+id/rbBoth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Both"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_font_11"
+                android:checked="true"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lytInputDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/rounded_small_corner_search"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="Search"
+            android:textColor="@color/color_font_white"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100" />
+    </LinearLayout>
+
+
+
+</ScrollView>
+    <include
+        android:id="@+id/lytAppBottomBar"
+        layout="@layout/app_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    </RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".app.view.baseui.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:animateLayoutChanges="true">
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtInternetWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warning_common_please_check_your_internet_connection_and_try_again_later"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_font_11"
+        android:textColor="@color/color_font_white"
+        android:background="@color/color_red"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/lytMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtInternetWarning"
+        android:foreground="?android:windowContentOverlay">
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

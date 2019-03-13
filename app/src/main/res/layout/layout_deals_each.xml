@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytDealsEach"
+    android:paddingTop="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lytDealsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtFlightName"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:text="Flight Name"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="bold"
+            android:textColor="@color/color_font_black"
+            android:layout_centerVertical="true"
+            />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtDealName"
+            android:layout_width="@dimen/dp_95"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtFlightName"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_left_deal_type"
+            android:text="Deal type"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="bold"
+            android:textColor="@color/color_font_white"
+            android:paddingLeft="@dimen/padding_left_deal_type"
+            android:paddingRight="@dimen/padding_right_deal_type"
+            android:background="@drawable/fp_hot_deals"
+            />
+
+    </RelativeLayout>
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtCabin"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_spinner"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/dp_5"
+        android:text="cabin"
+        android:layout_marginRight="@dimen/dp_5"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/size_font_11"
+        android:textStyle="normal"
+        android:layout_alignParentRight="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewDeals"
+        android:layout_below="@id/lytDealsTitle"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ScrollView
+        android:id="@+id/svCabin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_drop_down"
+        android:layout_alignLeft="@+id/txtCabin"
+        android:layout_alignRight="@+id/txtCabin"
+        android:layout_below="@+id/txtCabin"
+        android:background="@drawable/rounded_dark_gray_stroke"
+        android:scrollbars="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lytCabin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_10"
+
+            />
+    </ScrollView>
+
+
+
+</RelativeLayout>

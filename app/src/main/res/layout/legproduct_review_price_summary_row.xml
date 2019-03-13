@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_common_border" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgAirlineLogo"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_3"
+            android:src="@drawable/vistara"
+            android:text="Sign Up price Euro 200" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtAirlineId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dp_2"
+            android:layout_toRightOf="@+id/imgAirlineLogo"
+            android:paddingTop="@dimen/dp_5"
+            android:text="UK 847 "
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_14"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtAirlineId"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtFlightFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="@dimen/dp_5"
+                android:text="New Delhi (DEL) "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtDummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_toRightOf="@+id/txtFlightFrom"
+                android:paddingTop="@dimen/dp_5"
+                android:text="- "
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtFlightTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_toRightOf="@+id/txtDummy"
+                android:paddingTop="@dimen/dp_5"
+                android:text="Goa (GOI) "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSignUpPriceLable"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign Up price  "
+            android:textSize="@dimen/size_font_12" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSignUpPrice"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$ 0 "
+            android:textSize="@dimen/size_font_12" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtOptionPriceLable"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option Price "
+            android:textSize="@dimen/size_font_12" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtOptionPrice"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$ 26 "
+            android:textSize="@dimen/size_font_12" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtPaxCountLable"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Passengers "
+            android:textSize="@dimen/size_font_12" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtPaxCount"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="@dimen/size_font_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSubTotalLabel"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sub Total "
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="bold" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSubTotal"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$ 26 "
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

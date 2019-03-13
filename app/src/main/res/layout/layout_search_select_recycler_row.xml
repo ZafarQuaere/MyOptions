@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytSearchSelectRecyclerRow"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSelectedItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:text="Airline"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_font_gray_dark"
+            android:textSize="@dimen/size_font_15"
+            android:textStyle="normal" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtPassengerGroup"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtSelectedItem"
+            android:background="@drawable/bg_spinner"
+            android:layout_marginRight="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:text="@string/string_passenger"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_11"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgTick"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:adjustViewBounds="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/tick_red_icon"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/svGroupList"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_drop_down"
+            android:layout_alignLeft="@+id/txtPassengerGroup"
+            android:layout_alignRight="@+id/txtPassengerGroup"
+            android:layout_below="@+id/txtPassengerGroup"
+            android:background="@drawable/rounded_dark_gray_stroke"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:scrollbars="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lytPassGroupDropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10" />
+        </ScrollView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_common_border" />
+</RelativeLayout>

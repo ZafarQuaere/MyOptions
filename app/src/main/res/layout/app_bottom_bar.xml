@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lytAppBottomBar"
+    android:background="@color/color_gray_light">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_common_border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:id="@+id/lytFlightPassHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFlightPassHome"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/passhome_colored"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_bottom_passhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_menu_flight_pass_home"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytBuyFlightPass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFlightPassBuy"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/passbuy"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_bottom_buyflight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_menu_buy_flight_pass"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytRedeemBook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgFlightPassRedeem"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/passredeem"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_bottom_redeem_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_menu_redeem_book"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytLearnMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFlightPassLearnMore"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/learnmore"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_bottom_learnmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_menu_learn_more"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytFAQ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFlightPassFAQ"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/faq"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_bottom_faq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_menu_faqs"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

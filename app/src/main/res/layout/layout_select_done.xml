@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    >
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Airline tst test test Airline tst test test Airline tst test test Airline tst test test "
+        android:gravity="left"
+        android:maxLines="8"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/size_font_12"
+        android:textStyle="normal"
+        android:textColor="@color/color_font_white"
+        android:layout_gravity="bottom"
+        android:background="@color/color_blue"
+        android:padding="@dimen/dp_20"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        >
+
+        <LinearLayout
+            android:id="@+id/lytSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgDone">
+
+            <ImageView
+                android:id="@+id/imgSelectedItem"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/airline"
+                android:layout_gravity="bottom"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgSelectedItemNetwork"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/airline"
+                android:layout_gravity="bottom"
+                android:visibility="gone"/>
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtSelectedItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel valid throughout travel period with no restrictions on weekdaysimes "
+                android:textSize="@dimen/size_font_15"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_gray_dark"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_3"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgDone"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/done_button"
+            android:layout_gravity="bottom"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_common_border"/>
+
+</LinearLayout>

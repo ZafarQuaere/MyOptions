@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/lytLearnAboutFlightPass"
+                layout="@layout/layout_learn_about_flight_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txt_mainheading_cheapest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_flight_pass_the_cheapest_and_most_convenient_way_to_fly"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_14"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lay_loopParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/lytCheapestFlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_cheapestflight"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/cheapest_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_heading_cheapestflight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_cheapest_flights"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_cheapestflight_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_select"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytNoHiddenFees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_nohidden_fees"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/fees_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_nohidden_fees"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_no_hidden_fees_no_restrictions_no_black_out_periods"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_nohidden_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_no_restrictions_or_black_out_periods_for_your_flight_booking_period_no_surcharge_or_fees_for_peak_days_like_christmas_or_holidays_even_if_the_market_fare_increases_you_only_pay_the_pre_agreed_low_fare_with_your_flight_pass_no_minimum_stay_maximum_stay_or_saturday_night_stay_limit_no_restrictions_on_trip_duration"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytFullFreedom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_fullfreedom"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/peace_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_heading_fullfreedom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_full_freedom_and_peace_of_mind_in_trip_planning_and_booking"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_content_fullfreedom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_get_complete_freedom_to_plan_and_book_trips_at_your_convenience_with_flight_pass_save_time_and_effort_in_doing_flight_search_no_need_to_predict_whether_the_fare_will_go_up_or_down_or_when_is_the_right_time_to_purchase_with_flight_pass_all_these_hassles_and_stress_will_disappear_from_your_dictionary_instead_you_ll_love_the_freedom_and_conveinence_of_booking_flights_at_your_own_will"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytYourPersonalized"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_yourown"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/home_learn_more_benefits_three" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_yourown"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_your_own_personalized_flight_pass"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_content_yourown"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_flight_pass_offers_an_amazing_level_of_personalization_customize_your_flight_pass_by_selecting_your_desired_values_for_the_following_pass_features"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytBookYourFlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_bookyour"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/home_learn_more_benefits_four" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_heading_bookyour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_book_your_flight_till_last_available_seat"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_content_bookyour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_yes_it_sounds_too_good_to_be_true_but_with_flight_pass_you_can_book_any_flight_till_the_last_available_seat_no_blackout_dates_no_restrictions_on_fare_booking_classes_so_if_a_flight_is_available_on_the_airline_website_you_can_also_book_it_with_your_flight_pass_on_optiontown_com_the_only_limitating_factors_are_your_pre_selected_features_like_travel_period_advance_booking_limit_days_before_travel_you_must_book_and_travel_flexibility"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytPayOnly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_payonly20"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/home_benefits_seven_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_payonly20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_pay_only_20_upfront_and_rest_later_in_easy_installments"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_content_payonly20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_you_can_also_choose_the_number_of_installments_and_the_installment_amount_at_a_nominal_cost"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytMoreVacations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_morevacations"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/home_learn_more_benefits_six" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_morevacations"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_more_vacations_more_trips_more_savings_for"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_content_morevacations"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_flight_pass_offers_the_lowest_fare_per_trip_which_means_you_can_take_more_trips_for_your_budget_rejuvenate_your_family_bonds_with_more_vacations_and_more_frequent_family_get_togethers_flight_pass_makes_it_very_easy_to_plan_and_book_flights_share_your_flight_pass_with_friends_and_family"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytBusinessTravel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_bussinestravel"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/home_benefits_eight_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_headinf_businesstravel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_business_travel_minimize_travel_costs_and_maximize_productivity"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_content_businestravel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_combine_all_of_your_company_travel_volume_and_earn_the_highest_savings_save_time_and_boost_productivity_by_with_last_minute_booking_feature_for_your_dynamic_travel_needs_share_a_flight_pass_across_all_employees_serving_as_an_easy_and_free_travel_management_tool_special_offers_for_corporate_flight_passes"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytEasyToChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_easychange"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/home_learn_more_benefits_eight" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_heading_easychange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_easy_to_change_your_flight_pass_after_purchase"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_content_easychange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_it_s_quite_easy_and_convenient_to_change_flight_pass_online_for_nominal_fees_flight_changes_are_possible_as_per_airline_change_or_cancellation_policies"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytMaximiseYourUpgrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_MaximiseYourUpgrade"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/home_learn_more_benefits_eight" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_MaximiseYourUpgrade_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_easy_to_change_your_flight_pass_after_purchase"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_MaximiseYourUpgrade_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_it_s_quite_easy_and_convenient_to_change_flight_pass_online_for_nominal_fees_flight_changes_are_possible_as_per_airline_change_or_cancellation_policies"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytEasytoMoveUpgrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_20">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/img_EasytoMoveUpgrade"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/home_learn_more_benefits_eight" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_EasytoMoveUpgrade_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_easy_to_change_your_flight_pass_after_purchase"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="bold" />
+
+                            <com.optiontown.app.view.customview.OTTextView
+                                android:id="@+id/txt_EasytoMoveUpgrade_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:text="@string/string_it_s_quite_easy_and_convenient_to_change_flight_pass_online_for_nominal_fees_flight_changes_are_possible_as_per_airline_change_or_cancellation_policies"
+                                android:textColor="@color/color_font_black"
+                                android:textSize="@dimen/size_font_12"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/lytHowPurchase"
+                layout="@layout/layout_how_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <include
+                android:id="@+id/lytHowBook"
+                layout="@layout/layout_how_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/app_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/bottom_lay_less"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bottom_bar_fpo_redeem"
+            layout="@layout/app_bottom_bar_fpo_redeem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bottom_bar_fpo_redeem_more"
+            layout="@layout/app_bottom_bar_fpo_redeem_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+
+</RelativeLayout>

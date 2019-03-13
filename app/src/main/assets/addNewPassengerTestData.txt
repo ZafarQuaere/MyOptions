@@ -1,0 +1,20 @@
+{
+	"DOBDay" : "01",
+	"DOBMonth" : "Mar",
+	"DOBYear" : "1998",
+	"EXPDay" : "19",
+	"EXPMonth" : "10",
+	"EXPYear" : "2016",
+	"Email" : "test@tes.vib",
+	"FFPnumber" : "",
+	"FName" : "panda",
+	"IDCardNumber" : "rff",
+	"IDCardType" : "1",
+	"IDCountry" : "2",
+	"LName" : "singh",
+	"MName" : "",
+	"MobExt" : "+99",
+	"MobNum" : "1234567890",
+	"PIssuePlace" : "ddd",
+	"Prefix" : "1"
+}

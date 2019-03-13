@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        >
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgAirlineLogo"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtAirline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AirAsia X"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_11"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp_5"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtPNR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UIYGUIH"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_11"
+            android:textStyle="normal"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+</LinearLayout>

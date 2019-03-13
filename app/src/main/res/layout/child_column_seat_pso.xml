@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_30"
+    android:layout_height="@dimen/dp_30"
+    android:orientation="horizontal"
+    android:id="@+id/layout_seat_tag">
+
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_col_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/caldroid_black"
+            android:text="1"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:textSize="@dimen/size_font_12"
+            android:layout_marginRight="@dimen/dp_5"/>
+
+        <ImageView
+            android:id="@+id/img_chair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/premium_economy_regular_seat"
+            android:padding="@dimen/dp_4"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,727 @@
+<resources>
+    <string name="app_name">Optiontown</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="google_maps_api_key">AIzaSyBYWb08BJNsyOLiOgWBprQzVBm_fcwV7k4</string>
+
+    <string name="string_create_my_account">Create My Account</string>
+    <string name="string_login">Login</string>
+    <string name="string_change_country">Change Country</string>
+    <string name="string_India">India</string>
+    <string name="string_buy_flight_options">Buy Flight Options</string>
+    <string name="string_upgrade">Upgrade</string>
+    <string name="string_flight_pass">Flight Pass</string>
+    <string name="string_pay_less">Ply less, Fly More</string>
+    <string name="string_empty_seat">Empty Seat</string>
+    <string name="string_preferred_seat">Preferred Seat</string>
+    <string name="string_xtra_baggage">Xtra Baggage</string>
+    <string name="string_lounge_access">Lounge Access</string>
+    <string name="string_get_luxury_of_business_longue">Get luxury of Business Longue</string>
+    <string name="string_flexibility_reward">Flexibility Reward</string>
+    <string name="string_earn_rewards_for_your_travel_flexibility">Earn rewards for your travel flexibility!</string>
+    <string name="string_preferred_flight">Preferred Flight</string>
+    <string name="string_fly_on_your_preferred_flight">Fly on your preferred flight</string>
+    <string name="string_multiple_booking">Multiple Booking</string>
+    <string name="string_priority_handling">Priority Handling</string>
+    <string name="string_freedom_to_choose_flight_later">Freedom to choose flight later</string>
+    <string name="string_feel_like_vip_at_airport">Feel like VIP at Airport! </string>
+    <string name="string_my_flightpass">My FlightPass</string>
+    <string name="string_book_flight">Book Flight</string>
+    <string name="string_buy_flight_pass">Buy Flight Pass</string>
+    <string name="string_redeem_book">Redeem / Book</string>
+    <string name="string_fly_more_pay_less_up_to_50_off">Fly more, pay less (up to 50% off)</string>
+    <string name="string_save_up_to_50_on_flight_costs_no_need_to_worry_about_fare_increase_as_your_low_fare_is_locked_in">Save up to 50% on flight costs. No need to worry about fare increase as your low fare is locked-in</string>
+    <string name="string_pool_and_share">Pool and Share</string>
+    <string name="string_share_your_flight_pass_with_friends_family_or_colleagues">Share your flight pass with friends, family or colleagues</string>
+    <string name="string_personalized_for_you">Personalized for you</string>
+    <string name="string_customize_your_favorite_destinations_number_of_flights_number_of_users_travel_period_etc_to_suit_your_needs">Customize your favorite destinations, Number of Flights, number of users, Travel Period, etc. to suit your needs</string>
+    <string name="string_peace_of_mind">Peace of mind</string>
+    <string name="string_make_your_booking_amp_travel_experience_more_convenient_and_relaxed_save_time_and_effort_in_searching_flight_deals"><![CDATA[Make your booking #& travel experience more convenient and relaxed. Save time and effort in searching flight deals.]]></string>
+    <string name="string_book_last_available_seat">Book last available seat</string>
+    <string name="string_enjoy_the_luxury_to_book_any_flight_till_the_last_available_seat_subject_to_your_advance_booking_limit_no_hidden_restrictions_or_fees">Enjoy the luxury to book any flight till the last available seat subject to your Advance Booking limit. No hidden restrictions or fees.</string>
+    <string name="string_more_vacations_more_family_trips_more_savings">More vacations, more family trips, more savings</string>
+    <string name="string_cheapest_yet_most_convenient_way_to_travel_more_and_more_for_fun_or_pleasure">Cheapest, yet most convenient way to travel more and more for fun or pleasure.</string>
+    <string name="string_pay_only_20_and_rest_later">Pay only 20% and rest later</string>
+    <string name="string_just_pay_20_upfront_and_rest_later_in_easy_installments">Just pay 20% upfront and rest later in easy installments</string>
+    <string name="string_most_cost_efficient_way_for_business_travel">Most cost efficient way for business travel</string>
+    <string name="string_book_flights_at_last_minute_manage_travel_online_share_flight_pass_across_all_employees_and_earn_maximum_savings">Book flights at last minute, manage travel online, share flight pass across all employees and earn maximum savings.</string>
+    <string name="string_learn_about_flight_pass">Learn about Flight Pass</string>
+    <string name="string_flight_pass_benefits">Flight Pass Benefits</string>
+    <string name="string_flight_pass_option_fly_more_pay_less_up_to_75_off">Flight Pass Option - Fly more, pay less (up to 75% off)!</string>
+    <string name="string_flight_pass_allows_you_to_conveniently">Flight Pass allows you to conveniently </string>
+    <string name="string_pre_purchase_a_number_of_flights_at_an_agreed_low_price_and_enjoy_the_privilege_of_booking_flights_later_as_per_your_need_the_more_credits_you_buy_the_cheaper_it_gets">pre-purchase a Number of Flights at an agreed LOW PRICE and enjoy the privilege of booking flights later as per your need. The more credits you buy, the cheaper it gets.</string>
+    <string name="string_8226_cheapest_flights_up_to_75_off_no_more_fare_increase_as_your_flight_pass_low_fare_is_locked_in_book_even_peak_period_flights_at_low_price">• Cheapest Flights (up to 75% off). No more fare increase as your Flight Pass LOW fare is locked-in. Book even peak period flights at low price!</string>
+    <string name="string_8226_no_blackout_dates_no_hidden_fees_or_restrictions_no_surcharges_or_additional_fees_fly_on_any_date_no_restrictions_on_trip_duration">• No blackout dates. No hidden fees or restrictions. No surcharges or additional fees. Fly on any date. No restrictions on trip duration.</string>
+    <string name="string_8226_book_flight_till_the_last_available_seat_subject_to_your_advance_booking_limit_minimum_days_before_travel_you_must_book_and_travel_period">• Book flight till the last available seat subject to your Advance Booking limit (minimum days before travel you must book) and Travel Period.</string>
+    <string name="string_8226_customize_flight_pass_to_suit_your_needs_number_of_flights_destinations_to_fly_to_travel_period_users_who_can_book_and_fly_etc">• Customize Flight Pass to suit your needs; Number of Flights, destinations to fly to, Travel Period, users who can book and fly etc.</string>
+    <string name="string_8226_pay_only_20_upfront_and_rest_later_with_easy_installments">• Pay only 20% upfront and rest later with easy installments.</string>
+    <string name="string_8226_pool_and_share_your_flight_pass_with_friends_family_or_colleagues">• Pool and share your Flight Pass with friends, family or colleagues</string>
+    <string name="string_8226_a_great_travel_solution_for_both_leisure_and_business_travel">• A great travel solution for both leisure and business travel.</string>
+    <string name="string_with_flight_pass_you_can_fly_more_pay_up_to_50_less_save_time_and_effort_in_trip_planning_and_booking_and_enhance_your_travel_convenience">With Flight Pass, you can Fly more, Pay up to 50% less, save time and effort in trip planning and booking and enhance your travel convenience!</string>
+    <string name="string_read_more">Read more...</string>
+    <string name="string_8226_visit_www_optiontown_com_and_select_the_flight_pass_option_tab">• Visit www.optiontown.com and select the Flight Pass Option tab.</string>
+    <string name="string_8226_in_the_search_section_choose_your_desired_flight_pass_features_airline_cabin_travel_period_destinations_you_want_to_fly_to_and_number_of_users_and_click_search">• In the search section, choose your desired Flight Pass features (Airline, Cabin, Travel Period, destinations you want to fly to and Number of Users) and click search.</string>
+    <string name="string_8226_choose_your_desired_flight_pass_click_on_customise_if_you_want_to_customise_your_flight_pass">• Choose your desired Flight Pass. Click on \'Customise\' if you want to customise your Flight Pass.</string>
+    <string name="string_8226_review_and_make_the_payment_you_may_also_choose_a_flexible_payment_plan_with_easy_instalments">• Review and make the payment. You may also choose a Flexible Payment Plan with easy instalments</string>
+    <string name="string_now_you_are_ready_to_make_your_bookings_as_per_your_flight_pass">Now, you are ready to make your bookings as per your Flight Pass.</string>
+    <string name="string_8226_visit_www_optiontown_com_and_select_the_flight_pass_option_tab_in_the_book_flights_section_enter_your_username_and_password_to_login_to_your_account">• Visit www.optiontown.com and select the Flight Pass Option tab. In the Book Flights section, enter your username and password to login to your account.</string>
+    <string name="string_8226_choose_the_flight_pass_you_want_to_use_to_book_flights">• Choose the flight pass you want to use to book flights.</string>
+    <string name="string_8226_input_flight_search_criteria_and_click_search">• Input flight search criteria and click search.</string>
+    <string name="string_8226_select_your_desired_flight_from_the_search_results">• Select your desired flight from the search results.</string>
+    <string name="string_8226_add_users_and_review_your_flight_selection">• Add Users and review your flight selection.</string>
+    <string name="string_8226_pay_your_intalment_if_your_flight_pass_was_purchased_with_an_instalment_plan">• Pay your intalment if your flight Pass was purchased with an instalment plan.</string>
+    <string name="string_8226_submit_your_booking">• Submit your booking.</string>
+    <string name="string_8226_receive_your_booking_confirmation_email_as_per_the_specification_in_your_flight_pass">• Receive your booking confirmation email as per the specification in your Flight Pass.</string>
+    <string name="string_8226_about_flight_pass_option">• About Flight Pass Option</string>
+    <string name="string_8226_pass_purchase">• Pass Purchase</string>
+    <string name="string_8226_pass_redeem_book_flight">• Pass Redeem / Book Flight</string>
+    <string name="string_8226_payment">• Payment</string>
+    <string name="string_how_can_i_purchase_flight_pass">How Can I Purchase Flight Pass?</string>
+    <string name="string_how_can_i_book_flights_with_my_flight_pass">How can I book flights with my Flight Pass?</string>
+    <string name="string_frequently_asked_questions_faqs">Frequently Asked Questions (FAQs)</string>
+
+    <string name="string_testimonials">Testimonials</string>
+
+    <string name="string_menu_flight_pass_home">Flight Pass Home</string>
+    <string name="string_menu_buy_flight_pass">Buy Flight Pass</string>
+    <string name="string_menu_redeem_book">Redeem / Book</string>
+    <string name="string_menu_learn_more">Learn More</string>
+    <string name="string_menu_faqs">FAQs</string>
+    <string name="string_flight_pass_option">Flight Pass Option</string>
+    <string name="string_flight_pass_buy">Buy Flight Pass</string>
+    <string name="string_select_flight_pass">Select Flight Pass</string>
+    <string name="string_filter_your_results">Filter Your Results</string>
+    <string name="string_review">Review</string>
+    <string name="string_flight_pass_summary">Flight Pass Summary</string>
+    <string name="string_make_payment">Make Payment</string>
+    <string name="string_create_optiontown_account">Create Optiontown account</string>
+    <string name="string_faq">Frequently Asked Questions (FAQs)</string>
+
+
+    <!-- urls -->
+
+    <!--<string name="URL_BASE">https://192.168.64.10</string>-->
+    <!--<string name="URL_BASE">https://192.168.64.166</string>-->
+    <!--<string name="URL_BASE">https://192.168.64.79</string>-->
+    <!--<string name="URL_BASE">https://www.optiontown.biz</string>-->
+    <string name="URL_BASE">https://www.optiontown.com</string>
+    <!-- testing url-->
+    <!--<string name="URL_BASE">https://www.optiontown.com:2243</string>-->
+
+
+    <string name="URL_METHOD_MMP_ADDUser_LIST">FPOAddUserList</string>
+    <string name="URL_METHOD_SELLER_LIST">/getSellerList.do?mobileAction=</string>
+    <string name="URL_METHOD_ADD_MOBILE_USER">/Add_Mobile_User.do?mobileAction=</string>
+    <string name="URL_METHOD_PAYMENT_PAGE">/Payment_Page.do?mobileAction=</string>
+    <string name="URL_METHOD_FORGOT_LOGIN_PASS_APP">/forgot_loginPassApp.do?mobileAction=</string>
+    <string name="URL_METHOD_GET_LOGIN">/getLogin_JSON.do?mobileAction=</string>
+    <string name="URL_METHOD_TERMS_OF_SERVICE">/jsp/TGP/TGP_Term_Services.jsp</string>
+    <string name="URL_METHOD_PRIVACY_POLICY">/jsp/TGP/TGP_Privacy_Policy.jsp</string>
+    <string name="URL_METHOD_EMAIL_US">/jsp/TGP/TGP_Privacy_Policy.jsp</string>
+    <string name="URL_TGP_RULES">/jsp/TGP/TGP_Rules.jsp</string>
+
+    <string name="URL_getBlackListDate">getBlackListDate</string>
+    <string name="URL_FpoMMBPayment">FpoMMBPayment</string>
+    <string name="URL_ChangeFlightReview">ChangeFlightReview&amp;checkParameter=1&amp;newIfsIndex=</string>
+    <string name="URL_ChangeFlightSelectNew">ChangeFlightSelectNew&amp;checkParameter=1</string>
+    <string name="URL_ChangeFlightCurrent">ChangeFlightCurrent&amp;checkParameter=1&amp;ifsIndex=</string>
+    <string name="URL_FpoMMPPayment">FpoMMPPayment</string>
+    <string name="URL_passManagmentNewPrice">passManagmentNewPrice&amp;testParameter=1&amp;checkParameter=1</string>
+    <string name="URL_PassSelectedParameter">PassSelectedParameter&amp;submitChangeType=1&amp;checkParameter=1</string>
+    <string name="URL_ManageYourPassRefresh">ManageYourPassRefresh</string>
+    <string name="URL_countinueBFPaymentMobile">countinueBFPaymentMobile</string>
+    <string name="URL_GoingToBookFlight">GoingToBookFlight</string>
+    <string name="URL_SaveNewUserFPO">SaveNewUserFPO</string>
+    <string name="URL_FpoMMPSaveAddUser">FpoMMPSaveAddUser</string>
+    <string name="URL_UpdatePassUserAjax">UpdatePassUserAjax</string>
+    <string name="URL_PassFlightSummary">PassFlightSummary</string>
+    <string name="URL_SelectPassFlightReviewAndreviewEqualsreview">SelectPassFlightReview&amp;review=review</string>
+    <string name="URL_Flight_2_List">OpenJawFlight2List</string>
+    <string name="URL_SecondPartFlightList">SecondPartFlightList</string>
+    <string name="URL_setSelectedFlights">setSelectedFlights</string>
+    <string name="URL_SelectPassFlightListTab2">SelectPassFlightList&amp;tab=2</string>
+    <string name="URL_SelectPassFlightList">SelectPassFlightList</string>
+    <string name="URL_Book_Flight_LabelData">Book_Flight_LabelData</string>
+    <string name="URL_setRedeemLoginDetails">setRedeemLoginDetails</string>
+    <string name="URL_API_LABELS">ApiLabels</string>
+    <string name="URL_HOME_PASS_BANNER">getHomePassBanner</string>
+    <string name="URL_FPO_GET_PASS">FpoGetPass</string>
+    <string name="URL_IMAGE">/images/passes/</string>
+    <string name="URL_IMAGE_RESTRICTED">/images/alt/</string>
+    <string name="URL_FLIGHT_PASS_TOP_BANNER"></string>
+    <string name="URL_SESSION_ID">GetSessionId</string>
+    <string name="URL_LOGIN">setLoginDetails</string>
+    <string name="URL_LOGOUT">SessionInvalidate</string>
+    <string name="URL_ADD_USER">AddUserDetails</string>
+    <string name="URL_CREATE_ACCOUNT">CreateAccount</string>
+    <string name="URL_UPDATE_PROFILE">UpdateProfile</string>
+    <string name="URL_SIMPLE_UPDATE_PROFILE">Simple_UpdateProfile</string>
+    <string name="URL_FORGOT_PASSWORD">EmailUserNameAndPasswordApp&amp;email=</string>
+    <string name="URL_COUNTRY_EXT_LIST">CountryExtList</string>
+    <string name="URL_OpredeemPassDrpDwn">OpredeemPassDrpDwn</string>
+    <string name="URL_FPO_MOBILE_REVIEW_PASS">FpoMobileReviewPass</string>
+    <string name="URL_BUY_PASS_FROM_HOME_REVIEW">buyPassFromHome</string>
+    <string name="URL_FPO_MOBILE_CUSTOMIZE">FpoSearchCustomize</string>
+    <string name="URL_FPO_PAYMENT_PAGE">FPOPaymentPage</string>
+    <string name="URL_ADD_PASS_USER_FROM_FLYER">AddPassUserFromFlyer</string>
+    <string name="URL_CONTACT_US_LABEL">ContactUSLabels</string>
+    <string name="URL_Save_Testimonial_FPO">SaveTestimonialFPO</string>
+    <string name="URL_SEARCH_ADVANCE_BOOKING">SearchAdvanceBooking</string>
+    <string name="URL_TRAVEL_FLEXIBILITY">TravelFlexibility</string>
+    <string name="URL_CUSTOMIZE_PAX_CHANGES">CustomizePaxChange</string>
+    <string name="ITINERARY_SEARCH">ItinerarySearch</string>
+    <string name="URL_MY_FLIGHT_BOOKING_HISTORY">MyflightBookingHistory</string>
+    <string name="URL_UPDATE_USER">FpoMMPUpdateUser</string>
+    <string name="URL_MMB_CHANGE_FLIGHT_SELECT">ChangeFlightSelect</string>
+    <string name="URL_MMP_SAVE_UPDATE_USER">FpoMMPSaveUpdateUser</string>
+    <string name="URL_Select_invoice"><![CDATA[MMpSelectInvoice&select=1]]></string>
+    <string name="URL_SEND_INVOICE">SendInvoice</string>
+    <string name="URL_MANAGE_YOUR_PASS">ManageYourPass</string>
+    <string name="URL_MANAGE_MY_BOOKING">ManageMybooking</string>
+    <string name="URL_PromoApply">PromoApply</string>
+    <string name="URL_RemovePromoCode">RemovePromoCode</string>
+    <string name="URL_FfpValidation">FfpValidation</string>
+    <string name="URL_backSearchPass">backSearchPass</string>
+    <string name="URL_BackSearchHomeBanner">BackSearchHomeBanner</string>
+    <string name="URL_CustomizeFm">CustomizeFm</string>
+    <string name="URL_customZoneData">customZoneData</string>
+    <string name="URL_OpSearchItIn">opSearchItin</string>
+    <string name="URL_DetailPnrSearch">DetailPnrSearch</string>
+    <string name="URL_SelectUTO">SelectUTO</string>
+    <string name="URL_ItineraryViewDetail">ItineraryViewDetail</string>
+    <string name="URL_opConfirm">opConfirm&amp;isExpressCheckout=0</string>
+    <string name="URL_SeatMap">SeatMap</string>
+
+
+
+    <string name="string_rs">₹</string>
+    <string name="string_rs_html_1"><span class="rupee">INR</span></string>
+    <string name="string_rs_html_2"><span class="rupee">₹</span></string>
+
+
+
+    <string name="warning_common_error_message">Something went wrong, please try again later.</string>
+    <string name="warning_common_input_error_message">Invalid username or password.</string>
+    <string name="warning_common_please_check_your_internet_connection_and_try_again_later">Please check your Internet connection and try again later.</string>
+    <string name="message_no_pass">You have no valid pass list , please purchase pass first.</string>
+
+
+    <string name="warning_remove_user">Are you sure you want to remove this user?</string>
+
+    <string name="key_json_fpoGetPassData">key_json_fpoGetPassData</string>
+    <string name="key_json_loginData">key_json_loginData</string>
+    <string name="key_login_username">key_login_username</string>
+    <string name="key_login_password">key_login_password</string>
+    <string name="key_redeem_pass_list">key_redeem_pass_list</string>
+
+
+    <string name="key_shared_prefs">SHARED_PREFS</string>
+    <string name="key_my_booking">key_mybooking</string>
+    <string name="key_serializable">Key_Serializable</string>
+    <string name="key_selected_airline_tag">KEY_SELECTED_AIRLINE_TAG</string>
+    <string name="key_selected_airline_id">KEY_SELECTED_AIRLINE_ID</string>
+
+    <string name="key_selected_validity_begin">KEY_SELECTED_VALIDITY_BEGIN</string>
+    <string name="key_selected_travel_zone_tag">KEY_SELECTED_TRAVEL_ZONE_TAG</string>
+    <string name="key_selected_travel_zone_sub_group_id">KEY_SELECTED_TRAVEL_ZONE_SUB_GROUP_ID</string>
+    <string name="key_selected_travel_zone_group_id">KEY_SELECTED_TRAVEL_ZONE_GROUP_ID</string>
+    <string name="key_selected_travel_zone_id">KEY_SELECTED_TRAVEL_ZONE_ID</string>
+    <string name="key_selected_travel_zone_tgp_fg_id">KEY_SELECTED_TRAVEL_ZONE_TGP_FG_ID</string>
+    <string name="key_selected_travel_is_personalised_zone">KEY_SELECTED_IS_PERSONALISED_ZONE</string>
+
+    <string name="key_selected_cabin_tag">KEY_SELECTED_CABIN_TAG</string>
+    <string name="key_selected_cabin_id">KEY_SELECTED_CABIN_ID</string>
+
+    <string name="key_selected_passenger_tag">KEY_SELECTED_PASSENGER_TAG</string>
+    <string name="key_selected_passenger_id">KEY_SELECTED_PASSENGER_ID</string>
+
+    <string name="key_selected_flight_tag">KEY_SELECTED_FLIGHT_TAG</string>
+    <string name="key_selected_flight_id">KEY_SELECTED_FLIGHT_ID</string>
+
+    <string name="key_selected_travel_period_valid_from">KEY_SELECTED_TRAVEL_PERIOD_VALID_FROM</string>
+    <string name="key_selected_travel_period_month_tag">KEY_SELECTED_TRAVEL_PERIOD_MONTH</string>
+    <string name="key_selected_travel_period_month_id">KEY_SELECTED_TRAVEL_PERIOD_MONTH_ID</string>
+
+    <string name="key_selected_advance_booking_id">KEY_SELECTED_ADVANCING_BOOKING</string>
+    <string name="key_selected_advance_booking_tag">KEY_SELECTED_ADVANCING_BOOKING_TAG</string>
+
+    <string name="key_selected_flexibility_tag">KEY_SELECTED_FLEXIBILITY_TAG</string>
+    <string name="key_selected_flexibility_id">KEY_SELECTED_FLEXIBILITY_ID</string>
+
+    <string name="key_selected_fm_matrix_tag">KEY_SELECTED_FM_MATRIX_TAG#</string>
+    <string name="key_selected_fm_matrix_id">KEY_SELECTED_FM_MATRIX_ID#</string>
+
+    <!--<string name="key_filter_travel_zone_TgpfgId">key_filter_travel_zone_TgpfgId</string>
+    <string name="key_filter_travel_zone_ZoneSubGroupId">key_filter_travel_zone_ZoneSubGroupId</string>
+    <string name="key_filter_travel_zone_ShortDescription">key_filter_travel_zone_ShortDescription</string>
+    <string name="key_filter_travel_zone_ZoneGroupId">key_filter_travel_zone_ZoneGroupId</string>
+    -->
+
+    <string name="key_filter_travel_zone_ZoneId">key_filter_travel_zone_ZoneId</string>
+    <string name="key_filter_number_flight_creditId">key_filter_number_flight_creditId</string>\
+    <string name="key_filter_travel_period_validityId">key_filter_travel_period_validityId</string>
+    <string name="key_filter_price_per_flight_range_min">key_filter_price_per_flight_range_min</string>
+    <string name="key_filter_price_per_flight_range_max">key_filter_price_per_flight_range_max</string>
+
+    <string name="key_international_language_data">key_international_language_data</string>
+    <string name="key_session_data">key_session_data</string>
+    <string name="key_country_ext_data">key_country_ext_data</string>
+    <string name="key_home_pass_banner_data">key_home_pass_banner_data</string>
+    <string name="key_selected_country_id">key_selected_country_id</string>
+    <string name="key_selected_language_id">key_selected_language_id</string>
+    <string name="key_selected_country_logo_url">key_selected_country_logo_url</string>
+
+    <string name="key_country_data">key_country_data</string>
+
+    <string name="KEY_OUTBOUND_DESIRE_DATE">KEY_OUTBOUND_DESIRE_DATE</string>
+    <string name="KEY_OUTBOUND_NOTIFICATION_DATE">KEY_OUTBOUND_NOTIFICATION_DATE</string>
+
+
+    <string name="key_view_type">KEY_VIEW_TYPE</string>
+    <string name="string_select_zone">Select</string>
+    <string name="string_travel_valid_from">Travel valid from</string>
+    <string name="string_travel_period">Travel Period</string>
+    <string name="string_from">From</string>
+    <string name="string_help">Help</string>
+    <string name="string_low_to_high">Low to High</string>
+    <string name="string_high_to_low">High to Low</string>
+    <string name="string_flights">Flights</string>
+    <string name="string_show_all">Show all</string>
+    <string name="string_months">Months</string>
+    <string name="string_prefix">Prefix*</string>
+    <string name="string_day">Day</string>
+    <string name="string_month">Month</string>
+    <string name="string_year">Year</string>
+    <string name="string_empty"></string>
+
+    <string name="string_error_prefix">Please Select Prefix</string>
+    <string name="string_error_firstname">Please enter a valid first name.</string>
+    <string name="string_error_lastname">Please enter a valid last name.</string>
+    <string name="string_error_email_match">Email and Confirm Email do not match.</string>
+    <string name="string_error_email">Please enter a valid email address.</string>
+    <string name="string_error_email_confirm">Enter a valid email address and ensure that Email and Confirm Email fields have the same exact email address.</string>
+    <string name="string_error_password_confirm">Password and Confirm Password do not match.</string>
+    <string name="string_error_password_match">Password doesnt match.</string>
+    <string name="string_error_password">Enter a valid 6-20 character password using only alphabet (a-z), number (0-9), underscore, hyphen, @ or period. The first and the last character must be an alphabet or a number. Passwords must match.</string>
+    <string name="string_error_mobile">Enter a valid phone number.</string>
+    <string name="string_error_birthday">Enter a valid birth date.</string>
+    <string name="string_error_age">User should be an adult.</string>
+    <string name="string_error_age_infant">This user is an Infant. You cannot add an infant to booking using flight pass. You may contact airline to add infant to your booking.</string>
+    <string name="string_error_address1">Please enter address1</string>
+    <string name="string_error_address2">Please enter address2</string>
+    <string name="string_error_city">Please enter city</string>
+    <string name="string_error_zip">Please enter zip code</string>
+    <string name="string_error_selection">Selection already exists.</string>
+    <string name="string_error_selection_origin">Select Origin first.</string>
+
+    <string name="string_add_more_letter">Add More..(Type 3 letters)</string>
+    <string name="string_airport_city_country_letter">airport, city, country, (Type 3 letters)</string>
+    <string name="string_add_new_passenger">Add new Passenger</string>
+    <string name="string_passenger">Passenger</string>
+    <string name="string_passengers">Passengers</string>
+    <string name="string_ok">Ok</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="string_select">Select</string>
+    <string name="string_pass">Pass</string>
+    <string name="string_validity">Validity</string>
+    <string name="string_price">Price</string>
+    <string name="string_view_details">View Details</string>
+    <string name="string_choose_your_payment_plan">Choose Your Payment Plan</string>
+    <string name="string_instant_payment_get_maximum_savings">Instant Payment - Get Maximum Savings!</string>
+    <string name="string_proceed_to_payment">Proceed to payment</string>
+    <string name="string_flexible_payment_plans_pay_over_time">Flexible Payment Plans - Pay over time</string>
+    <string name="string_amount">Amount</string>
+    <string name="string_down_payment">Down Payment</string>
+    <string name="string_no_of_installments">No. of Installments</string>
+    <string name="string_amount_each_installment">Amount each Installment</string>
+    <string name="string_total_pass_price">Total pass price</string>
+    <string name="string_low_down_payment">Low Down Payment</string>
+    <string name="string_travel_zone">Travel Zone</string>
+    <string name="string_cabin">Cabin</string>
+    <string name="string_number_of_flights">Number of Flights</string>
+    <string name="string_advance_booking">Advance Booking</string>
+    <string name="string_travel_flexibility">Travel Flexibility</string>
+    <string name="string_users">Users</string>
+    <string name="string_fare_taxes_fees"><![CDATA[Fare, Taxes & Fees]]></string>
+    <string name="string_price_per_flight">Price per Flight</string>
+    <string name="string_email_mandatory">Email*</string>
+    <string name="string_confirm_email_mandatory">Confirm Email*</string>
+    <string name="string_confirm_email">Confirm Email*</string>
+    <string name="string_password_mandatory">Password*</string>
+    <string name="string_confirm_password_mandatory">Confirm Password*</string>
+    <string name="string_confirm_password">Confirm Password*</string>
+    <string name="string_personal_information">Personal Information</string>
+    <string name="string_prefix_mandatory">Prefix*</string>
+    <string name="string_first_name_mandatory">First Name*</string>
+    <string name="string_middle_name">Middle Name</string>
+    <string name="string_last_name_mandatory">Last Name*</string>
+    <string name="string_number_mandatory">Number*</string>
+    <string name="string_date_of_birth_mandatory">Date of Birth* : </string>
+    <string name="string_date_of_birth">Date of Birth</string>
+    <string name="string_add_me_as_the_first_passenger_eligible_to_use_this_flight_pass">Add me as the first passenger eligible to use this Flight Pass.</string>
+    <string name="string_create_account">Create Account</string>
+    <string name="string_please_accept_our_terms_of_service">Please accept our Terms of Service.</string>
+    <string name="string_success">Success</string>
+    <string name="string_failure">Failure</string>
+    <string name="string_some_additional_information_is_required_kindly_fill_in_the_information_as_mentioned_below">Some additional information is required. Kindly fill in the information as mentioned below.</string>
+    <string name="string_login_to_my_optiontown_account">Login to My Optiontown account</string>
+    <string name="string_username_email">Username/Email</string>
+    <string name="string_password">Password*</string>
+    <string name="string_my_optiontown">My Optiontown</string>
+    <string name="string_join_optiontown_and_enjoy_unique_benefits">Join Optiontown and enjoy unique benefits!</string>
+    <string name="string_simple_and_easy_way_to_store_and_manage_your_account_information">• Simple and easy way to store and manage your account information.</string>
+    <string name="string_view_your_previous_and_current_trips_and_monitor_your_account_history_in_your_optiontown_account">• View your previous and current trips and monitor your account history in your Optiontown account.</string>
+    <string name="string_get_news_and_quick_updates_on_our_existing_and_new_products">• Get news and quick updates on our existing and new products.</string>
+    <string name="string_view_and_update_your_profile">View and update your profile</string>
+    <string name="string_my_profile">My Profile</string>
+    <string name="string_my_trips">My Trips</string>
+    <string name="string_mandatory_fields">* Mandatory Fields</string>
+    <string name="string_login_to_your_optiontown_account_by_using_your_email_address">Login to your Optiontown account by using your email address</string>
+    <string name="string_mandatory_username_email">Username/Email *</string>
+    <string name="string_check_this_box_to_change_password">Check this box to change password</string>
+    <string name="string_optiontown_alert_keep_this_box_checked_to_get_email_alerts_when_your_flight_s_are_eligible_to_sign_up_for_our_product_s">Optiontown Alert! - Keep this box checked to get email alerts when your flight(s) are eligible to sign-up for our product(s).</string>
+    <string name="string_i_wish_to_receive_special_offers_from_optiontown_com">I wish to receive special offers from Optiontown.com</string>
+    <string name="string_first_name">First Name</string>
+    <string name="string_first_nm">First Name*</string>
+    <string name="string_last_name">Last Name</string>
+    <string name="string_last_nm">Last Name*</string>
+    <string name="string_cell_mobile_mandatory">Cell / Mobile*</string>
+    <string name="string_suffix">Suffix</string>
+    <string name="string_sex">Sex</string>
+    <string name="string_default_paypal_account_email">Default PayPal Account Email</string>
+    <string name="string_confirm_paypal_account_email">Confirm PayPal Account Email</string>
+    <string name="string_contact_information">Contact Information</string>
+    <string name="string_address_line_1">Address Line 1</string>
+    <string name="string_default_credit_check_recipient">Default Credit / Check Recipient</string>
+    <string name="string_address_line_2">Address Line 2</string>
+    <string name="string_zip_postal_code">Zip / Postal Code</string>
+    <string name="string_cell_mobile">Cell / Mobile</string>
+    <string name="string_country">Country</string>
+    <string name="string_state_province">State / Province</string>
+    <string name="string_city">City</string>
+    <string name="string_enter_digits_only">(enter digits only)</string>
+    <string name="string_other_phone">Other Phone</string>
+    <string name="string_save">Save</string>
+    <string name="string_add_passenger">Add Passenger</string>
+    <string name="string_my_optiontown_create_account">My Optiontown - Create Account</string>
+    <string name="string_already_a_member_login">Already a member? Login</string>
+    <string name="string_all_fields_are_mandatory">(All fields are mandatory)</string>
+    <string name="string_email_address">Email Address*</string>
+    <string name="string_6_20_size_a_z_0_9_dot_case_sensitive">(6-20 size. a-z, 0-9, _ , @, -, dot. Case sensitive.)</string>
+    <string name="string_by_clicking_on_submit_you_are_agreeing_to_the_terms_of_service_and_privacy_policy">By clicking on \'Submit\', you are agreeing to the Terms of Service and</string>
+    <string name="string_6_50_size_a_z_0_9_dot">(6-50 size. a-z, 0-9, _ , @, -, dot)</string>
+    <string name="string_forgot_username_password">Forgot Username/Password</string>
+    <string name="string_enter_your_email_address">Enter your email address.</string>
+    <string name="string_send_my_user_name_password_to_my_email_address">Send my User Name/Password to my email address</string>
+    <string name="string_just_send_my_user_name">Just send my User Name</string>
+    <string name="string_back">Back</string>
+    <string name="string_customize">Customize</string>
+    <string name="string_buy">Buy</string>
+    <string name="string_write_a_testimonial">Write a Testimonial</string>
+    <string name="string_logout">Logout</string>
+    <string name="string_look_what_our_customers_have_to_say_about_us">Look what our customers have to say about us</string>
+    <string name="string_express_check_out">Express Check Out</string>
+    <string name="string_one_flight_pass_for_multiple_destinations_more_vacations_more_fun_more_savings">One Flight Pass for multiple destinations. More vacations.More fun. More savings</string>
+    <string name="string_select_a_country">Select a Country</string>
+    <string name="string_search">Search</string>
+    <string name="string_advance_search">Advance Search</string>
+    <string name="string_upgrade_travel_option_uto">Upgrade Travel Option (UTo)</string>
+    <string name="string_upgrade_to_business_or_first_for_up_to_75_less">Upgrade to Business or First for up to 75% less!</string>
+    <string name="string_upgrade_pass_up">Upgrade Pass (UP)</string>
+    <string name="string_buy_multiple_upgrades_for_even_less">Buy multiple upgrades for even less</string>
+    <string name="string_preferred_seat_option_pso">Preferred Seat Option (PSo)</string>
+    <string name="string_get_seat_of_your_choice">Get seat of your choice.</string>
+    <string name="string_preferred_seat_pass_psp">Preferred Seat Pass (PSP)</string>
+    <string name="string_buy_multiple_preferred_seats_for_even_less">Buy multiple preferred seats for even less</string>
+    <string name="string_empty_seat_option_eso">Empty Seat Option (ESo)</string>
+    <string name="string_enjoy_flatbed_in_economy">Enjoy FlatBed in Economy !</string>
+    <string name="string_empty_seat_pass_esp">Empty Seat Pass (ESP)</string>
+    <string name="string_buy_multiple_economy_flatbeds_for_even_less">Buy multiple Economy Flatbeds for even less</string>
+    <string name="string_flight_pass_the_cheapest_and_most_convenient_way_to_fly">Flight Pass - The cheapest and most convenient way to fly!</string>
+    <string name="string_cheapest_flights">CHEAPEST FLIGHTS</string>
+    <string name="string_flight_pass_offers_the_cheapest_flights_up_to_50_off_no_more_worries_about_fare_increase_as_your_flight_pass_low_fare_is_locked_in">Flight Pass offers the cheapest flights (up to 50% off). No more worries about fare increase as your Flight Pass \'low fare\' is Locked-in.</string>
+    <string name="string_no_hidden_fees_no_restrictions_no_black_out_periods">No hidden fees, no restrictions, no black-out periods</string>
+    <string name="string_no_restrictions_or_black_out_periods_for_your_flight_booking_period_no_surcharge_or_fees_for_peak_days_like_christmas_or_holidays_even_if_the_market_fare_increases_you_only_pay_the_pre_agreed_low_fare_with_your_flight_pass_no_minimum_stay_maximum_stay_or_saturday_night_stay_limit_no_restrictions_on_trip_duration">No restrictions or black-out periods for your flight booking. Period. No surcharge or fees for peak days like christmas or holidays. Even if the market fare increases, you only pay the pre-agreed Low Fare with your Flight Pass. No minimum stay, maximum stay or saturday night stay limit. No restrictions on trip duration</string>
+    <string name="string_full_freedom_and_peace_of_mind_in_trip_planning_and_booking">Full freedom and peace of mind in trip planning and booking</string>
+    <string name="string_get_complete_freedom_to_plan_and_book_trips_at_your_convenience_with_flight_pass_save_time_and_effort_in_doing_flight_search_no_need_to_predict_whether_the_fare_will_go_up_or_down_or_when_is_the_right_time_to_purchase_with_flight_pass_all_these_hassles_and_stress_will_disappear_from_your_dictionary_instead_you_ll_love_the_freedom_and_conveinence_of_booking_flights_at_your_own_will">Get complete freedom to plan and book trips at your convenience with Flight Pass. Save time and effort in doing flight search. No need to predict whether the fare will go up or down or when is the right time to purchase. With Flight Pass, all these hassles and stress will disappear from your dictionary. Instead, you\'ll love the freedom and conveinence of booking flights at your own will.</string>
+    <string name="string_book_your_flight_till_last_available_seat">Book your flight till last available seat</string>
+    <string name="string_yes_it_sounds_too_good_to_be_true_but_with_flight_pass_you_can_book_any_flight_till_the_last_available_seat_no_blackout_dates_no_restrictions_on_fare_booking_classes_so_if_a_flight_is_available_on_the_airline_website_you_can_also_book_it_with_your_flight_pass_on_optiontown_com_the_only_limitating_factors_are_your_pre_selected_features_like_travel_period_advance_booking_limit_days_before_travel_you_must_book_and_travel_flexibility">Yes, it sounds too good to be true, but with Flight Pass, you can book any flight till the last available seat. No blackout dates. No restrictions on fare/booking classes. So, if a flight is available on the airline website, you can also book it with your Flight Pass on Optiontown.com. The only limitating factors are your pre-selected features, like Travel Period, Advance Booking limit (days before travel you must book) and Travel Flexibility.</string>
+    <string name="string_pay_only_20_upfront_and_rest_later_in_easy_installments">Pay Only 20% upfront and rest later in easy installments</string>
+    <string name="string_you_can_also_choose_the_number_of_installments_and_the_installment_amount_at_a_nominal_cost">You can also choose the number of installments and the installment amount at a nominal cost.</string>
+    <string name="string_more_vacations_more_trips_more_savings_for">More vacations, more trips, more savings for</string>
+    <string name="string_flight_pass_offers_the_lowest_fare_per_trip_which_means_you_can_take_more_trips_for_your_budget_rejuvenate_your_family_bonds_with_more_vacations_and_more_frequent_family_get_togethers_flight_pass_makes_it_very_easy_to_plan_and_book_flights_share_your_flight_pass_with_friends_and_family">Flight Pass offers the lowest fare per trip, which means you can take more trips for your budget. Rejuvenate your family bonds with more vacations and more frequent family get-togethers. Flight Pass makes it very easy to plan and book flights. Share your Flight Pass with friends and family</string>
+    <string name="string_business_travel_minimize_travel_costs_and_maximize_productivity">Business Travel : Minimize travel costs and maximize productivity</string>
+    <string name="string_combine_all_of_your_company_travel_volume_and_earn_the_highest_savings_save_time_and_boost_productivity_by_with_last_minute_booking_feature_for_your_dynamic_travel_needs_share_a_flight_pass_across_all_employees_serving_as_an_easy_and_free_travel_management_tool_special_offers_for_corporate_flight_passes">Combine all of your company travel volume and earn the highest savings. Save time and boost productivity by with last minute booking feature for your dynamic travel needs. Share a Flight Pass across all employees, serving as an easy and free travel management tool. Special offers for corporate flight passes.</string>
+    <string name="string_easy_to_change_your_flight_pass_after_purchase">Easy to change your Flight Pass after purchase</string>
+    <string name="string_it_s_quite_easy_and_convenient_to_change_flight_pass_online_for_nominal_fees_flight_changes_are_possible_as_per_airline_change_or_cancellation_policies">It\'s quite easy and convenient to change Flight Pass online for nominal fees. Flight changes are possible as per airline change or cancellation policies.</string>
+    <string name="string_your_own_personalized_flight_pass">Your own personalized Flight Pass</string>
+    <string name="string_flight_pass_offers_an_amazing_level_of_personalization_customize_your_flight_pass_by_selecting_your_desired_values_for_the_following_pass_features">Flight Pass offers an amazing level of personalization. Customize your Flight Pass by selecting your desired values for the following pass features.</string>
+    <string name="string_learn_more">Learn More</string>
+    <string name="string_please_accept_our">Please accept our</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="string_privacy_policy">Privacy Policy</string>
+    <string name="string_contact_optiontown">Contact Optiontown</string>
+    <string name="string_plz_fill_in_few_details">Please fill in few details and we will get back to you within 4 hours.</string>
+    <string name="string_booking_information">Booking Information</string>
+    <string name="string_pnr">PNR</string>
+    <string name="string_option">Option*</string>
+    <string name="string_airline">Airline*</string>
+    <string name="string_describe_qsn_thought">Describe your question or thoughts below.</string>
+    <string name="string_submit">Submit</string>
+    <string name="input_mandatory">Input is Mandatory</string>
+    <string name="enter_valid_email">Please Enter a valid email.</string>
+
+
+
+    <string name="buy_upgrade">Buy Upgrade</string>
+    <string name="check_uto_status">Check Uto Status</string>
+    <string name="benefits">Benefits</string>
+    <string name="string_empty_seat_option">Empty Seat Option</string>
+    <string name="string_view_details_underline">View Details</string>
+    <string name="string_email">Email</string>
+    <string name="join_optiontown_to_maximize_chance">Join Optiontown to maximize your chances.</string>
+    <string name="string_seat_price">Empty Seat Price*</string>
+    <string name="string_empty_seat_price_refund">*Empty Seat price will be refunded if not assigned</string>
+    <string name="string_eso_not_available">ESo Not Available</string>
+
+    <string name="string_category">Category</string>
+    <string name="string_write_testimonial">Write a Testimonial</string>
+    <string name="string_country_mandatory">Country*</string>
+    <string name="string_error_pnr">Enter PNR</string>
+    <string name="string_error_airline">Select Airline</string>
+    <string name="string_error_option">Select prefered Option</string>
+    <string name="string_credit_information">Credit Card Information</string>
+    <string name="string_card_type">Card Type</string>
+    <string name="string_last_four_digit">Last 4 Digit</string>
+    <string name="string_type_last_four_digit">Type Last 4 Digit</string>
+
+    <string name="string_airline_without_star">Airline</string>
+    <string name="string_booking_refernce">Booking Reference</string>
+    <string name="string_contact_email">Contact Email</string>
+    <string name="string_uto_rules">UTO Rules</string>
+    <string name="string_lao_summary">Your LAo Summary</string>
+    <string name="string_join_optiontown">Join Optiontown</string>
+    <string name="string_enjoy_special_offers">and enjoy special offers!</string>
+    <string name="string_extra_baggage_option">Xtra Baggage Option</string>
+    <string name="string_xtra_baggage_low_cost">Extra Baggage at Low Cost!</string>
+    <string name="string_xtra_baggage_price">Extra Baggage Price</string>
+    <string name="string_xtra_baggage_not_available">Extra Baggage Not Available</string>
+
+
+
+
+
+
+
+
+    <string name="string_boost_your_chances_to_receive_an_upgrade">Boost your chances to receive an upgrade by selecting higher level priority.</string>
+    <string name="string_confirm">Confirm</string>
+    <string name="string_number">Number</string>
+    <string name="string_flight_number">Flight Number</string>
+    <string name="string_depart_date">Depart Date</string>
+    <string name="string_arrive">Arrive</string>
+    <string name="string_depart">Depart</string>
+    <string name="string_continue">Continue</string>
+    <string name="string_boost_my_priority">Boost my priority</string>
+    <string name="string_upgrade_price_refunded_if_not_upgrade">* Upgrade price is refunded if not upgrade.</string>
+    <string name="string_stand_by">Standby Upgrade</string>
+    <string name="string_confirm_upgrade">Confirmed Upgrade</string>
+    <string name="string_add_individual">Add Individual</string>
+    <string name="buy_empty_seat">Buy Empty Seat</string>
+    <string name="check_eso_status">Check ESo Status</string>
+    <string name="buy_pref_seat">Buy Preferred Seat</string>
+    <string name="check_pso_status">Check PSo Status</string>
+    <string name="buy_xtra_baggage">Buy Xtra Baggage</string>
+    <string name="check_xbo_status">Check XBo Status</string>
+    <string name="buy_lounge_access">Buy Lounge Access</string>
+    <string name="check_lao_status">Check LAo Status</string>
+    <string name="get_fro_reward">Get FRo Rewards</string>
+    <string name="reward_status">Reward Status</string>
+    <string name="buy_pref_flight">Buy Preferred Flight</string>
+    <string name="check_pfo_status">Check PFo Status</string>
+    <string name="buy_mbo">Buy MBo</string>
+    <string name="check_mbo_status">Check MBo Status</string>
+
+
+    <!-- <string name="upgrade">Upgrade</string>
+     <string name="empty_sheet">Empty Sheet</string>
+     <string name="preferred_sheet">Preferred Sheet</string>
+     <string name="xstra_baggase">Xstra Baggage</string>
+     <string name="lounge_access">Lounge Access</string>
+     <string name="flexiblity_rewards">Flexibility Rewards</string>
+     <string name="preferred_flight">Preferred Flight</string>
+     <string name="multiple_booking">Multiple Booking</string>-->
+
+
+    <string name="string_mailing_address">Mailing Address</string>
+    <string name="string_po_box_usa">P. O. Box 42 East Walpole MA 02032-0042 USA</string>
+    <string name="string_usa_contact_number">USA +1 617 977 8128</string>
+    <string name="string_email_us">Email us</string>
+    <string name="key_leg_pro_session_data">key_leg_prod_session_data</string>
+    <string name="key_LP_selected_airline_id">key_LP_selected_airline_id</string>
+    <string name="key_LP_selected_airline_tag">key_LP_selected_airline_tag</string>
+    <string name="string_steps_to_get_upgrade">Steps to get an upgrade.</string>
+    <string name="string_edit_passenger">Edit passenger</string>
+
+
+
+
+
+
+
+    <string name="string_leg_product_search">Search Product</string>
+    <string name="enter_valid_confirmation_number">Enter a valid confirmation number (6 alphanumeric characters)</string>
+    <string name="string_upgrade_home">Upgrade Home</string>
+    <string name="string_buy_upgrade">Buy Upgrade</string>
+    <string name="string_check_status">Check Status</string>
+
+
+
+    <string name="string_bullet">•</string>
+
+
+
+
+    <string name="string_uto_price_summary">UTo Price Summary</string>
+    <string name="string_payment_mode">Payment Mode*</string>
+    <string name="string_contact_email_star">Contact Email*</string>
+    <string name="string_credit_card">Credit Card</string>
+    <string name="string_debit_card">Debit Card</string>
+    <string name="string_paypal">Paypal</string>
+    <string name="string_please_check_box_to_confirm_your_acceptance_of">Please check the box to confirm
+        your acceptance of </string>
+    <string name="string_continue_to_next_step">Continue to next step</string>
+
+    <string name="xtra_baggage_price_refund">*Xtra Baggage price will be refunded if not assigned</string>
+    <string name="string_optiontown_confirmation">Optiontown Confirmation</string>
+    <string name="string_my_transaction">My Transactions</string>
+    <string name="string_to_maximize_chances">to maximize chances</string>
+    <string name="key_selected_productId">key_selected_productId</string>
+
+
+
+
+    <string name="key_leg_list_data">key_leg_list_data</string>
+    <string name="close">close</string>
+    <string name="bpm_close_label">bpm_close_label</string>
+    <string name="bpm_actionbar_label">bpm_actionbar_label</string>
+    <string name="key_selected_price">key_selected_price</string>
+    <string name="key_selected_index_string">key_selected_index_string</string>
+    <string name="string_enter_valid_email">Enter Valid Email</string>
+    <string name="string_enter_mobile_number">Enter Mobile Number</string>
+    <string name="string_to">To</string>
+    <string name="string_deapart_flexibility">Depart Flexibililty</string>
+    <string name="string_return">Return</string>
+    <string name="string_return_flexibility">Return Flexibility</string>
+    <string name="string_terms_of_service">Terms of Service</string>
+    <string name="you_must_accept_rules_and_terms_of_service">You must accept rules and terms of Service before continue.</string>
+    <string name="string_your_option_summary">Your Option Summary</string>
+    <string name="string_flight1">Flight 1</string>
+    <string name="string_flight2">Flight 2</string>
+    <string name="key_leg_pro_result_data">key_leg_pro_result_data</string>
+    <string name="string_redeem_option_town_confirmation">Optiontown Confirmation #233456</string>
+    <string name="string_del_mum_goa">Delhi-Mumbai-Goa</string>
+    <string name="string_travel_valid_story">Travel valid on all vistara operated non-stop flights (to/from) between Delhi , Mumbai and Goa includes the following path Del- mum, del- goa, mum- goa.</string>
+    <string name="string_available_flights">Available Flights</string>
+    <string name="string_10">10</string>
+    <string name="string_used_flights">Used Flights</string>
+    <string name="string_6months_from_1sep">6 Months From 1sep</string>
+    <string name="string_book_30days_before_travel">Book 30 days before travel</string>
+    <string name="string_one_day_flexibility">One Day Flexibility</string>
+    <string name="string_transaction_details">Transaction Details</string>
+    <string name="string_update_passenger">Update Passenger</string>
+    <string name="string_book_flights">Book Flights</string>
+    <string name="string_in_process">In Process</string>
+    <string name="string_view_more">View More</string>
+    <string name="string_upgrade_not_available">Upgrade Not Available</string>
+    <string name="search_error_msg">search_error_msg</string>
+    <string name="is_search_error">is_search_error</string>
+    <string name="string_select_airline">Select Airline</string>
+    <string name="string_plz_select_one_option">Please select one option for at least one flight.</string>
+    <string name="string_select_airline_associated_to_your_reference">Select the airline associated with your Booking Reference</string>
+    <string name="string_search_booking_by_flight">Search Booking By Flight</string>
+    <string name="string_search_booking_by_flight_label">Search Booking By flight Label</string>
+    <string name="string_country_code">Country Code</string>
+    <string name="string_British_airways_club_membership">British Airways Club Membership Number</string>
+    <string name="string_identity_proof">Identity Proof</string>
+    <string name="string_id_card_type">Id Card Type*</string>
+    <string name="string_id_card_number">Id Card Number*</string>
+    <string name="string_country_of_issuance">Country of Issuance*</string>
+    <string name="string_city_of_issuance">City of  Issuance</string>
+    <string name="string_expiration_date">Expiration Date*</string>
+    <string name="string_view_deatils">View Details</string>
+
+
+    <string name="string_old_password">Old Password<font color="#FF0000">*</font></string>
+    <!--<string name="string_new_password">New Password*</string>-->
+    <string name="string_new_password">New Password<font fgcolor="#FF0000">*</font></string>
+    <string name="string_billing_address">Billing Address</string>
+    <string name="key_country_list_data">key_country_list_data</string>
+    <string name="enter_valid_invoice_customer_name">Please enter valid invoice customer name.</string>
+    <string name="enter_valid_billing_address">Enter a valid billing address.</string>
+    <string name="enter_valid_city_name">Enter a valid City name.</string>
+    <string name="enter_state">Enter a State/Province.</string>
+    <string name="enter_zip">Enter Zip Code.</string>
+    <string name="key_countryName">key_countryName</string>
+    <string name="key_countryId">key_countryId</string>
+    <string name="string_enter_first_name">Enter First Name.</string>
+    <string name="string_enter_last_name">Enter Last Name.</string>
+    <string name="key_phone_ext_data">key_phone_ext_data</string>
+    <string name="string_more">more</string>
+    <string name="key_selected_pass">key_selected_pass</string>
+    <string name="corporate_client">Corporate Client / Agent</string>
+    <string name="hide">Hide</string>
+    <string name="tour_code">Tour Code</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="pnr_validation">Please enter a valid Booking Reference (6 alphanumeric characters)</string>
+    <string name="string_promocode_heading">Have a promo Code ?</string>
+    <string name="string_promocode">Promotional Code</string>
+    <string name="string_apply">Apply</string>
+    <string name="string_remove">Remove</string>
+    <string name="string_optiontown1010off">OPTIONTOWN1010.0% OFF</string>
+    <string name="string_discount">Discount</string>
+    <string name="string_promodisc10736">10736</string>
+    <string name="string_promocode_terms_condition"><![CDATA[Promo Code Terms & Conditions]]></string>
+    <string name="key_productId">key_productId</string>
+    <string name="string_how_does_it_work">How does it work ?.</string>
+    <string name="key_selected_passenger_pass_type_id">KEY_SELECTED_PASSENGER_PASS_TYPE_ID</string>
+    <string name="string_upgrade_pass">Upgrade Pass</string>
+    <string name="string_select_your_pass">Select Your Pass</string>
+    <string name="string_booking">Booking</string>
+    <string name="string_show_upgrade_option">Show Upgrade Options</string>
+    <string name="key_leg_benefit_data">key_leg_benefit_data</string>
+    <string name="partial_signUp">Partial SignUp</string>
+    <string name="URL_BMP_CONFIRM">BoostPriorityConfirm</string>
+    <string name="key_first_time_launch">isFirstTimeLaunch</string>
+
+    <string name="intro_about_us">Optiontown is a pioneer in the world of travel options. Our vision is to develop unique and innovative travel options that help to optimize value for both travelers and travel providers. Built using our patented technologies, our revolutionary product portfolio includes the Upgrade Travel Option (UTo, pronounced as You Too), the Empty Seat Option (ESo), the Flight Pass Option(FPo), the Flexibility Reward Option (FRo), the Multiple Booking Option (MBo),the Preferred Flight Option (PFo), the Preferred Seat Option (PSo), the Lounge Access Option (LAo) and the Extra Baggage Option (XBo).\n\nOur unique technologies are based upon concurrent optimization for travelers and travel providers. Our optimization approach concentrates on the overall value for the parties involved rather than simply on a specific product or service.</string>
+    <string name="intro_who_we_are_">Optiontown is owned and operated by Tenon &amp; Groove, LLC, which was founded in 2003. Our vision is to develop unique travel options that can help optimize value for both travelers and travel providers. Over the last few years, we have developed several ground-breaking patented optimization technologies in the field of travel. Our people come from a wide range of backgrounds with a common goal of excellence. Tenon &amp; Groove, LLC is headquartered in Massachusetts, USA and has wholly-owned subsidiaries in Canada and India.</string>
+    <string name="optiontwon_products">1) Flight Pass Option\n\n2) Upgrade Travel Option \n\n3) Empty Seat Option \n\n4) Preferred Seat Option \n\n5) Extra Baggage Option
+    \n\n6) Lounge Access Option \n\n7) Priority Handling Option \n\n8) Flexibility Reward Option \n\n9) Multiple Booking Option </string>
+    <string name="ifs_index_for_pick_a_seat">ifsIndexForPickASeat</string>
+
+    <string name="recaptch_site_key">6LcQqzEUAAAAAKEB9MsJssqOzJp3DgG1EWJSRhnr</string>
+    <string name="enter_captcha">Enter Captcha</string>
+    <string name="captcha">Captcha</string>
+    <string name="captcha_case_sensitive">*Captcha is case sensitive</string>
+    <string name="enter_valid_captcha">Enter Valid Captcha</string>
+
+    <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your password is required.</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_fingerprint_to_authenticate_title">Use fingerprint to authenticate</string>
+    <string name="use_fingerprint_to_authenticate_key" >use_fingerprint_to_authenticate_key</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="sign_in">Sign in</string>
+    <string name="fingerprint_description">Confirm fingerprint to continue</string>
+    <string name="key_login_password_fingerprint">Login Password Fingerprint</string>
+    <string name="key_login_username_fingerprint">Login Username Fingerprint</string>
+    <string name="string_appsettings">Setting</string>
+    <string name="fingerprint_error_doesnt_match">Fingerprint doesn\'t match.</string>
+
+</resources>
+

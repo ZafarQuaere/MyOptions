@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtlearmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_8226_cheapest_flights_up_to_75_off_no_more_fare_increase_as_your_flight_pass_low_fare_is_locked_in_book_even_peak_period_flights_at_low_price"
+        android:textStyle="normal"
+        android:textSize="@dimen/size_font_12"
+        android:textColor="@color/color_font_black"
+        android:lineSpacingExtra="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+
+</LinearLayout>

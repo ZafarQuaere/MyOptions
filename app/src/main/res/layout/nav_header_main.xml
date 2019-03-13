@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/lytNavHeaderWithCountryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBackCountryList"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/back_icon" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/string_select_a_country"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_17"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_common_border" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewCountryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lytNavHeaderWithOutCountryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lytNotLoggedIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_side_nav_row"
+            android:layout_marginLeft="@dimen/margin_side_nav_left"
+            android:layout_marginRight="@dimen/margin_side_nav_Right"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtCreateMyAccount"
+                android:layout_width="@dimen/dp_160"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/rounded_corner"
+                android:paddingBottom="@dimen/padding_side_nav_Bottom"
+                android:paddingLeft="@dimen/padding_side_nav_Left"
+                android:paddingRight="@dimen/padding_side_nav_Right"
+                android:paddingTop="@dimen/padding_side_nav_Top"
+                android:text="@string/string_create_my_account"
+                android:singleLine="true"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtLogin"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin_side_nav_left"
+                android:background="@drawable/rounded_corner"
+                android:paddingBottom="@dimen/padding_side_nav_Bottom"
+                android:paddingLeft="@dimen/padding_side_nav_Left"
+                android:paddingRight="@dimen/padding_side_nav_Right"
+                android:paddingTop="@dimen/padding_side_nav_Top"
+                android:text="@string/string_login"
+                android:singleLine="true"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytLoggedIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_side_nav_row"
+            android:layout_marginLeft="@dimen/margin_side_nav_left"
+            android:layout_marginRight="@dimen/margin_side_nav_Right"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/login_active_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smith"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_11"
+                    android:textStyle="bold" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="smith@aol.com"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_11"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytChangeCountry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_side_nav_row"
+            android:background="@color/color_gray_light"
+            android:visibility="visible">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_nav_changecountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_side_nav_left"
+                android:text="@string/string_change_country"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="bold" />
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_side_nav_from_country"
+                android:layout_marginRight="@dimen/margin_side_nav_Right"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="bold" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgCountryLogo"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/txtCountry"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytBuyFlightOptions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_side_nav_row"
+            android:layout_marginTop="@dimen/margin_side_nav_top"
+            android:background="@color/color_gray_light"
+            android:clickable="true"
+            android:onClick="onClickBuyFlightOptionExpand"
+            android:visibility="visible">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_nav_heading_buyflightpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_side_nav_left"
+                android:text="@string/string_buy_flight_options"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtBuyFlightOptionPlusMinus"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_side_nav_from_country"
+                android:layout_marginRight="@dimen/margin_side_nav_Right"
+                android:background="@drawable/menu_minus_icon"
+
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lytFlightOptionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lytUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickUpgradeExpand"
+               >
+
+                <ImageView
+                    android:id="@+id/imgUpgrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/uto_mobile_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgUpgrade"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_upgrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_upgrade"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_upgrade"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtUpgradePlusMinus"
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_from_country"
+                    android:layout_marginRight="@dimen/margin_side_nav_Right"
+                    android:background="@drawable/menu_plus_icon"
+
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytUpgradeTravelOption"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row_double_line"
+                android:onClick="onClickUTO"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgUpgradeTravelOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:src="@drawable/uto_n" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgUpgradeTravelOption"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_upgrade_uto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_upgrade_travel_option_uto"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_upgrade_uto_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:text="@string/string_upgrade_to_business_or_first_for_up_to_75_less"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytUpgradePass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row_double_line"
+                android:onClick="onClickUTOStatus"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgUpgradePass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:src="@drawable/up" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgUpgradePass"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_upgrade_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_upgrade_pass_up"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_upgrade_up_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:text="@string/string_buy_multiple_upgrades_for_even_less"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lytFlightPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:clickable="true"
+                android:onClick="onClickFlightPass">
+
+                <ImageView
+                    android:id="@+id/imgFlightPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/fpo_mobile_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgFlightPass"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_flightpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_flight_pass"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_payless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_pay_less"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:id="@+id/lytEmptySeatOptions"
+                android:onClick="onClickEmptySeatExpand">
+
+                <ImageView
+                    android:id="@+id/imgEmptySeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/eso_menu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgEmptySeat"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_emptyseat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_empty_seat"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_upgrade"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtEmptySeatPlusMinus"
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_from_country"
+                    android:layout_marginRight="@dimen/margin_side_nav_Right"
+                    android:background="@drawable/menu_plus_icon"
+
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lytEmptySeatOption"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row_double_line"
+                android:onClick="onClickESo"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgEmptySeatOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:src="@drawable/eso_n" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgEmptySeatOption"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_emptyseat_eso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_empty_seat_option_eso"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_emptyseat_eso_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:text="@string/string_enjoy_flatbed_in_economy"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytEmptySeatPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row_double_line"
+                android:onClick="onClickESoStatus"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgEmptySeatPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:src="@drawable/esp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgEmptySeatPass"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_emptyseat_esp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_empty_seat_pass_esp"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_emptyseat_esp_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:text="@string/string_buy_multiple_economy_flatbeds_for_even_less"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickPreferredSeatExpand">
+
+                <ImageView
+                    android:id="@+id/imgPreferredSeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/pso_mobile_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgPreferredSeat"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_preferredseat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_preferred_seat"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_upgrade"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtPreferredSeatPlusMinus"
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_from_country"
+                    android:layout_marginRight="@dimen/margin_side_nav_Right"
+                    android:background="@drawable/menu_plus_icon"
+
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytPreferredSeatOption"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row_double_line"
+                android:onClick="onClickPSo"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgPreferredSeatOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:src="@drawable/pso_n" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgPreferredSeatOption"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_preferredseat_pso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_preferred_seat_option_pso"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_preferredseat_pso_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:text="@string/string_get_seat_of_your_choice"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytPreferredSeatPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row_double_line"
+                android:onClick="onClickPSoStatus"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgPreferredSeatPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:src="@drawable/psp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgPreferredSeatPass"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_preferredseat_psp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_preferred_seat_pass_psp"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_preferredseat_psp_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:text="@string/string_buy_multiple_preferred_seats_for_even_less"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:onClick="onClickXtraBaggage"
+                android:layout_height="@dimen/height_side_nav_row">
+
+                <ImageView
+                    android:id="@+id/imgXtraBaggage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/xbo_mobile_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgXtraBaggage"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_extrabaggage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_xtra_baggage"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_extrabag_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Xtra Baggage at a low price"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:onClick="onClickLoungeAccess"
+                android:layout_height="@dimen/height_side_nav_row">
+
+                <ImageView
+                    android:id="@+id/imgLongueAccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/lao_mobile_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgLongueAccess"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_loungeaccess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_lounge_access"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_loungeacc_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_get_luxury_of_business_longue"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickPriorityHandling">
+
+                <ImageView
+                    android:id="@+id/imgPriorityHandling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/pho_mobile_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgPriorityHandling"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_priority_handling"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_feel_like_vip_at_airport"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytFlexibilityReward"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickFlexibleRewards"
+                >
+
+                <ImageView
+                    android:id="@+id/imgFlexibilityReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/fro_mobile_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgFlexibilityReward"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_flexibiltyreward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_flexibility_reward"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_flexibiltyrew_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_earn_rewards_for_your_travel_flexibility"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytPreferredFlight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickPreferredFlight"
+                >
+
+                <ImageView
+                    android:id="@+id/imgPreferredFlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/pfo_mobile_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgPreferredFlight"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_preferred_flight"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_fly_on_your_preferred_flight"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytMultipleBooking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickMultipleBooking">
+
+                <ImageView
+                    android:id="@+id/imgMultipleBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/mbo_mobile_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgMultipleBooking"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_multiple_booking"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_freedom_to_choose_flight_later"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytSpecialBaggage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickSpecialBaggage">
+
+                <ImageView
+                    android:id="@+id/imgSpecialBaggage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/sbo_ot" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgSpecialBaggage"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Special Baggage"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Carry Special Equipments at low prices"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytCarryOnBaggage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickCarryOnBaggage">
+
+                <ImageView
+                    android:id="@+id/imgCarryOnBaggage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/cbo_ot_menu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgCarryOnBaggage"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Carry-On Baggage"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Carry more luggage in the cabin at a discount"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_10"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytMyFlightPass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_side_nav_row"
+            android:background="@color/color_gray_light"
+            android:clickable="true"
+            android:onClick="onClickMyFlightPassExpand"
+            android:visibility="visible">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_side_nav_left"
+                android:text="@string/string_my_flightpass"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMyFlightPassPlusMinus"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_side_nav_from_country"
+                android:layout_marginRight="@dimen/margin_side_nav_Right"
+                android:background="@drawable/menu_minus_icon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lytMyFlightPassContaier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:onClick="onClickBookFlight">
+
+                <ImageView
+                    android:id="@+id/imgBookFlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:src="@drawable/extend_pass_validity_icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:layout_toRightOf="@id/imgBookFlight"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_nav_bookflight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_book_flight"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_side_nav_small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/string_upgrade"
+                        android:textColor="@color/color_font_gray"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_line_separator"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_common_border" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- -->
+        <LinearLayout
+            android:id="@+id/lytOptionPassContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+            <RelativeLayout
+                android:id="@+id/lytOptionPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_side_nav_row"
+                android:background="@color/color_gray_light"
+                android:clickable="true"
+                android:onClick="onClickMyOptionPassExpand"
+                android:visibility="visible">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_left"
+                    android:text="My OptionPass"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="bold" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtOptionPassPlusMinus"
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_side_nav_from_country"
+                    android:layout_marginRight="@dimen/margin_side_nav_Right"
+                    android:background="@drawable/menu_minus_icon"
+
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lytOptionPassContaier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_side_nav_row"
+                    android:onClick="onClickOptionPass">
+
+                    <ImageView
+                        android:id="@+id/imgOptionPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_side_nav_left"
+                        android:src="@drawable/new_redeem_option_pass_andriod_icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_side_nav_left"
+                        android:layout_toRightOf="@id/imgOptionPass"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txt_nav_OptionPass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Buy OptionPass"
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_12"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_line_separator"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_common_border" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- -->
+
+
+    </LinearLayout>
+</LinearLayout>

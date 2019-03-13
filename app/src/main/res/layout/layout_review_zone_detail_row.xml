@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytODRow"
+    android:orientation="vertical"
+    android:minHeight="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/lytOrigin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delhi(DEL) Delhi(DEL) Delhi(DEL) Delhi(DEL) Delhi(DEL) "
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_11"
+                        android:textStyle="normal"
+                        android:layout_marginTop="@dimen/dp_0"
+                        android:visibility="gone"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtDirectionalArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_0"
+                    android:text=">>"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lytDestination"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delhi(DEL)"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_11"
+                    android:textStyle="normal"
+                    android:layout_marginTop="@dimen/dp_0"
+                    android:visibility="gone"/>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delhi(DEL)"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_11"
+                    android:textStyle="normal"
+                    android:layout_marginTop="@dimen/dp_0"
+                    android:visibility="gone"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytStops"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtStopsValue1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non-stop"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="normal"
+                    android:layout_marginTop="@dimen/dp_0"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtStopsValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 stop via LKO/IXC"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="normal"
+                    android:layout_marginTop="@dimen/dp_0"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTravelMustStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="travel must start from..."
+                    android:textColor="@color/color_font_red"
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="normal"
+                    android:layout_marginTop="@dimen/dp_0"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_font_white_light"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyt_testimonial_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10">
+
+
+    <ImageView
+        android:id="@+id/img_testimonialssssss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/testimonials_size" />
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipTestim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_testimonial">
+
+        <!--<LinearLayout
+            android:id="@+id/lytViewFlip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_testimonial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="It was a wonderful experience to deal with OptionTown in Dec 2009 for my flight DELHI-MUMBAI-DELHI. ...
+-Col Jitendra Kumar, New Zealand. I couldn't believe I could actually fly in the premium class,I had a wonderful first class trip because of UTO program. .."
+                android:textColor="@color/color_font_black" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtWriter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingRight="@dimen/dp_10"
+                android:text="-Kartik Anand"
+                android:textColor="@color/color_font_black" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_20"
+                android:text="India"
+                android:textColor="@color/color_font_black" />
+        </LinearLayout>-->
+    </ViewFlipper>
+
+
+</RelativeLayout>
+
+

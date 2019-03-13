@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lytPartialUpgrade"
+    android:background="@color/color_common_border"
+    android:padding="@dimen/dp_1"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_common_border"/>
+
+    <RelativeLayout
+        android:id="@+id/lytBuyForIndividualPassenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imgUserIcon"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:src="@drawable/pax_plush_icon"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtBuyIndividualPassngerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgUserIcon"
+            android:layout_weight="5"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="Click here to buy for individual"
+            android:textSize="@dimen/size_font_12"
+            android:textColor="@color/color_font_black"/>
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgPlus"
+            android:layout_width="@dimen/dp_22"
+            android:layout_height="@dimen/dp_22"
+            android:layout_centerVertical="true"
+            android:src="@drawable/plus_icon"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lytPassengerSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_25"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+      <!--  <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_5"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:text="passenger"
+            android:textSize="@dimen/size_font_13"
+            android:textColor="@color/color_font_black"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

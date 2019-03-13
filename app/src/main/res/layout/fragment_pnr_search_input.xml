@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/lyt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/lytError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_mandatory"
+            android:layout_marginLeft="@dimen/dp_0"
+            android:layout_marginRight="@dimen/dp_0"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_moccasin"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/error4_icon" />
+
+            <LinearLayout
+                android:id="@+id/lytErrorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytWarningLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_below="@+id/lytError"
+            android:visibility="gone">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtHeadingWarningLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have not yet added details of all users to your selected Upgrade Pass. You may enter user details under Add User section."
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytUpgradePassList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytWarningLabel"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtUpgradePassLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/string_upgrade_pass"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtSelectYourPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spinner"
+                android:hint="@string/string_select_your_pass"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytUpgradePassList"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtBookingLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/string_booking"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal" />
+
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtBookingRef"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner"
+                    android:hint="33P4G6"
+                    android:padding="@dimen/dp_10"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:gravity="end">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtBookUpgradeOnNewBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Upgrade On New Booking"
+                    android:textColor="@color/color_font_blue_dark"
+                    android:textSize="@dimen/size_font_11"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytPNRLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytBooking"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtPNRLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/string_pnr"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal" />
+
+                    <com.optiontown.app.view.customview.OTEditText
+                        android:id="@+id/edtPNR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:hint="33P4G6"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:gravity="end">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtBookUpgradeOnExistingBookingLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Book Upgrade On Existing Booking"
+                        android:textColor="@color/color_font_blue_dark"
+                        android:textSize="@dimen/size_font_11"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtLastnameLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/string_last_name"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal" />
+
+                <com.optiontown.app.view.customview.OTEditText
+                    android:id="@+id/edtLastName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="@string/string_select_your_pass"
+                    android:padding="@dimen/dp_10"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtShowUpgradeOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_small_corner_search"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:text="@string/string_show_upgrade_option"
+            android:textColor="@color/color_font_white"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal"
+            android:layout_below="@+id/lytPNRLastName"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/lytRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytUpgradePassList"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:background="@color/transparent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerPassList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:focusableInTouchMode="true"
+                android:groupIndicator="@android:color/darker_gray"
+                android:popupBackground="@color/color_font_white"
+                android:scrollbarSize="3dp"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytRecyclerViewBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/lytBooking"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <View
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:background="@color/transparent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerBookingList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:focusableInTouchMode="true"
+                android:groupIndicator="@android:color/darker_gray"
+                android:popupBackground="@color/color_font_white"
+                android:scrollbarSize="3dp"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

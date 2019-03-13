@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtFeatureTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/size_font_13"
+        android:text="Travel is not valid during following periods"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2"
+        android:weightSum="10">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtRoutes"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:layout_weight="5"
+            android:text="Routes"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtTravelPeriod"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:text="Travel Period"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.7"
+        android:background="@color/color_common_border"/>
+
+    <LinearLayout
+        android:id="@+id/lytODListWithDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:id="@+id/lytODListWithDateChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

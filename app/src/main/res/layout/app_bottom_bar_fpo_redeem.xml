@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lytAppBottomBar"
+    android:background="@color/color_gray_light">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_common_border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:id="@+id/lytBuyFlightPass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgBuyFlightPass"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/passbuy"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtBuyFlightPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Flight Pass"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytRedeemPass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgRedeemPass"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/passredeem"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtRedeemPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_redeem_book"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lytMyOptions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgMyOptions"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/my_option_icon_grey"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMyOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Options "
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytInActivePass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgInActivePass"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/inactive_pass"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtInActivePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inactive Pass"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytMyBooking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgMyBooking"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/redeemmybooking"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMyBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Booking"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgMore"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/redeem_more"
+                android:layout_gravity="center"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:gravity="center"
+                android:textSize="@dimen/size_font_8"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:paddingBottom="@dimen/dp_5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

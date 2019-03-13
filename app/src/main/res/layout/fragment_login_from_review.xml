@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10">
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtLoginLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have My Optiontown Account?"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_font_14"
+        android:textColor="@color/color_font_black"
+        android:background="@drawable/rounded_light_gray_stroke"
+        android:padding="@dimen/dp_10"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        >
+
+        <LinearLayout
+            android:id="@+id/lytError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_0"
+            android:layout_marginRight="@dimen/dp_0"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/color_moccasin"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/error4_icon" />
+
+            <LinearLayout
+                android:id="@+id/lytErrorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTEditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/rounded_stroke"
+            android:hint="@string/string_username_email"
+            android:inputType="textWebEmailAddress"
+            android:textSize="@dimen/size_font_14"
+            android:textColor="@color/color_font_black"
+            android:padding="@dimen/dp_6"/>
+
+        <com.optiontown.app.view.customview.OTEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_stroke"
+            android:hint="@string/string_password"
+            android:textSize="@dimen/size_font_14"
+            android:textColor="@color/color_font_black"
+            android:padding="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_10"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <include
+        android:visibility="visible"
+        android:id="@+id/lytCaptchaParent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        layout="@layout/layout_captcha"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        >
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Username/Password"
+            android:textStyle="normal"
+            android:textSize="@dimen/size_font_13"
+            android:textColor="@color/color_font_blue"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_centerVertical="true"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtProceedToPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_font_13"
+            android:textColor="@color/color_font_white"
+            android:background="@drawable/rounded_red"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create My Optiontown Account"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_font_14"
+        android:textColor="@color/color_font_black"
+        android:background="@drawable/rounded_light_gray_stroke"
+        android:padding="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+{
+  "AddUserData": [
+    {
+      "FFPNumber": null,
+      "UserType": 1,
+      "MiddleName": "",
+      "Email": "pep1439@gmail.com",
+      "DOB": "03-06-1970",
+      "Lastname": "AGRAHARI",
+      "FirstName": "AMIT",
+      "UserNumber": 0,
+      "PrimaryPhNO": "91-8822586958",
+      "SelectUserId": 7560,
+      "PrefixID": 1
+    },
+    {
+      "FFPNumber": null,
+      "UserType": 1,
+      "MiddleName": "",
+      "Email": "ronjoe@gmail.com",
+      "DOB": "02-17-1984",
+      "Lastname": "Joe",
+      "FirstName": "Ron",
+      "UserNumber": 1,
+      "PrimaryPhNO": "91-5544879521-",
+      "SelectUserId": 7578,
+      "PrefixID": 1
+    },
+    {
+      "FFPNumber": null,
+      "UserType": 1,
+      "MiddleName": "",
+      "Email": "jack@gmail.com",
+      "DOB": "04-15-1985",
+      "Lastname": "John",
+      "FirstName": "Jack",
+      "UserNumber": 1,
+      "PrimaryPhNO": "91-8855471254-",
+      "SelectUserId": 7574,
+      "PrefixID": 1
+    }
+  ]
+}

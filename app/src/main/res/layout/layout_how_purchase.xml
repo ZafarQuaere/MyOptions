@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_20"
+    android:background="@drawable/rounded_corner"
+    android:animateLayoutChanges="true">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        layout="@layout/layout_title_expand"
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_20"
+            >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_howpurchase"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@drawable/cartwithflight"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_10">
+
+
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txt_hyperlink_webview_optiontown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_8226_visit_www_optiontown_com_and_select_the_flight_pass_option_tab"
+                    android:textStyle="normal"
+                    android:autoLink="web"
+                    android:textSize="@dimen/size_font_12"
+                    android:textColor="@color/color_font_black"
+                    android:lineSpacingExtra="@dimen/dp_5"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txt_secondline_howpurchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_8226_in_the_search_section_choose_your_desired_flight_pass_features_airline_cabin_travel_period_destinations_you_want_to_fly_to_and_number_of_users_and_click_search"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/size_font_12"
+                    android:textColor="@color/color_font_black"
+                    android:lineSpacingExtra="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_2"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lytBottomToHide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txt_howpurchse_titlepara2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_now_you_are_ready_to_make_your_bookings_as_per_your_flight_pass"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/size_font_12"
+                        android:textColor="@color/color_font_black"
+                        android:lineSpacingExtra="@dimen/dp_5"
+                        android:paddingTop="@dimen/dp_12"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

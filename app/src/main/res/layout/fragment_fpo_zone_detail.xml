@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:padding="@dimen/dp_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/lytZoneTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtZoneName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delhi-Mumbai"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:id="@+id/lytViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTiny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiny"
+                    android:padding="@dimen/dp_5"
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="normal"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  |  "
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="normal"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summary"
+                    android:padding="@dimen/dp_5"
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_font_blue"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  |  "
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="normal"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail"
+                    android:padding="@dimen/dp_5"
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="normal"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtZoneDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valid for travel only on the following routes. Only valid for British Airways operated flights. Only one-way or round-trip travel permitted."
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_10"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+
+        <LinearLayout
+            android:id="@+id/lytRoutesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtOriginLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Origin"
+                android:textColor="@color/color_font_gray_dark"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:layout_marginTop="@dimen/dp_15"
+                />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtDestinationLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Destination"
+                android:textColor="@color/color_font_gray_dark"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:layout_marginTop="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_10"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtStopsLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stops"
+                android:textColor="@color/color_font_gray_dark"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:layout_marginTop="@dimen/dp_15"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_font_white_light"/>
+
+        <LinearLayout
+            android:id="@+id/lytOriginDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtViewAllRoutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All Routes"
+            android:textColor="@color/color_font_blue"
+            android:textSize="@dimen/size_font_10"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/dp_20"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"/>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

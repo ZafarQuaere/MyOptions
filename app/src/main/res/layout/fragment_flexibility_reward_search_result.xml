@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtFro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flexibility Reward"
+        android:textColor="@color/color_blue"
+        android:textSize="@dimen/size_font_14"
+        android:textStyle="bold" />
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:visibility="gone"
+        android:id="@+id/txtFro_enjy_flatbed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFro"
+        android:paddingTop="@dimen/dp_2"
+        android:text="Get a premium award on flexibility"
+        android:textColor="@color/caldroid_black"
+        android:textSize="@dimen/size_font_12" />
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtFroViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtFro_enjy_flatbed"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtFro"
+        android:paddingTop="@dimen/dp_2"
+        android:text="@string/string_view_details"
+        android:textColor="@color/color_blue"
+        android:textSize="@dimen/size_font_12" />
+
+    <LinearLayout
+        android:id="@+id/lytFroRecyleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lytBottom"
+        android:layout_below="@+id/txtFroViewDetails"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_app_background"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyViewFlexiReward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lytBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lytFroJoinOT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:padding="@dimen/dp_8"
+            android:background="@drawable/round_corner_blue_with_stroke"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtFroJoinOT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="@string/string_join_optiontown"
+                android:textColor="@color/color_blue"
+                android:textSize="@dimen/size_font_11" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="@string/string_enjoy_special_offers"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_11" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFroContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:background="#CD3301"
+            android:text="Continue"
+            android:textColor="@color/caldroid_white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

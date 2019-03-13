@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lytError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPersonalInformationLabel"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_moccasin"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/error4_icon" />
+
+        <LinearLayout
+            android:id="@+id/lytErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlytBody"
+        android:layout_below="@+id/lytError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <include
+            android:id="@+id/mmb_header_booking_detail"
+            layout="@layout/mmb_header_booking_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/mmb_header_booking_detail"
+            android:background="@color/color_gray_dark" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSelectFlightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator"
+            android:text="Current Flight"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_14"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+
+        <LinearLayout
+            android:id="@+id/lytItinerary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/txtSelectFlightLabel"
+            >
+
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytItinerary"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/rounded_small_corner_search"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/string_continue"
+            android:textColor="@color/color_font_white"
+            android:textSize="@dimen/size_font_18"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_below="@+id/txtContinue"></View>
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem"
+        layout="@layout/app_bottom_bar_fpo_redeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem_more"
+        layout="@layout/app_bottom_bar_fpo_redeem_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

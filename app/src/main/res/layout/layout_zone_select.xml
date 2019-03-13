@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10">
+
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zone_selector_bg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dp_10"/>
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtZoneShortDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgArrow"
+        android:text="Delhi - Mumbai"
+        android:textSize="@dimen/size_font_12"
+        android:textStyle="normal"
+        android:textColor="@color/color_font_black"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtSelect"
+        android:layout_width="@dimen/dp_82"
+        android:layout_height="@dimen/dp_20"
+        android:text="@string/string_select_zone"
+        android:textSize="@dimen/size_font_12"
+        android:textStyle="bold"
+        android:textColor="@color/color_font_white"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/new_fb_search_box"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_5"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_common_border"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytTransactionRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtDateLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="bold"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="4"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Wed, 21 Apr, 2016"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtEventLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Event"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="bold"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="4"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtEvent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Flight Booked"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtDescriptionLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="bold"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="4"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="KUL-MEL \n2 Flights"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPaidLable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Total Amount Paid"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="bold"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="4"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPaid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="$ 8796"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtAccountLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Payment Account"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="bold"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="4"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="*******1234"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/color_common_border"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+
+
+</LinearLayout>

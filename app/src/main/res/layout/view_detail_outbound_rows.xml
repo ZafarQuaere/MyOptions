@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lytHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <!--  <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtOutbound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rounded_corner"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:text="Outbound" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lytToAndFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytHeader"
+        android:background="@drawable/background_suggestion_airlines"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6">
+
+            <ImageView
+                android:id="@+id/txtFlightName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/dp_5"
+                android:src="@drawable/vistara" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/dp_2"
+                android:text="D7 103"
+                android:textSize="@dimen/dp_10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:weightSum="1">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtFrom"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.48"
+                android:text="London (LHR) "
+                android:textSize="@dimen/dp_10" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/zone_selector_bg"
+                android:paddingLeft="@dimen/dp_2"
+                android:textSize="@dimen/dp_10" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtTo"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.48"
+                android:text="Kuala Lumpur (KUL) "
+                android:textSize="@dimen/dp_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtFromDate"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.48"
+                android:text="London (LHR) "
+                android:textSize="@dimen/dp_10" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/zone_selector_bg"
+                android:paddingLeft="@dimen/dp_2"
+                android:textSize="@dimen/dp_10" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtToDate"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.48"
+                android:text="Kuala Lumpur (KUL) "
+                android:textSize="@dimen/dp_10" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lytHeader"
+        android:background="@color/color_common_border">
+    </View>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1" />
+
+    <android.support.v4.view.ViewPager
+        android:background="@drawable/background_suggestion_airlines"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_below="@+id/tablyt"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lytTopCustomize">
+
+        <include
+            android:id="@+id/lytSelectDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_select_done"
+           />
+
+        <LinearLayout
+            android:id="@+id/lytPassengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupPassengers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytAdvanceBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:visibility="visible"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupAdvanceBooking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytFlexibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupFliexibility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytFMMatrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_1"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupFMMatrix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/svHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/lytHorizontalView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/lytModifySearch"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                >
+
+                <ImageView
+                    android:id="@+id/imgModifySearch"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:src="@drawable/modify_footer_icon"/>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtModifySearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modify Search"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_font_10"
+                    android:textColor="@color/color_font_black"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_40"
+                android:background="@color/color_common_border"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/lytCustomize"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                >
+
+                <ImageView
+                    android:id="@+id/imgCustomize"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:src="@drawable/customize_footer_selected_icon"/>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtCustomize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_customize"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_font_10"
+                    android:textColor="@color/color_font_red"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytExpressCheckout"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:background="@color/color_red">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:src="@drawable/help_ar_up_icon_white"
+                    android:rotation="90"/>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtexpresscheckoutlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_express_check_out"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_font_10"
+                    android:textColor="@color/color_font_white"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

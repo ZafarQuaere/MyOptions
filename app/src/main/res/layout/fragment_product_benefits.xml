@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_20"
+    android:background="@drawable/rounded_corner"
+    android:animateLayoutChanges="true">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        layout="@layout/layout_title_expand"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerViewListBenefits">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+</LinearLayout>

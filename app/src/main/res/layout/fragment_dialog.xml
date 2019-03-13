@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:background="@color/color_gray_light"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal"
+            android:textColor="@color/color_font_black"
+            android:layout_alignParentLeft="true"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal"
+            android:textColor="@color/color_font_blue"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lytTravelZone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel is valid on all AirAsia X operated flight (to/from) Mum and Del."
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal"
+            android:textColor="@color/color_font_gray_dark"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="@dimen/dp_20"
+            >
+
+        </com.google.android.gms.maps.MapView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytTravelFlexibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_20"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/travel_flexibility_customize"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtTFDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel is valid on all AirAsia X operated flight (to/from) Mum and Del."
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal"
+            android:textColor="@color/color_font_gray_dark"
+            android:layout_marginLeft="@dimen/dp_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytABandTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_20"
+           >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/timer_pic_light"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_10">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtABTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advance Booking"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtABDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book flignt at any time 7 days before travel."
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="normal"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_20"
+           >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender_pic_light"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_10">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTPTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel Period"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTPDescription1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 months    24-Mar-2016 to 24-Dec-2016"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTPDescription2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel is valid only on flights departing within this period."
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="normal"
+                    android:textColor="@color/color_font_gray_dark"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lytHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSavingLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Saving."
+            android:textColor="@color/color_font_green"
+            android:textSize="@dimen/size_font_15"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtFlexibilityLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="Flexibility."
+            android:textColor="#e7a301"
+            android:textSize="@dimen/size_font_15"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <RadioButton
+                android:id="@+id/rbFeatureName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_font_15"
+                android:layout_weight="4"
+                android:layout_gravity="top"
+                android:text="radio "
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/lytFeatureSaving"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_7"
+                android:paddingLeft="@dimen/dp_5"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytFeatureFlexibility"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_7"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtFeatureShortTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="title "
+                android:layout_weight="4"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="normal"
+                android:layout_marginLeft="@dimen/dp_33"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

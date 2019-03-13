@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_6"
+    android:paddingTop="@dimen/dp_5">
+
+    <LinearLayout
+        android:id="@+id/lytPassInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSelectedPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asia OCN : 5648795124"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/edit_icon_black" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlytAirline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytPassInfo">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtAirlineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airline : "
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="bold" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtAirline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtAirlineLabel"
+            android:text=" "
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lytPassenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlytAirline"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtPassengerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passengers : "
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPassenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_5"
+            android:textColor="@color/color_font_black"
+            android:text="Joshi / Manav /Shankar"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytPassenger"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtAirlineBookingRefLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airline Booking Reference : "
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="bold" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtAirlineBookingNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_font_black"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="64UG45"
+            android:textSize="@dimen/size_font_13"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

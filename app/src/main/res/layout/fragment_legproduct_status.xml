@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytCheckStatus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lytError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_moccasin"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/error4_icon" />
+
+        <LinearLayout
+            android:id="@+id/lytErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/lytError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_app_background"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:orientation="vertical">
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtCheckStatusTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:visibility="gone"
+                android:text="Upgrade status"
+                android:textColor="@color/caldroid_black"
+                android:textSize="@dimen/size_font_16" />
+
+            <RelativeLayout
+                android:id="@+id/lytSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtOTConfirmationLable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_font_black"
+                    android:visibility="invisible"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:layout_alignLeft="@+id/edtOTConfirmation"
+                    android:text="Optiontown Confirmation" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/imgOTConfirmation"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:src="@drawable/flymorepayless" />
+
+                <com.optiontown.app.view.customview.OTEditText
+                    android:id="@+id/edtOTConfirmation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgOTConfirmation"
+                    android:layout_toRightOf="@+id/imgOTConfirmation"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:maxLength="30"
+                    android:hint="@string/string_optiontown_confirmation"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/color_common_border" />
+
+
+            <RelativeLayout
+                android:id="@+id/lytLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtLastNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_font_black"
+                    android:visibility="invisible"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:layout_alignLeft="@+id/edtLastName"
+                    android:text="Last Name" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/imgLastName"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:src="@drawable/user_last_name" />
+
+                <com.optiontown.app.view.customview.OTEditText
+                    android:id="@+id/edtLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgLastName"
+                    android:layout_toRightOf="@+id/imgLastName"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:maxLength="40"
+                    android:hint="@string/string_last_name"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/color_common_border" />
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_40"
+                android:background="@drawable/rounded_small_corner_search"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_40"
+                android:paddingRight="@dimen/dp_40"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/string_submit"
+                android:textColor="@color/color_font_white"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/lytAppBottomBar"
+        layout="@layout/app_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <!--  <include
+          android:id="@+id/lytMainAppBottomBar"
+          layout="@layout/app_bottom_bar_leg_product"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true" />-->
+
+</RelativeLayout>

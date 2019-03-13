@@ -1,0 +1,93 @@
+{
+	"mangemypassrefreshdata" : {
+		"LABL_Continue_Label" : "Continue",
+		"LABL_FPO_Select_parameter_to_change_Label" : "Select parameter to change",
+		"LABL_ERR_Change_Type_Label" : "Please select the Change Type.",
+		"LABL_Submit_Label" : "Submit",
+		"LABL_FPO_Manage_My_Pass_Heading_Label" : "Manage My Pass",
+		"LABL_FPO_Select_Flight_Pass_Label" : "Select Flight Pass",
+		"changeFlightListDropDown" : [{
+				"Select Your Pass" : "0"
+			}, {
+				"passBookingList" : [{
+						"Select" : "0"
+					}
+				],
+				"passLabel" : "Aruba  OCN # 1006488017"
+			}, {
+				"passBookingList" : [{
+						"Select" : "0"
+					}
+				],
+				"passLabel" : "Delhi - Mumbai  OCN # 1006488015"
+			}, {
+				"passBookingList" : [{
+						"Select" : "0"
+					}
+				],
+				"passLabel" : "Delhi - Mumbai  OCN # 1006488014"
+			}
+		],
+		"changeFlightParameter" : [{
+				"passchangrtypeid" : "0",
+				"Passlabelname" : "Select"
+			}, {
+				"passchangrtypeid" : "1",
+				"Passlabelname" : "Travel Zone"
+			}, {
+				"passchangrtypeid" : "2",
+				"Passlabelname" : "Number of eCoupons"
+			}, {
+				"passchangrtypeid" : "3",
+				"Passlabelname" : "Travel Period"
+			}, {
+				"passchangrtypeid" : "4",
+				"Passlabelname" : "Advance Booking"
+			}, {
+				"passchangrtypeid" : "5",
+				"Passlabelname" : "Travel Flexibility"
+			}, {
+				"passchangrtypeid" : "7",
+				"Passlabelname" : "Increase Passenger"
+			}, {
+				"passchangrtypeid" : "8",
+				"Passlabelname" : "Replace Passenger"
+			}, {
+				"passchangrtypeid" : "9",
+				"Passlabelname" : "Cabin"
+			}
+		],
+		"LABL_FPO_Change_My_Flight_Pass_Label" : "Change My Flight Pass"
+	},
+	"Calculate_Label" : "Calculate Fee",
+	"NewdateAfter" : "07 Jun 2017",
+	"SelectedParameter" : 3,
+	"MonthsLbl" : "Months",
+	"Existing_Value" : "Existing Value",
+	"SelectPassChangeLabel" : "Travel Period",
+	"CurrentdateNow" : "07 Feb 2017",
+	"SelectedParameterList" : [{
+			"ID" : "120",
+			"Label" : "4 Months"
+		}, {
+			"ID" : "180",
+			"Label" : "6 Months"
+		}, {
+			"ID" : "270",
+			"Label" : "9 Months"
+		}, {
+			"ID" : "365",
+			"Label" : "12 Months"
+		}, {
+			"ID" : "545",
+			"Label" : "18 Months"
+		}, {
+			"ID" : "730",
+			"Label" : "24 Months"
+		}
+	],
+	"Going_To_Lbl" : "To",
+	"NewdateNow" : "07 Feb 2017",
+	"CurrentdateAfter" : "07 May 2017",
+	"New_Value" : "New Value"
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".app.view.baseui.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/lytTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@color/color_app_background">
+
+            <ImageView
+                android:id="@+id/imgActionBarDrawerIcon"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:src="@drawable/menu_icon"
+                android:layout_centerVertical="true"
+                android:scaleType="fitStart"
+                android:layout_marginLeft="@dimen/dp_10"/>
+
+            <ImageView
+                android:id="@+id/imgActionBarAppLogoLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/optionpass_logo"
+                android:scaleType="fitStart"
+                android:layout_toRightOf="@id/imgActionBarDrawerIcon"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/imgActionBarAppLogoSmall"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_launcher_logo"
+                android:scaleType="fitStart"
+                android:layout_toRightOf="@id/imgActionBarDrawerIcon"
+                android:visibility="gone" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtActionBarAppFeatureName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_flight_pass_option"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_font_16"
+                android:textColor="@color/color_font_black"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgActionBarAppLogoSmall"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_70"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/imgUserIconAndFilter"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:layout_marginLeft="@dimen/dp_70"
+                android:layout_marginRight="@dimen/dp_10"
+                />
+
+            <LinearLayout
+                android:id="@+id/lytActionBarHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtActionBarHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_help"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_font_black"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_5"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgActionBarHelpArrow"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/help_ar_up_icon"
+                    android:scaleType="fitStart"
+                    android:layout_marginRight="@dimen/dp_5"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

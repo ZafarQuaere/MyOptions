@@ -1,0 +1,115 @@
+{
+  "airlineLogo": "https:\/\/www.optiontown.com\/images\/VN_Logo.gif",
+  "productHeading": "Preferred Flight Option (PFo) ",
+  "segmentArray": [
+    {
+      "flightArrivalCode": "FRA",
+      "outboundStartRange": -219,
+      "FlightAvailabilityMsg": "PFo is unavailable for this flight.Please do check for your future flights. ",
+      "flightArrivalName": "Frankfurt",
+      "flightDepartureName": "Seoul",
+      "journeytypeLbl": "First Journey",
+      "outboundEndRange": 0,
+      "flightDeparturedate": "Dec 31 6:05 PM",
+      "flightDepartureCode": "ICN"
+    },
+    {
+      "convenienceLabl1Part1": "This is the latest date by which Optiontown will notify you if you're rebooked to your selected Preferred Flight. The longer you are willing to wait, the higher are your chances to get rebooked to your preferred flight.",
+      "returnStartRange": 78,
+      "desiredDateLabl1": "<b>Latest date to rebook you to preferred flight?<\/b>",
+      "someOtherDayLbl": "Some other date",
+      "returnEndRange": 1,
+      "convenienceLabl1Part2": " I can wait to receive my Preferred Flight Notification up to:",
+      "flightDepartureName": "Frankfurt",
+      "convenienceShortLabl1": " ",
+      "journeyChoiceArray": [
+        {
+          "choicLabel": "The same day",
+          "choiceValue": "25-Oct-2017",
+          "choiceDate": "Oct 25"
+        },
+        {
+          "choicLabel": "One day after",
+          "choiceValue": "26-Oct-2017",
+          "choiceDate": "Oct 26"
+        }
+      ],
+      "convenienceLablPart2": " I prefer to depart on:",
+      "convenienceLablPart1": "Choose your preferred depart date as per your convenience.",
+      "flightDepartureCode": "FRA",
+      "flightDeparturedate": "Oct 25 2:35 PM",
+      "journeyChoiceArraySecond": [
+        {
+          "choiceValue1": "1",
+          "choicLabel": "1 day",
+          "beforeTravalLabl": "before original departure time"
+        },
+        {
+          "choiceValue1": "3",
+          "choicLabel": "3 days",
+          "beforeTravalLabl": "before original departure time"
+        }
+      ],
+      "flightArrivalCode": "SGN",
+      "someOtherDayValue": "Oct-25-2017",
+      "flightArrivalName": "H.C.Minh City",
+      "desiredDateLabl": "<b>What's your desired date for preferred flight?<\/b>",
+      "journeytypeLbl": "Second Journey",
+      "convenienceShortLabl": "-"
+    },
+    {
+      "convenienceLabl1Part1": "This is the latest date by which Optiontown will notify you if you're rebooked to your selected Preferred Flight. The longer you are willing to wait, the higher are your chances to get rebooked to your preferred flight.",
+      "returnStartRange": 79,
+      "desiredDateLabl1": "<b>Latest date to rebook you to preferred flight?<\/b>",
+      "someOtherDayLbl": "Some other date",
+      "returnEndRange": 14,
+      "convenienceLabl1Part2": " I can wait to receive my Preferred Flight Notification up to:",
+      "flightDepartureName": "H.C.Minh City",
+      "convenienceShortLabl1": " ",
+      "journeyChoiceArray": [
+        {
+          "choicLabel": "The same day",
+          "choiceValue": "26-Oct-2017",
+          "choiceDate": "Oct 26"
+        },
+        {
+          "choicLabel": "One day after",
+          "choiceValue": "27-Oct-2017",
+          "choiceDate": "Oct 27"
+        }
+      ],
+      "convenienceLablPart2": " I prefer to depart on:",
+      "convenienceLablPart1": "Choose your preferred depart date as per your convenience.",
+      "flightDepartureCode": "SGN",
+      "flightDeparturedate": "Oct 26 11:45 PM",
+      "journeyChoiceArraySecond": [
+        {
+          "choiceValue1": "1",
+          "choicLabel": "1 day",
+          "beforeTravalLabl": "before original departure time"
+        },
+        {
+          "choiceValue1": "3",
+          "choicLabel": "3 days",
+          "beforeTravalLabl": "before original departure time"
+        }
+      ],
+      "flightArrivalCode": "ICN",
+      "someOtherDayValue": "Oct-26-2017",
+      "flightArrivalName": "Seoul",
+      "desiredDateLabl": "<b>What's your desired date for preferred flight?<\/b>",
+      "journeytypeLbl": "Third Journey",
+      "convenienceShortLabl": "-"
+    }
+  ],
+  "bothLabel": "Both",
+  "pnr": "MNDLMS",
+  "airlineDisplayName": "Vietnam Airlines",
+  "outboundLabel": "Outbound",
+  "ErrorMessage": "Input is mandatory.",
+  "selectFlightLabel": "When do you want a Preferred Flight?",
+  "returnLabel": "Return",
+  "journyCount": 2,
+  "productTagLine": "Stuck with your second choice flight? Fly on preferred flight!",
+  "buttonText": "Search Preferred Flights"
+}

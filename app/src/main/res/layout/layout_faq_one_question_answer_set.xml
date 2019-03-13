@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="Are there anyhidden restrictions, fees or blackout periods?"
+            android:textColor="@color/color_font_blue"
+            android:textSize="@dimen/size_font_15"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imgExpand"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_25"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/plus_icon" />
+
+    </LinearLayout>
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="No. Flight Pass has no hidden restrictions, lanning and booking. "
+        android:textColor="@color/color_font_gray_dark"
+        android:textSize="@dimen/size_font_15"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_common_border" />
+
+</LinearLayout>
+

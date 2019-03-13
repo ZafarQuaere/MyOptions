@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_6"
+    android:background="@color/caldroid_white">
+
+    <LinearLayout
+        android:id="@+id/lay_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_7">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date Label"
+            android:textColor="@color/caldroid_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_font_12"/>
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wed, 1 ,2016"
+            android:textColor="@color/caldroid_black"
+            android:textSize="@dimen/size_font_12"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_date"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_7">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_label_event"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Event"
+            android:textColor="@color/caldroid_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_font_12"/>
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_event"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wed, 1 ,2016"
+            android:textColor="@color/caldroid_black"
+            android:textSize="@dimen/size_font_12"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_event"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_7">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_label_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Description"
+            android:textColor="@color/caldroid_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_font_12"/>
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wed, 1 ,2016"
+            android:textColor="@color/caldroid_black"
+            android:textSize="@dimen/size_font_12"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay_pass_credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_description"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_7">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_label_pass_credits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pass Credits\n Added/(Redeemed)"
+            android:textColor="@color/caldroid_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_font_12"/>
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_credit_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Wed, 1 ,2016"
+            android:textColor="@color/caldroid_black"
+            android:textSize="@dimen/size_font_12"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_pass_credits"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_7">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_label_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Amount Paid"
+            android:textColor="@color/caldroid_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_font_12"/>
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wed, 1 ,2016"
+            android:textColor="@color/caldroid_black"
+            android:textSize="@dimen/size_font_12"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_amount"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_7">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_label_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment Account"
+            android:textColor="@color/caldroid_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_font_12"/>
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txt_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wed, 1 ,2016"
+            android:textColor="@color/caldroid_black"
+            android:textSize="@dimen/size_font_12"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.7"
+        android:layout_below="@+id/lay_account"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_font_gray" />
+
+
+</RelativeLayout>

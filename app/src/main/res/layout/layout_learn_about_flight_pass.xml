@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytTop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_20"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20">
+
+    <include
+        android:id="@+id/lytTitle"
+        layout="@layout/layout_title_expand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_20">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgLearnMore"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@drawable/fpo_tutorial_video_screen" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtLearnMoreTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_flight_pass_option_fly_more_pay_less_up_to_75_off"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_14"
+                    android:textStyle="bold" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtLearnMoreDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_12"
+                    android:text="@string/string_flight_pass_allows_you_to_conveniently"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtLearnMoreDescription1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:text="@string/string_pre_purchase_a_number_of_flights_at_an_agreed_low_price_and_enjoy_the_privilege_of_booking_flights_later_as_per_your_need_the_more_credits_you_buy_the_cheaper_it_gets"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtFlightHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:text="@string/string_how_does_it_work"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_14"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/lytBottomToHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@+id/txtFlightHeading"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!--
+            adding data using loop
+            -->
+
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtFlightUpto50less"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytBottomToHide"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:text="@string/string_with_flight_pass_you_can_fly_more_pay_up_to_50_less_save_time_and_effort_in_trip_planning_and_booking_and_enhance_your_travel_convenience"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtReadMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFlightUpto50less"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="end"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:text="@string/string_read_more"
+            android:textColor="@color/color_font_blue_dark"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

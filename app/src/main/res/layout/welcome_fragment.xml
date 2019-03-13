@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytWelcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#f5f4f4"
+        android:elevation="@dimen/dp_10">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_7"
+            android:background="@color/color_app_background" />
+
+
+
+           <LinearLayout
+               android:id="@+id/layoutDots"
+               android:layout_above="@+id/btnSkip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:background="@color/color_app_background"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" />
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_above="@+id/btnSkip"
+            android:layout_height="wrap_content"
+            android:background="@color/color_app_background"
+            android:text="Dots"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/color_font_black"
+            android:gravity="center_horizontal"/>-->
+
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_red"
+            android:text="Let's Get Started!"
+            android:paddingTop="@dimen/dp_10"
+            android:textAllCaps="false"
+            android:textColor="@color/color_font_white"
+            android:textSize="@dimen/size_font_13" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

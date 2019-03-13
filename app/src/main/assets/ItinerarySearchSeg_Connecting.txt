@@ -1,0 +1,82 @@
+{
+  "airlineLogo": "https:\/\/www.optiontown.com\/images\/VN_Logo.gif",
+  "productHeading": "Preferred Flight Option (PFo) ",
+  "segmentArray": [
+    {
+      "flightArrivalCode": "YYZ",
+      "outboundStartRange": -162,
+      "FlightAvailabilityMsg": "PFo is unavailable for this flight.Please do check for your future flights. ",
+      "flightArrivalName": "Toronto",
+      "flightDepartureName": "Hanoi",
+      "journeytypeLbl": "First Journey",
+      "outboundEndRange": 0,
+      "flightDeparturedate": "Feb 26 10:40 AM",
+      "flightDepartureCode": "HAN"
+    },
+    {
+      "flightArrivalCode": "HKG",
+      "FlightAvailabilityMsg": "PFo is unavailable for this flight.Please do check for your future flights. ",
+      "returnStartRange": 15,
+      "flightArrivalName": "Hong Kong",
+      "returnEndRange": 0,
+      "flightDepartureName": "Toronto",
+      "journeytypeLbl": "Second Journey",
+      "flightDeparturedate": "Aug 23 1:50 AM",
+      "flightDepartureCode": "YYZ"
+    },
+    {
+      "convenienceLabl1Part1": "This is the latest date by which Optiontown will notify you if you're rebooked to your selected Preferred Flight. The longer you are willing to wait, the higher are your chances to get rebooked to your preferred flight.",
+      "returnStartRange": 16,
+      "desiredDateLabl1": "<b>Latest date to rebook you to preferred flight?<\/b>",
+      "someOtherDayLbl": "Some other date",
+      "returnEndRange": 14,
+      "convenienceLabl1Part2": " I can wait to receive my Preferred Flight Notification up to:",
+      "flightDepartureName": "Hong Kong",
+      "convenienceShortLabl1": " ",
+      "journeyChoiceArray": [
+        {
+          "choicLabel": "The same day",
+          "choiceValue": "24-Aug-2017",
+          "choiceDate": "Aug 24"
+        },
+        {
+          "choicLabel": "One day after",
+          "choiceValue": "25-Aug-2017",
+          "choiceDate": "Aug 25"
+        }
+      ],
+      "convenienceLablPart2": " I prefer to depart on:",
+      "convenienceLablPart1": "Choose your preferred depart date as per your convenience.",
+      "flightDepartureCode": "HKG",
+      "flightDeparturedate": "Aug 24 2:30 PM",
+      "journeyChoiceArraySecond": [
+        {
+          "choiceValue1": "1",
+          "choicLabel": "1 day",
+          "beforeTravalLabl": "before original departure time"
+        },
+        {
+          "choiceValue1": "3",
+          "choicLabel": "3 days",
+          "beforeTravalLabl": "before original departure time"
+        }
+      ],
+      "flightArrivalCode": "HAN",
+      "someOtherDayValue": "Aug-24-2017",
+      "flightArrivalName": "Hanoi",
+      "desiredDateLabl": "<b>What's your desired date for preferred flight?<\/b>",
+      "journeytypeLbl": "Third Journey",
+      "convenienceShortLabl": "-"
+    }
+  ],
+  "bothLabel": "",
+  "pnr": "IYCHSO",
+  "airlineDisplayName": "Vietnam Airlines",
+  "outboundLabel": "",
+  "ErrorMessage": "Input is mandatory.",
+  "selectFlightLabel": "",
+  "returnLabel": "",
+  "journyCount": 1,
+  "productTagLine": "Stuck with your second choice flight? Fly on preferred flight!",
+  "buttonText": "Search Preferred Flights"
+}

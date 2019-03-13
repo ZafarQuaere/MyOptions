@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytPromoCode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_promocode_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_light_gray_stroke"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10"
+        android:visibility="visible">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtPromoCodeHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_promocode_heading"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_16"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPromoCodeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/string_promocode"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_13"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.optiontown.app.view.customview.OTEditText
+                        android:id="@+id/edtPromoCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_weight="5"
+                        android:background="@drawable/rounded_corner_white"
+                        android:hint="Promo"
+                        android:padding="@dimen/dp_6"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_11" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtApplyPromo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:text="@string/string_apply"
+                        android:textColor="@color/color_font_blue_dark"
+                        android:textSize="@dimen/size_font_13"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/txtPromoErrorMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_weight="1"
+                    android:text="Error Msg"
+                    android:textColor="@color/color_font_red"
+                    android:textSize="@dimen/size_font_11"
+                    android:visibility="gone" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtPromoTermsOfService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_weight="1"
+                    android:text="@string/string_terms_of_service"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_11"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_promocode_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_5"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPromoCodeLabelTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:gravity="left"
+                android:text="Promotional Code"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold"/>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPromotionalCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="code"
+                android:textColor="@color/color_font_green"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtDiscountPercent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_discount"
+                android:textColor="@color/color_font_red"
+                android:textSize="@dimen/size_font_12"
+                android:gravity="left"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/layRemovePromoCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_clear_black_24dp" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtRemove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/string_remove"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_10" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtDiscountLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:text="@string/string_discount"
+                    android:gravity="left"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtDiscount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTotalPassLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:text="@string/string_total_pass_price"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12" />
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtTotalPass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_promo_terms_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPromoTermsAndConditionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/string_promocode_terms_condition"
+                android:textColor="@color/color_font_blue"
+                android:textSize="@dimen/size_font_11"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_blue" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

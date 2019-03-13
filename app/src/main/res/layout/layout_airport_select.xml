@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_solid_airport_select"
+    android:orientation="horizontal">
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtZoneShortDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEL New Delhi"
+        android:textSize="@dimen/size_font_10"
+        android:textStyle="normal"
+        android:textColor="@color/color_font_black"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"/>
+
+
+
+
+
+</LinearLayout>

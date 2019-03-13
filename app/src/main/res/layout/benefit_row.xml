@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_10">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/flymorepayless" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <com.optiontown.app.view.customview.OTTextViewHtml
+                android:id="@+id/txtLearnMoreTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text=" "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextViewHtml
+                android:id="@+id/txtLearnMoreDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:isScrollContainer="false"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:text="@string/string_save_up_to_50_on_flight_costs_no_need_to_worry_about_fare_increase_as_your_low_fare_is_locked_in"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

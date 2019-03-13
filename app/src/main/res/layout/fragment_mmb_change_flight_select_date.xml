@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lytError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPersonalInformationLabel"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_moccasin"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/error4_icon" />
+
+        <LinearLayout
+            android:id="@+id/lytErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlytBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/mmb_header_booking_detail"
+                    layout="@layout/mmb_header_booking_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/mmb_header_booking_detail"
+                    android:background="@color/color_gray_dark" />
+
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtSelectFlightLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="Current Flight "
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_14"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/lytItinerary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtSelectDesireDateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="Select your new desired date"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_13"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/lytTravelPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_22"
+                        android:layout_height="@dimen/dp_22"
+                        android:layout_gravity="bottom"
+                        android:paddingRight="@dimen/dp_5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/depart_date" />
+
+                    <LinearLayout
+                        android:id="@+id/lytDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtNewDateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Depart Date"
+                            android:textSize="@dimen/size_font_11"
+                            android:textStyle="normal" />
+
+                        <com.optiontown.app.view.customview.OTTextView
+                            android:id="@+id/txtSelectedNewDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:background="@android:color/transparent"
+                            android:text=""
+                            android:textColor="@color/color_font_black"
+                            android:textSize="@dimen/size_font_14"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/color_common_border" />
+
+                <LinearLayout
+                    android:id="@+id/lytAdvanceBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtAdvanceBookingLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Advance Booking"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/size_font_13"
+                        android:textStyle="bold" />
+
+                    <com.optiontown.app.view.customview.OTTextView
+                        android:id="@+id/txtAdvanceBookingDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="Book Flights at any time till 30 days before travel."
+                        android:textSize="@dimen/size_font_12"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtContinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:background="@drawable/rounded_small_corner_search"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/string_continue"
+                    android:textColor="@color/color_font_white"
+                    android:textSize="@dimen/size_font_18"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_below="@+id/txtContinue"></View>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem"
+        layout="@layout/app_bottom_bar_fpo_redeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem_more"
+        layout="@layout/app_bottom_bar_fpo_redeem_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

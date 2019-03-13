@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingRight="3dp"
+    android:paddingBottom="3dp">
+
+    <ImageView
+        android:id="@+id/imgOption"
+        android:layout_width="@dimen/width_home_recycler_grid_view"
+        android:layout_height="wrap_content"
+        android:src="@drawable/partner1"
+        android:adjustViewBounds="true"
+        />
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtOptionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:singleLine="true"
+        android:layout_alignBottom="@id/imgOption"
+        android:layout_alignRight="@id/imgOption"/>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+{
+  "airlineLogo": "https:\/\/www.optiontown.com\/images\/VN_Logo.gif",
+  "productHeading": "Preferred Flight Option (PFo) ",
+  "segmentArray": [
+    {
+      "convenienceLabl1Part1": "This is the latest date by which Optiontown will notify you if you're rebooked to your selected Preferred Flight. The longer you are willing to wait, the higher are your chances to get rebooked to your preferred flight.",
+      "desiredDateLabl1": "<b>Latest date to rebook you to preferred flight?<\/b>",
+      "someOtherDayLbl": "Some other date",
+      "convenienceLabl1Part2": " I can wait to receive my Preferred Flight Notification up to:",
+      "flightDepartureName": "London",
+      "convenienceShortLabl1": " ",
+      "journeyChoiceArray": [
+        {
+          "choicLabel": "The same day",
+          "choiceValue": "18-Aug-2017",
+          "choiceDate": "Aug 18"
+        },
+        {
+          "choicLabel": "One day after",
+          "choiceValue": "19-Aug-2017",
+          "choiceDate": "Aug 19"
+        }
+      ],
+      "convenienceLablPart2": " I prefer to depart on:",
+      "convenienceLablPart1": "Choose your preferred depart date as per your convenience.",
+      "flightDepartureCode": "LHR",
+      "flightDeparturedate": "Aug 18 11:10 AM",
+      "journeyChoiceArraySecond": [
+        {
+          "choiceValue1": "1",
+          "choicLabel": "1 day",
+          "beforeTravalLabl": "before original departure time"
+        },
+        {
+          "choiceValue1": "3",
+          "choicLabel": "3 days",
+          "beforeTravalLabl": "before original departure time"
+        }
+      ],
+      "outboundStartRange": 10,
+      "flightArrivalCode": "HAN",
+      "someOtherDayValue": "Aug-18-2017",
+      "flightArrivalName": "Hanoi",
+      "desiredDateLabl": "<b>What's your desired date for preferred flight?<\/b>",
+      "journeytypeLbl": "Outbound",
+      "outboundEndRange": 6,
+      "convenienceShortLabl": "-"
+    },
+    {
+      "convenienceLabl1Part1": "This is the latest date by which Optiontown will notify you if you're rebooked to your selected Preferred Flight. The longer you are willing to wait, the higher are your chances to get rebooked to your preferred flight.",
+      "returnStartRange": 17,
+      "desiredDateLabl1": "<b>Latest date to rebook you to preferred flight?<\/b>",
+      "someOtherDayLbl": "Some other date",
+      "returnEndRange": 14,
+      "convenienceLabl1Part2": " I can wait to receive my Preferred Flight Notification up to:",
+      "flightDepartureName": "Hanoi",
+      "convenienceShortLabl1": " ",
+      "journeyChoiceArray": [
+        {
+          "choicLabel": "The same day",
+          "choiceValue": "25-Aug-2017",
+          "choiceDate": "Aug 25"
+        },
+        {
+          "choicLabel": "One day after",
+          "choiceValue": "26-Aug-2017",
+          "choiceDate": "Aug 26"
+        }
+      ],
+      "convenienceLablPart2": " I prefer to depart on:",
+      "convenienceLablPart1": "Choose your preferred depart date as per your convenience.",
+      "flightDepartureCode": "HAN",
+      "flightDeparturedate": "Aug 25 1:10 AM",
+      "journeyChoiceArraySecond": [
+        {
+          "choiceValue1": "1",
+          "choicLabel": "1 day",
+          "beforeTravalLabl": "before original departure time"
+        },
+        {
+          "choiceValue1": "3",
+          "choicLabel": "3 days",
+          "beforeTravalLabl": "before original departure time"
+        }
+      ],
+      "flightArrivalCode": "LHR",
+      "someOtherDayValue": "Aug-25-2017",
+      "flightArrivalName": "London",
+      "desiredDateLabl": "<b>What's your desired date for preferred flight?<\/b>",
+      "journeytypeLbl": "Return",
+      "convenienceShortLabl": "-"
+    }
+  ],
+  "bothLabel": "Both",
+  "pnr": "TQOKHR",
+  "airlineDisplayName": "Vietnam Airlines",
+  "outboundLabel": "Outbound",
+  "ErrorMessage": "Input is mandatory.",
+  "selectFlightLabel": "When do you want a Preferred Flight?",
+  "returnLabel": "Return",
+  "journyCount": 2,
+  "productTagLine": "Stuck with your second choice flight? Fly on preferred flight!",
+  "buttonText": "Search Preferred Flights"
+}

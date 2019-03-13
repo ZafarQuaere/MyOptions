@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lytCheapestFlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_20">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_learnmore"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/cheapest_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_cheapest_flights"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="@string/string_select"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

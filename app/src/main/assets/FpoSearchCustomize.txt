@@ -1,0 +1,131 @@
+{
+  "IsPassFlexibilityDisplay": 1,
+  "Passengers_Heading_Label": "Users",
+  "Passengers_Long_Desc_Label": "   Users refers to the maximum number of users who can take the advantage of Flight Pass Option to book flights and fly. Choose more users in order to make your Flight Pass to be shared among more persons. Each Users can travel alone or along with one or more of the other users on any trip. This applies to all child (2-18 years) and Adults (18+ years). For infants, you will need to purchase a separate ticket at the time of flight booking.   The Users can use the pass to book the tickets and fly to their desired destination. You can add your family members, friends, collegues as an Users to book ticket and fly. However, you need to choose the 2 or 3 or more number of users limit in your flight pass to share your pass with other users.   One Flight Credit will be consumed for per person per flight. So, either any one Users can consume all Flight Credits of the Flight Pass or they can travel together in a group of two or more to consume the flight credits.   Please note that the pass is non-transferable and you are not allowed to add more users once you have purchased the Flight Pass. You will need to fill details (Personal details, Passport Information & Contact details) of each User to your flight pass.   Example - Mary has bought a Flight Pass with Travel Zone - Australia Advance Booking - 7 days Before Travel Travel Flexiblity - 2 Flexi-Days Number of Flights - 20 flights  Users - 2  Mary along with one more person can take these 20 flights. If they both fly together on all trips then they can take 10 flights togehter using this flight pass.   Lets assume, Mary had added 4 users to her Pass (her husband and two kids).  Thus, the entire family of 4 (assuming all traveling together) can take 5 flights with this Flight Pass (4 persons X 5 flights = 20 Flight Credits).   ",
+  "Depart_Flexibility_Label": "Travel Flexibility",
+  "Depart_Flexibility_Long_Desc": "   Travel Flexibility (over consecutive days) allows you to get a cheaper flight pass if you are flexible with your travel dates. For users who are not flexible, they can select the \"Exact Choice\" option, which allows to pick specific flights, travel dates and travel times. However, the users who do not mind departing a few hours or days earlier or later, they can choose any of the Flexi-Days options to reduce their overall travel costs significantly. With Flexi-Days option, you choose a Travel Period (either same\/2 day\/3day) and then your confirmed flight will be notified to you.   Same Day Flexibility : If you must travel on the same date as your intended departure date but are flexible to fly at any time of the day, then you can select the \"Same Day\" Flexibility. In this option, you will get to choose your departure date, but the exact details of the confirmed flight will be notified to you.   2 days Flexibility : In this option, a customer will get to select two consecutive dates for travel, and the customer is willing to travel on any flight on those two dates.   Example - Mary has brought a Flight Pass with  Travel Zone- Australia Advance Booking - 7 days before travel  Intended Date of Travel - 15th April Travel Flexiblity - 2 days Flexibility  Mary can select flights departing on either 15\/16th April or 14\/15th April.  ",
+  "LABL_Passengers_Short_Desc_Label": "Refers to the maximum number of Passengers who can book and fly.",
+  "AdvanceBookingData": {
+    "AdvanceBooking_1_Array": [
+      {
+        "Pass_Advance_book_closer_Label": "I want to book closer to my travel date",
+        "advanceBooking_Id": 2,
+        "advanceBookingSelectedValue_Label": "",
+        "advanceBookingChecked": "0",
+        "advanceBooking_Value": "2 days before travel",
+        "advanceBooking_Price_Value": " (Add $ 30) "
+      },
+      {
+        "Pass_Advance_book_closer_Label": "I want to book closer to my travel date",
+        "advanceBooking_Id": 3,
+        "advanceBookingSelectedValue_Label": "",
+        "advanceBookingChecked": "0",
+        "advanceBooking_Value": "3 days before travel",
+        "advanceBooking_Price_Value": " (Add $ 27) "
+      },
+      {
+        "Pass_Advance_book_closer_Label": "I want to book closer to my travel date",
+        "advanceBooking_Id": 7,
+        "advanceBookingSelectedValue_Label": "",
+        "advanceBookingChecked": "0",
+        "advanceBooking_Value": "7 days before travel",
+        "advanceBooking_Price_Value": " (Add $ 11) "
+      },
+      {
+        "Pass_Advance_book_closer_Label": "I want to book closer to my travel date",
+        "advanceBooking_Id": 14,
+        "advanceBookingSelectedValue_Label": "",
+        "advanceBookingChecked": "0",
+        "advanceBooking_Value": "14 days before travel",
+        "advanceBooking_Price_Value": " (Add $ 3) "
+      }
+    ],
+    "AdvanceBooking_2_Array": [
+      {
+        "Pass_Advance_book_early_Label": "I can book early to reduce my travel costs",
+        "advanceBookingSelectedValue_Label": "",
+        "advanceBooking_Id": 30,
+        "advanceBookingChecked": "0",
+        "advanceBooking_Value": "30 days before travel",
+        "advanceBooking_Price_Value": " (Add $ 1) "
+      },
+      {
+        "Pass_Advance_book_early_Label": "I can book early to reduce my travel costs",
+        "advanceBookingSelectedValue_Label": "",
+        "advanceBooking_Id": 60,
+        "advanceBookingChecked": "0",
+        "advanceBooking_Value": "60 days before travel",
+        "advanceBooking_Price_Value": " (Add $ 1) "
+      },
+      {
+        "Pass_Advance_book_early_Label": "I can book early to reduce my travel costs",
+        "advanceBooking_Id": 90,
+        "advanceBookingChecked": "1",
+        "advanceBookingSelectedValue_Label": "90 days before travel",
+        "advanceBooking_Value": "90 days before travel",
+        "advanceBooking_Price_Value": " (included in price)"
+      }
+    ]
+  },
+  "Advance_Booking_Label": "Advance Booking",
+  "Advance_Booking_Long_Desc": "   Pick your Advance Booking criteria based on how early or late you wish to make your flight booking. For instance, if you normally book your flights 7 days before travel, then choose the \"7 day\" Advance Booking, which will then allow you to book flight anytime before 7 days of the travel date. If you want to travel on the 15th, you will need to book your flight on or before 8th of that month.   However, if you book early and want to encash it for a better price, then you may choose the \"30 day\" or even \"60 day\" criteria to get more savings. The earlier you book, the cheaper will be your flight pass and lower your travel costs.   Example - Mary has bought a Flight Pass with Travel Zone - Australia  Advance Booking - 7 days Before Travel Intended Date of Travel - 15th April  Flight Booking can be done on or before - 8th of April.   Just for example, in the event, Mary had chosen a 3 day Advance Booking criteria, then she could book as late as 12th April for a 15th April travel date. However, if she has chosen a 30 day Advance Booking criteria, then she would have to book on or before 15th March.   ",
+  "UsersData": {
+    "Users_Array": [
+      {
+        "UserSelected_Label": "",
+        "UsersShowValue": "3 Users",
+        "UsersShowValue_Label": " (Add $ 4)",
+        "UsersShowId": 3,
+        "UserChecked": "0"
+      },
+      {
+        "UserSelected_Label": "",
+        "UsersShowValue": "2 Users",
+        "UsersShowValue_Label": " (Add $ 4)",
+        "UsersShowId": 2,
+        "UserChecked": "0"
+      },
+      {
+        "UsersShowValue": "1 Users",
+        "UserSelected_Label": "1 Users",
+        "UsersShowValue_Label": " (included in price)",
+        "UsersShowId": 1,
+        "UserChecked": "1"
+      }
+    ]
+  },
+  "LABL_Passengers_AddPurchaseMinLabel": "*At least 1 passenger must be added now to purchase the Flight Pass.",
+  "FlexibilityData": {
+    "NoFlexibilitySet_Array": [
+      {
+        "notFlexibilitySetRangeData": "Exact Flight Choice",
+        "notFlexibilitySetRange_Value": " (Add $ 14) ",
+        "notFlexibilitySetRangeId": 1000,
+        "notFlexibilitySetSelected_Label": "",
+        "Flexibility_Not_Exist_Input_Label": "I want to choose exact flights of my choice",
+        "notFlexibilitySetChecked": "0",
+        "notFlexibilitySetRangeNote": "I want to choose exact flights of my choice"
+      }
+    ],
+    "FlexibilitySet_Array": [
+      {
+        "flexibilitySetValue": "I am flexible to fly at any time on my desired travel date.",
+        "flexibilitySet_Exist_Input_Label": "I can be flexible with travel dates to reduce my travel costs",
+        "Included_Price_Label": " (Add $ 2)",
+        "FlexibilitySetCheck": "0",
+        "flexibilitySetRangeData": "Same Day Flexibility",
+        "FlexibilitySetSelected_Label": "",
+        "flexibilitySetRangeId": 1
+      },
+      {
+        "flexibilitySetValue": "My travel dates are flexible by +\/- 1 day (either a day before or a day after)",
+        "flexibilitySet_Exist_Input_Label": "I can be flexible with travel dates to reduce my travel costs",
+        "Included_Price_Label": "(included in price)",
+        "FlexibilitySetCheck": "1",
+        "flexibilitySetRangeData": "One Day Flexibility",
+        "FlexibilitySetSelected_Label": "My travel dates are flexible by +\/- 1 day (either a day before or a day after)",
+        "flexibilitySetRangeId": 2
+      }
+    ]
+  }
+}

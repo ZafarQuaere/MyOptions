@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytContent"
+        android:background="@drawable/background_suggestion_airlines"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_suggestion_airlines"
+            android:padding="@dimen/dp_5">
+
+            <ImageView
+                android:id="@+id/imgEmtpySeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/empty_seat2by4" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgEmtpySeat"
+                android:layout_centerInParent="true"
+                android:text="Flexibility Reward"
+                android:textColor="#0038AB"
+                android:textSize="@dimen/size_font_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLytSelectEso"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/empty_seat_gradiant_button"
+            android:padding="@dimen/dp_5">
+
+            <CheckBox
+                android:id="@+id/cb_selectEso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_esoPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="$4"
+                android:textColor="#CD3301"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="bold" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_esoPrice"
+                android:layout_centerHorizontal="true"
+                android:text="Select ESo"
+                android:textColor="#CD3301"
+                android:textSize="@dimen/size_font_12" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLytEsoNotAvailable"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/empty_seat_gradiant_button"
+            android:padding="@dimen/dp_5">
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txt_esoNotAVailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/string_eso_not_available"
+                android:textColor="@color/caldroid_black"
+                android:textSize="@dimen/size_font_10" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

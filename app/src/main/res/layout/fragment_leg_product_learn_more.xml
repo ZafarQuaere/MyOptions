@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lyt_learnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_fragment"
+            android:layout_marginRight="@dimen/margin_right_fragment"
+            android:layout_marginTop="@dimen/dp_20"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewLearnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:id="@+id/lyt_steps2Upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lyt_learnAbout"
+                android:layout_marginBottom="@dimen/dp_100"
+                android:layout_marginTop="@dimen/dp_20"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/layout_title_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50" />
+
+                <RelativeLayout
+                    android:id="@+id/lytSteps2Upgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/imgSteps2Upgrade"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8" />
+
+                    <com.optiontown.app.view.customview.OTTextViewHtml
+                        android:id="@+id/txtSteps2Upgrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imgSteps2Upgrade"
+                        android:autoLink="web"
+                        android:lineSpacingExtra="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_5"
+                        android:textColor="@color/color_font_black"
+                        android:textSize="@dimen/dp_12"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/lytAppBottomBar"
+        layout="@layout/app_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+  <!--  <include
+        android:id="@+id/lytMainAppBottomBar"
+        layout="@layout/app_bottom_bar_leg_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />-->
+</RelativeLayout>

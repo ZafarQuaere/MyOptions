@@ -1,0 +1,28 @@
+{
+  "MmpLabels": [
+    {
+      "Id": 1,
+      "ManageMypassLabelList": "Manage My Pass"
+    },
+    {
+      "Id": 2,
+      "ManageMypassLabelList": "Change My Flight Pass"
+    },
+    {
+      "Id": 3,
+      "ManageMypassLabelList": "Add Users"
+    },
+    {
+      "Id": 4,
+      "ManageMypassLabelList": "Change Password"
+    },
+    {
+      "Id": 5,
+      "ManageMypassLabelList": "Update Users"
+    },
+    {
+      "Id": 6,
+      "ManageMypassLabelList": "Invoice"
+    }
+  ]
+}

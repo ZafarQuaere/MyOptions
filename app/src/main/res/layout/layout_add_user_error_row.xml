@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_cross_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/error_icon2" />
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select Prefix"
+        android:textStyle="normal"
+        android:textSize="@dimen/size_font_11"
+        android:textColor="@color/color_font_red"
+        android:layout_marginLeft="@dimen/dp_3"
+        />
+
+</LinearLayout>

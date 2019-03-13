@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_gray_light"
+    android:orientation="vertical"
+    >
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtZoneName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_0"
+        android:text="India"
+        android:textSize="@dimen/size_font_12"
+        android:textStyle="bold"
+        android:textColor="@color/color_font_black"
+        android:paddingTop="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_3"
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_weight="8"
+
+        />
+
+    <View
+        android:id="@+id/viewStripSelected"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:background="@color/color_red"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

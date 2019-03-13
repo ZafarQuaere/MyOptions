@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.optiontown.app.view.customview.OTTextViewHtml
+        android:id="@+id/txt_content_Testimonial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/dp_5"
+        android:text="I'm so glad that I came to know about the flight pass offered by Optiontown ..."
+        android:textColor="@color/color_font_black"
+        android:textSize="@dimen/size_font_12"
+        android:minLines="3"
+        android:maxLines="5"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtTestimonialName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:lines="1"
+            android:text="name"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtTestimonialCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lines="1"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:text="country"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

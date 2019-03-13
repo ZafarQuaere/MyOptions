@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical"
+    >
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You may select any Outbound flight of your choice from the list below."
+        android:textSize="@dimen/size_font_13"
+        android:textStyle="normal"
+        android:textColor="@color/color_font_red"
+        android:padding="@dimen/dp_10"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/txtError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"/>
+
+
+
+
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem_more"
+        layout="@layout/app_bottom_bar_fpo_redeem_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem"
+        layout="@layout/app_bottom_bar_fpo_redeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

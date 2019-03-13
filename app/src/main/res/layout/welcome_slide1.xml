@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dp_50"
+    android:scrollbars="none">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:elevation="@dimen/dp_20">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/optionpass_logo" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="About Us"
+            android:textColor="@color/color_font_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/OTTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:text="@string/intro_about_us"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:padding="@dimen/dp_10">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_small_corner_search"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="Partner Airline"
+                android:textColor="@color/color_font_white" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:drawableBottom="@drawable/arrow_connecting"
+                android:paddingLeft="@dimen/dp_15"
+                android:text="Concurrent Optimization"
+                android:textColor="@color/color_font_black" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_small_corner_search"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="Travellers "
+                android:textColor="@color/color_font_white" />
+
+        </LinearLayout>
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:text="@string/intro_about_us"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_14" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"/>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

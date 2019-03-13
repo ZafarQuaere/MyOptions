@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dp_5"
+        android:id="@+id/lytRow">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtJourneyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outbound"
+            android:textSize="@dimen/size_font_10"
+            android:textStyle="normal"
+            android:textColor="@color/color_font_black"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_8"
+            android:gravity="center_vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgAirline"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtAirlineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Asia"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_black"
+                android:layout_marginLeft="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/lytSegments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytSelect"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_stroke_green"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgSelected"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/tick"
+                    android:visibility="gone"/>
+
+                <com.optiontown.app.view.customview.OTTextView
+                    android:id="@+id/txtSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected"
+                    android:textSize="@dimen/size_font_10"
+                    android:textStyle="normal"
+                    android:textColor="@color/color_font_green"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtOperation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veuling operates flights 2154, 3658"
+                android:textSize="@dimen/size_font_10"
+                android:textStyle="normal"
+                android:textColor="@color/color_font_gray"
+                android:layout_below="@+id/lytSegments"
+                android:layout_marginTop="@dimen/dp_5"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_common_border"/>
+
+    <View
+        android:id="@+id/viewMargin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+</LinearLayout>

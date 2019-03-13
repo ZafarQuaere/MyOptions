@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardView="http://schemas.android.com/tools"
+    android:id="@+id/cardViewCB"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtBookingStatus"
+    android:layout_marginTop="@dimen/dp_8"
+    app:cardUseCompatPadding="true"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/dp_2"
+    app:cardElevation="@dimen/dp_8">
+
+    <RelativeLayout
+        android:id="@+id/rlytCBCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_6">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtCBDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="Mumbai (BOM)"
+            android:textStyle="bold"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_15" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtCBPassStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_5"
+            android:text="Confirmed"
+            android:textColor="@color/color_font_green"
+            android:textSize="@dimen/size_font_12" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtDepartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_5"
+            android:layout_below="@+id/txtCBDestination"
+            android:text="Wed 13 Oct, 2016"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12" />
+
+        <LinearLayout
+            android:id="@+id/lytOCN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDepartDate"
+            android:layout_marginTop="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtOCNLabel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="OCN   "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtOCN"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDepartDate"
+                android:layout_toRightOf="@+id/txtOCNLabel"
+                android:layout_weight="7"
+                android:text=": 10062596315 "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytAirline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytOCN"
+            android:layout_marginTop="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtAirlineLabel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lytOCN"
+                android:layout_weight="3"
+                android:text="Airline "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtAirline"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lytOCN"
+                android:layout_toRightOf="@+id/txtPNRLabel"
+                android:layout_weight="7"
+                android:text=": Vistara "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytPnr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytAirline"
+            android:paddingLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPNRLabel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lytOCN"
+                android:layout_weight="3"
+                android:text="Vistara PNR   "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPNR"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lytOCN"
+                android:layout_toRightOf="@+id/txtPNRLabel"
+                android:layout_weight="7"
+                android:text=": 6ESTQU "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12" />
+        </LinearLayout>
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytPnr"
+            android:layout_toLeftOf="@+id/txtDanda"
+            android:padding="@dimen/dp_5"
+            android:text="View Details"
+            android:textColor="@color/color_font_blue_dark"
+            android:textSize="@dimen/size_font_12" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtDanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytPnr"
+            android:layout_toLeftOf="@+id/txtFAQ"
+            android:padding="@dimen/dp_5"
+            android:text=" | "
+            android:textColor="@color/color_font_blue_dark"
+            android:textSize="@dimen/size_font_12" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtFAQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lytPnr"
+            android:padding="@dimen/dp_5"
+            android:text="FAQ's"
+            android:textColor="@color/color_font_blue_dark"
+            android:textSize="@dimen/size_font_12" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

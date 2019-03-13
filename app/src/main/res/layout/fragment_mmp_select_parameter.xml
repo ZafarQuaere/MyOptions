@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/lytMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:id="@+id/lytError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_moccasin"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/error4_icon" />
+
+            <LinearLayout
+                android:id="@+id/lytErrorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/lytPassInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lytError"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSelectedPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asia OCN : 5648795124"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/edit_icon_black" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytPassInfo"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtSelectParameterLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select parameter to change"
+                android:textColor="@color/color_font_gray_dark"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="normal" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtSelectedParameter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="Select"
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_12"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/color_gray_light" />
+        </LinearLayout>
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytChange"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@drawable/rounded_small_corner_search"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/string_continue"
+            android:textColor="@color/color_font_white"
+            android:textSize="@dimen/size_font_18"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytChange"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_0"
+            android:visibility="gone"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+        </android.support.v7.widget.CardView>
+
+
+        <include
+            android:id="@+id/app_bottom_bar_fpo_redeem"
+            layout="@layout/app_bottom_bar_fpo_redeem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/app_bottom_bar_fpo_redeem_more"
+            layout="@layout/app_bottom_bar_fpo_redeem_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

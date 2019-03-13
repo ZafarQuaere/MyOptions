@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_golden">#FFD700</color>
+    <color name="color_app_background">#ffffff</color>
+
+    <color name="color_font_white_light">#e0e0e0</color>
+    <color name="color_font_OT_blue">#0039ac</color>
+    <color name="color_font_white">#ffffff</color>
+    <color name="color_font_black">#000000</color>
+    <color name="color_font_red">#ff0000</color>
+    <color name="color_font_blue">#42599D</color>
+    <color name="color_font_pale_blue">#FF3373C2</color>
+    <color name="color_font_gray">#B3B3B3</color>
+    <color name="color_font_gray_dark">#484848</color>
+    <color name="color_font_blue_dark">#0039AC</color>
+    <color name="color_font_green">#FF38971C</color>
+
+    <color name="color_red">#CD3301</color>
+    <color name="color_light_blue">#6894C4</color>
+
+    <color name="color_common_border">#e5e4e4</color>
+    <color name="color_gray_light">#F3F3F3</color>
+    <color name="color_gray_dark">#838383</color>
+    <color name="color_green">#00FF00</color>
+    <color name="color_blue">#42599D</color>
+    <color name="color_white">#ffffff</color>
+    <color name="transparent_color_home_recycler_grid_text_view">#90000000</color>
+    <color name="color_moccasin">#FFE4B5</color>
+    <color name="card_view_bg">#eeeeee</color>
+    <color name="color_light_background">#FFEBF5FE</color>
+    <color name="color_multi_product">#FDE9D9</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="test">#FCF6D2</color>
+
+
+    <!-- Welcome screen -->
+    <color name="colorAccentPinkLightButton">#FF65A6</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="warning_color">#f4511e</color>
+    <color name="hint_color">#42000000</color>
+    <color name="success_color">#009688</color>
+
+</resources>

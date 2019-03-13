@@ -1,0 +1,60 @@
+{
+  "airlineLogo": "https:\/\/www.optiontown.com\/images\/VN_Logo.gif",
+  "productHeading": "Preferred Flight Option (PFo) ",
+  "segmentArray": [
+    {
+      "convenienceLabl1Part1": "This is the latest date by which Optiontown will notify you if you're rebooked to your selected Preferred Flight. The longer you are willing to wait, the higher are your chances to get rebooked to your preferred flight.",
+      "desiredDateLabl1": "<b>Latest date to rebook you to preferred flight?<\/b>",
+      "someOtherDayLbl": "Some other date",
+      "convenienceLabl1Part2": " I can wait to receive my Preferred Flight Notification up to:",
+      "flightDepartureName": "Paris",
+      "convenienceShortLabl1": " ",
+      "journeyChoiceArray": [
+        {
+          "choicLabel": "The same day",
+          "choiceValue": "04-Nov-2017",
+          "choiceDate": "Nov 4"
+        },
+        {
+          "choicLabel": "One day after",
+          "choiceValue": "05-Nov-2017",
+          "choiceDate": "Nov 5"
+        }
+      ],
+      "convenienceLablPart2": " I prefer to depart on:",
+      "convenienceLablPart1": "Choose your preferred depart date as per your convenience.",
+      "flightDepartureCode": "CDG",
+      "flightDeparturedate": "Nov 4 2:00 PM",
+      "journeyChoiceArraySecond": [
+        {
+          "choiceValue1": "1",
+          "choicLabel": "1 day",
+          "beforeTravalLabl": "before original departure time"
+        },
+        {
+          "choiceValue1": "3",
+          "choicLabel": "3 days",
+          "beforeTravalLabl": "before original departure time"
+        }
+      ],
+      "outboundStartRange": 88,
+      "flightArrivalCode": "HAN",
+      "someOtherDayValue": "Nov-04-2017",
+      "flightArrivalName": "Hanoi",
+      "desiredDateLabl": "<b>What's your desired date for preferred flight?<\/b>",
+      "journeytypeLbl": "Outbound",
+      "outboundEndRange": 14,
+      "convenienceShortLabl": "-"
+    }
+  ],
+  "bothLabel": "",
+  "pnr": "ALZRVP",
+  "airlineDisplayName": "Vietnam Airlines",
+  "outboundLabel": "",
+  "ErrorMessage": "Input is mandatory.",
+  "selectFlightLabel": "",
+  "returnLabel": "",
+  "journyCount": 1,
+  "productTagLine": "Stuck with your second choice flight? Fly on preferred flight!",
+  "buttonText": "Search Preferred Flights"
+}

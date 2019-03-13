@@ -1,0 +1,29 @@
+key password : paraskeystore
+alias :optiontown
+
+package name : com.app.optiontown
+
+
+.............................................................
+google dev : optiontownmobile@gmail.com
+pass : option1234
+.............................................................
+windows phone dev : optiontownmobile@gmail.com
+pass : optiontown12345
+.............................................................
+
+Follow link  to make using cmd : 
+
+     https://www.scirra.com/tutorials/861/how-to-sign-and-align-your-android-app-apk
+
+To know anything about file.keystore
+
+   1- place the above file in user path
+   2- in cmd: "keytool -list -v -keystore file.keystore"
+
+Recover keystore Password
+
+     http://maxcamillo.github.io/android-keystore-password-recover/
+
+change keystore password : 
+     https://gist.github.com/zach-klippenstein/4631307

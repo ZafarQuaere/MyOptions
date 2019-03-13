@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_5">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/lytLegPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/caldroid_gray"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_5"
+        android:visibility="gone">
+
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtCreditHelpMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Upgrade Pass has 8 Available Upgrades Credits that you may use for Passenger Sign-up$"
+            android:textSize="@dimen/size_font_12" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtTgpFgSortDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_3"
+            android:text="All Delhi Flights OCN # 1006543694  Available :  8 Upgrades"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12" />
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtPassCabinNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_3"
+            android:text="Upgrade Type :  Premium Economy Business"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/lytLegPass"
+        android:id="@+id/lytContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginRight="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtFlightType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/outbound_return_background"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text=""
+                android:textColor="@color/caldroid_black"
+                android:textSize="@dimen/size_font_14" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtSignUpPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtFlightType"
+                android:layout_alignParentRight="true"
+                android:text="Sign Up price Euro 200"
+                android:paddingBottom="@dimen/dp_2"
+                android:textSize="@dimen/size_font_12" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleLegList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:overScrollMode="never" />
+
+
+    </LinearLayout>
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytContent"
+        android:layout_toLeftOf="@+id/btnBoostPriority"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="@string/string_upgrade_price_refunded_if_not_upgrade"
+        android:textSize="@dimen/size_font_11" />
+</RelativeLayout>

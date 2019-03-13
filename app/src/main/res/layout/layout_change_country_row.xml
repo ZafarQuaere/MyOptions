@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/rounded_stroke"
+    android:id="@+id/lytChangeCountryRow">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imgCountry"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="@dimen/dp_20"/>
+
+    <com.optiontown.app.view.customview.OTTextView
+        android:id="@+id/txtCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="India"
+        android:textSize="@dimen/size_font_13"
+        android:textStyle="normal"
+        android:textColor="@color/color_font_black"
+        android:layout_marginLeft="@dimen/dp_20"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/imgTick"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/tick_red_icon"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

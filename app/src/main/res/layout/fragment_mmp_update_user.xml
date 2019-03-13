@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlyUpdateUser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lytError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_moccasin"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgErroWala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/error4_icon" />
+
+        <ImageView
+            android:id="@+id/imgSuccessWala"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:src="@drawable/error4_icon"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lytErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lytPassInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lytError"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_5">
+
+        <com.optiontown.app.view.customview.OTTextView
+            android:id="@+id/txtSelectedPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asia OCN : 5648795124"
+            android:textColor="@color/color_font_black"
+            android:textSize="@dimen/size_font_12"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/edit_icon_black" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lytPassInfo"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rlyScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPassenger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtPassengerLabel"
+                android:background="@color/color_app_background"
+                android:padding="@dimen/dp_10"
+                android:text="Mr Sam Watson "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_14" />
+
+            <View
+                android:id="@+id/viewPrefix"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_below="@+id/txtPassenger"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@color/color_common_border"></View>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/viewPrefix"
+                android:layout_marginTop="14dp">
+
+                <com.optiontown.app.view.customview.OTEditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_app_background"
+                    android:hint="Email*"
+                    android:inputType="textPostalAddress"
+                    android:padding="@dimen/dp_10"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_common_border" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtCellMobileLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilEmail"
+                android:layout_marginTop="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="Cell Mobile*"
+                android:textSize="@dimen/size_font_12" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtCellMobileExtension"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCellMobileLabel"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:text="Zimbabwe "
+                android:textColor="@color/color_font_black"
+                android:textSize="@dimen/size_font_14" />
+
+            <View
+                android:id="@+id/viewMobileExtension"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="@dimen/dp_1"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtCellMobileExtension"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/color_common_border"></View>
+
+            <com.optiontown.app.view.customview.OTEditText
+                android:id="@+id/editCellMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtCellMobileExtension"
+                android:layout_alignTop="@+id/txtCellMobileExtension"
+                android:layout_below="@+id/txtCellMobileLabel"
+                android:layout_toRightOf="@+id/txtCellMobileExtension"
+                android:background="@color/color_app_background"
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_5"
+                android:textSize="@dimen/size_font_14" />
+
+            <View
+                android:id="@+id/viewMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_1"
+                android:layout_alignBottom="@+id/viewMobileExtension"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/editCellMobileNumber"
+                android:layout_toRightOf="@+id/viewMobileExtension"
+                android:background="@color/color_common_border"></View>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilFFPNumberLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewMobileNumber"
+                android:layout_marginTop="@dimen/dp_15"
+                android:visibility="visible"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                <com.optiontown.app.view.customview.OTEditText
+                    android:id="@+id/editBritishAirwayClubNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/color_app_background"
+                    android:hint="Club Vistara No"
+                    android:maxLength="100"
+                    android:padding="@dimen/dp_10"
+                    android:textColor="@color/color_font_black"
+                    android:textSize="@dimen/size_font_14" />
+
+                <View
+                    android:id="@+id/viewBaClub"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_common_border" />
+            </android.support.design.widget.TextInputLayout>
+            <!-- <View
+                 android:id="@+id/viewBaClub"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/dp_1"
+                 android:layout_below="@+id/editBritishAirwayClubNumber"
+                 android:layout_marginTop="@dimen/dp_2"
+                 android:background="@color/color_common_border"></View>-->
+
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilFFPNumberLabel"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@drawable/rounded_small_corner_search"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="@string/string_save"
+                android:textColor="@color/color_font_white"
+                android:textSize="@dimen/size_font_18"
+                android:textStyle="bold" />
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/svExtensionCode"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/height_drop_down"
+                android:layout_alignLeft="@+id/txtCellMobileExtension"
+                android:layout_alignRight="@+id/txtCellMobileExtension"
+                android:layout_below="@+id/viewMobileExtension"
+                android:background="@drawable/rounded_dark_gray_stroke"
+                android:scrollbars="vertical"
+                android:visibility="gone">
+
+                <com.optiontown.app.view.customview.InterceptedLinearLayout
+                    android:id="@+id/lytExtensionScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_10" />
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_130"
+                android:layout_below="@+id/txtSave"></View>
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtMandatoryFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_5"
+                android:text="@string/string_mandatory_fields"
+                android:textColor="@color/color_font_red"
+                android:textSize="@dimen/size_font_11"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <com.optiontown.app.view.customview.OTTextView
+                android:id="@+id/txtPassengerLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="Passenger"
+                android:textSize="@dimen/size_font_12"
+                android:layout_below="@+id/txtMandatoryFieldLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem"
+        layout="@layout/app_bottom_bar_fpo_redeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/app_bottom_bar_fpo_redeem_more"
+        layout="@layout/app_bottom_bar_fpo_redeem_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
