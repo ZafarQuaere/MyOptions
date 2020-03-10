@@ -15,7 +15,7 @@ public class CollectionTest
     {
         //testHashSet();
         //testHashMap();
-        testIdentityHashMap();
+        testIdentityHashMap();//identity hashmap is faster than hashmap coz it doesn't uses equals() and hashcode() methods for comparing instead it uses equality operator ==
         //commonTest();
     }
 
@@ -88,6 +88,22 @@ public class CollectionTest
         map.put(t1, "t2");
 
         System.out.println(map.toString());
+
+        IdentityHashMap<String, String> identityMap = new IdentityHashMap<String, String>();
+
+        identityMap.put("sony", "bravia");
+        identityMap.put(new String("sony"), "mobile");
+
+        //size of identityMap should be 2 here because two strings are different objects
+        System.out.println("Size of IdentityHashMap: " + identityMap.size());
+        System.out.println("IdentityHashMap: " + identityMap);
+
+        identityMap.put("sony", "videogame");
+
+        //size of identityMap still should be 2 because "sony" and "sony" is same object
+        System.out.println("Size of IdentityHashMap: " + identityMap.size());
+        System.out.println("IdentityHashMap: " + identityMap);
+
     }
 }
 

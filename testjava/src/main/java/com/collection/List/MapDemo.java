@@ -38,7 +38,6 @@ public class MapDemo {
         System.out.println(map.put(5,"salary")); // will return null as key is unique
         System.out.println();
         retriveNonGenericThrouhIterator(map);
-
     }
 
     //retrieving data from Map using iterator
@@ -77,7 +76,5 @@ public class MapDemo {
             System.out.println("Key :"+e.getKey()+"  Value :"+e.getValue());
 
         }
-
-
     }
 }

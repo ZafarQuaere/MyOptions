@@ -23,9 +23,7 @@ public class CalendarTest
         }
         catch (Exception e)
         {
-            System.out.println("Error");
+            System.out.println("Error "+e.getMessage());
         }
-
-
     }
 }

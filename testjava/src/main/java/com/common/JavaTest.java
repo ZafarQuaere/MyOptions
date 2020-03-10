@@ -17,7 +17,6 @@ public class JavaTest
         System.out.println("hashcode b3 : " + b3.hashCode());
 
         System.out.println("both equal : " + b1.equals(b2));
-
-        //System.out.println("both equal : " + (b3 == b1));
+        System.out.println("both equal : " + (b3 == b1));
     }
 }

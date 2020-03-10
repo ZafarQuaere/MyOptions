@@ -1,0 +1,4 @@
+IdentityHashMap is a special implementation of Map interface which doesn't use equals() and hashCode() method for comparing object unlike
+other implementation of Map e.g. HashMap. Instead, IdentityHashMap uses equality operator "=="  to compare keys and values in Java which
+makes it faster compare to HashMap and suitable where you need reference equality check and instead of logical equality. By the way,
+IdentityHashMap is a special implementation of Map interface

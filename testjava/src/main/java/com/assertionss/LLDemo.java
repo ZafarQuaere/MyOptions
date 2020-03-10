@@ -28,8 +28,6 @@ public class LLDemo {
         while (node != null){
             System.out.println("Data's : "+node.data);
             node = node.next;
-
-
         }
 
         insertData(node);

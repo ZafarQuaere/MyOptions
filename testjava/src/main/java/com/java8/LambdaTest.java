@@ -34,7 +34,7 @@ public class LambdaTest implements Interface1, Interface2
 
     private static void useLambdaInThread()
     {
-        Runnable r = () -> System.out.println("Lambda >> Thread");
+        Runnable r =() -> System.out.println("Lambda >> Thread");
         Thread t = new Thread(r);
         t.start();
     }

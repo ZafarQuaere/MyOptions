@@ -12,7 +12,7 @@ public class ArrayListDemo {
 
     public static void main(String args[]) {
         ArrayList arrayList = new ArrayList();
-        System.out.println(arrayList.add("abc"));
+        System.out.println(arrayList.add("abc")); // this will return true if the value is added successfully
         arrayList.add("def");
         arrayList.add("ghi");
         arrayList.add(1);
@@ -28,7 +28,7 @@ public class ArrayListDemo {
 
         //Creating other collection object VEctor
         Vector vector = new Vector();
-        System.out.println( vector.add(3));
+        System.out.println( vector.add(3)); // this will return either true or false.
         vector.add(4);
 
         // now append the vector items to array list as
@@ -46,7 +46,7 @@ public class ArrayListDemo {
         //to replace any one item in arraylist use
         arrayList.set(2,0);
 
-        //to check wheter the element is presenet in arraylist
+        //to check wheter the element is present in arraylist
         System.out.println("contains : "+arrayList.contains(2));
 
         //to check  the index of element in arraylist

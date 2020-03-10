@@ -6,7 +6,9 @@ import java.util.Comparator;
  * Created by zafar.imam on 22-08-2017.
  */
 
-public class Employee implements Comparable<Employee>{//Comparator<Employee>{//
+public class
+
+Employee implements Comparable<Employee>{//Comparator<Employee>{//
 
     private int id;
     private String name;

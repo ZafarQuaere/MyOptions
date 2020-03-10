@@ -1,19 +1,13 @@
 package com.collection.List;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.ListIterator;
 
 /**
  * Created by amit on 29-08-2017.
  */
-public class LinkedListTest
-{
-    public static void main(String args[])
-    {
+public class LinkedListTest {
+    public static void main(String args[]) {
         LinkedList<String> list = new LinkedList<>();
 
         for (int i = 0; i < 5; i++) {
@@ -25,14 +19,11 @@ public class LinkedListTest
         }*/
 
 
-
-
         list.addFirst("f1");
         list.addFirst("f2");
 
         list.addLast("l1");
         list.addLast("l2");
-
 
 
         Object[] ary = list.toArray();
@@ -42,7 +33,7 @@ public class LinkedListTest
 
         ListIterator<String> iterator = list.listIterator();
 
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             iterator.next();
             iterator.previous();
             System.out.println("inside");
