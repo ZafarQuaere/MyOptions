@@ -8,14 +8,14 @@ public class BinaryGap {
 
     public static void main(String[] arg) {
         System.out.println("Enter Any Number ");
-        Scanner scanner = new Scanner(System.in);
+     /*   Scanner scanner = new Scanner(System.in);
         BinaryGap obj = new BinaryGap();
-        int i = scanner.nextInt();
+        int i = scanner.nextInt();*/
        /* int[] binaryArray = decToBinary(i);
         for (int j = 0; j < binaryArray.length; j++) {
             System.out.print(binaryArray[j]);
         }*/
-         convertNumericeToBinary(i);
+         convertNumericeToBinary(15);
     }
 
     private static void convertNumericeToBinary(int n) {

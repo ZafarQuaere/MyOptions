@@ -3,25 +3,28 @@ package com.string;
 /**
  * Created by amit on 16-06-2017.
  */
-public class ReverseString
-{
-    public static void main(String args[])
-    {
-        System.out.println(getReverse("(ReverseThisString)"));
+public class ReverseString {
+    public static void main(String args[]) {
+       // System.out.println(getReverse("ReverseThisString"));
+        System.out.println(getReverse("Mine"));
+        reverseString("ReverseThisString");
     }
 
-    private static String getReverse(String string)
-    {
+    private static void reverseString(String string) {
+
+    }
+
+
+    private static String getReverse(String string) {
         char val[] = new char[string.length()];
-        for (int index = 0; index < string.length(); index++)
-        {
-            if(val[index] != 0)
-            {
+       // char val[] = string.toCharArray();
+        for (int i = 0; i < string.length(); i++) {
+            if (val[i] != 0) {
                 break;
             }
-            val[index] = string.charAt(string.length() - 1 - index);
-            val[string.length() - 1 - index] = string.charAt(index);
-            System.out.println("loop count : " + (index + 1) + ", " + (new String(val)));
+            val[i] = string.charAt(string.length() - 1 - i);
+            val[string.length() - 1 - i] = string.charAt(i);
+            System.out.println("loop count : " + (i + 1) + ", " + (new String(val)));
         }
         return new String(val);
     }
