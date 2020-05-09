@@ -18,14 +18,14 @@ public class RemoveDuplicates {
     }
 
     private static StringBuilder removeDuplicateString(String string) {
-        char arr[] = string.toCharArray();
+        char[] arr = string.toCharArray();
         LinkedHashSet<Character> lhs = new LinkedHashSet<>();
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < arr.length; i++) {
             lhs.add(string.charAt(i));
         }
         for (Character ch: lhs) {
-            builder = builder.append(ch);
+            builder.append(ch);
         }
 
         return builder;

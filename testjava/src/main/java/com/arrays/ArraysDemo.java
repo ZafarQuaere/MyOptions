@@ -38,3 +38,5 @@ public class ArraysDemo {
         System.out.println(Arrays.equals(array1,array2));
     }
 }
+
+

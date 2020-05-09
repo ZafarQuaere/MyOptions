@@ -223,7 +223,6 @@ public class ArrayTypesComparison {
         System.out.println("ArrayTypesComparison.equals(cities, metros) : " + Arrays.equals(cities, metros)); //true
         System.out.println("ArrayTypesComparison.equals(cities, capitals) : " + Arrays.equals(cities, capitals)); //true
 
-
     }
 
 }

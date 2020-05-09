@@ -11,8 +11,8 @@ public class ReverseStringWithSB {
     }
 
     private static String reverseString(String s) {
-        StringBuffer buffer = new StringBuffer(s);
-        StringBuffer reverse = buffer.reverse();
-        return reverse.toString();
+        StringBuilder buffer = new StringBuilder(s);
+//        StringBuilder reverse = buffer.reverse();
+        return buffer.reverse().toString();
     }
 }

@@ -15,7 +15,7 @@ public class ReplaceChar {
 
     }
 
-    public static String reformedString(String faultString) {
+    private static String reformedString(String faultString) {
 
         String lineWithoutSpaces = faultString.replaceAll("\\s+","");
         return lineWithoutSpaces;
