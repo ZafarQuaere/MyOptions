@@ -6,7 +6,7 @@ package com.java8;
 
 public class InterfaceDemo implements defaultInterf{
 
-    public static void main(String arg[]){
+    public static void main(String[] arg){
         InterfaceDemo demo = new InterfaceDemo();
         demo.m1();
         demo.m2();
@@ -23,13 +23,12 @@ public class InterfaceDemo implements defaultInterf{
 }
 
 interface defaultInterf{
-
     public void m1();
-
     default void m2(){ // we can eiter override it or leave it, we can access it from any class
         System.out.println("New default method" + " is added in interface ");
     }
 }
+
 interface normal{
     public void mm1();
     public void mm2();

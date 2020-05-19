@@ -1,8 +1,23 @@
 package com.example.kotlin.collections
 
 fun main(args: Array<String>) {
-    aboutImmutableList()
+   // aboutImmutableList()
     //aboutMutableList()
+
+    //retrive ITEM using take
+    usingTake();
+}
+/*
+Use of take, takeLast,drop,dropLast keyword
+takeWhile, dropWhile
+ */
+fun usingTake() {
+    val chars = ('a'..'z').toList()
+    println("first 5 char ${chars.take(5)}")
+    println("last 5 char ${chars.takeLast(5)}")
+    println("drop 10 char ${chars.drop(10)}")
+    println("drop 25 char ${chars.dropLast(25)}")
+
 }
 
 fun aboutImmutableList() {

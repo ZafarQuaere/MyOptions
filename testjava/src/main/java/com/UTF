@@ -1,0 +1,28 @@
+https://medium.com/@apiltamang/unicode-utf-8-and-ascii-encodings-made-easy-5bfbe3a1c45a
+
+ASCII
+First there was the C programming language, then there was ASCII. In ASCII, every letter, digits, and symbols that mattered
+(a-z, A-Z, 0–9, +, -, /, “, ! etc.) were represented as a number between 32 and 127. Most computers used 8-bits bytes then.
+This meant each byte could store 2⁸-1= 255 numbers. So each byte (or unit of storage) had more than enough space to store the basic
+set of english characters.
+
+
+
+Unicode
+In order to accommodate the non-english characters, people started going a little crazy on how to use the numbers from 128 to 255 still available
+on a single byte. Different people would use different characters for the same numbers. Obviously, not only was it the wild wild west, but
+it quickly dawned that the extra available numbers could not even come close to represent the complete set of characters for some languages.
+
+The Unicode was a brave attempt to create a single character set that could represent every characters in every imaginable language systems.
+This required a paradigm shift in how to interpret characters. And in this new paradigm, each character was an idealized abstract entity.
+Also in this system, rather than use a number, each character was represented as a code-point. The code-points were written as: U+00639,
+where U stands for ‘Unicode’, and the numbers are hexadecimal.
+
+UTF -- Unicode transformation format
+Unicode is an international standard of character encoding which has the capability of representing a majority of written languages
+all over the globe. Unicode uses hexadecimal to represent a character. Unicode is a 16-bit character encoding system. The lowest value is \u0000
+and the highest value is \uFFFF.
+
+UTF-8 is a variable width character encoding. UTF-8 has the ability to be as condensed as ASCII but can also contain any Unicode characters
+with some increase in the size of the file. UTF stands for Unicode Transformation Format. The '8' signifies that it allocates 8-bit blocks
+to denote a character. The number of blocks needed to represent a character varies from 1 to 4.

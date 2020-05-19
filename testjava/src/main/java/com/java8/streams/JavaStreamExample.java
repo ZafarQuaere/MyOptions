@@ -1,4 +1,4 @@
-package com.logicprogram.collection;
+package com.java8.streams;
 
 /**
  * Created by parasmani.sharma on 23/05/2017.
@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 class Product {
-    int id;
-    String name;
+    private int id;
+    private String name;
     float price;
 
-    public Product(int id, String name, float price) {
+    Product(int id, String name, float price) {
         this.id = id;
         this.name = name;
         this.price = price;

@@ -1,20 +1,13 @@
-package com.java8;
-
-import java.util.Iterator;
+package com.java8.lambda;
 
 /**
  * Created by amit on 24-08-2017.
  */
-public class LambdaTest implements Interface1, Interface2
-{
-    public static void main(String args[])
-    {
+public class LambdaTest implements Interface1, Interface2 {
+    public static void main(String args[]) {
         LambdaTest test = new LambdaTest();
-        Interface1 s1 = message ->
-        {
-            //System.out.println("Hello1 : " + message);
-            return "Hello1 : " + message;
-        };
+        Interface1 s1 = message -> "Hello1 : " + message;
+
         Interface1 s2 = message -> ("Hello2 : " + message);
 
 
@@ -32,9 +25,8 @@ public class LambdaTest implements Interface1, Interface2
         test.defaultMethod();
     }
 
-    private static void useLambdaInThread()
-    {
-        Runnable r =() -> System.out.println("Lambda >> Thread");
+    private static void useLambdaInThread() {
+        Runnable r = () -> System.out.println("Lambda >> Thread");
         Thread t = new Thread(r);
         t.start();
     }
@@ -52,45 +44,53 @@ public class LambdaTest implements Interface1, Interface2
     }
 
 
-    int test(Comparable s){return 0;};
-    String test(String j){return "";};
+    int test(Comparable s) {
+        return 0;
+    }
+
+    ;
+
+    String test(String j) {
+        return "";
+    }
+
+    ;
 }
 
 interface Interface1 {
 
     String sayMessage(String message);
 
-    default void defaultMethod()
-    {
+    default void defaultMethod() {
         System.out.println("i am default1");
     }
 
     @Override
     public String toString();
 
-    static void staticMethod()
-    {
+    static void staticMethod() {
         System.out.println("staticMethod() called");
     }
 }
 
-interface Interface2
-{
-    default void defaultMethod()
-    {
+interface Interface2 {
+    default void defaultMethod() {
         System.out.println("i am default2");
     }
 }
 
-interface X { Iterable m(Object arg); }
-interface Y { String m(Iterable arg); }
-
-interface Z extends X, Y{
-
+interface X {
+    Iterable m(Object arg);
 }
 
-class test implements X, Y
-{
+interface Y {
+    String m(Iterable arg);
+}
+
+interface Z extends X, Y {
+}
+
+class test implements X, Y {
 
 
     @Override

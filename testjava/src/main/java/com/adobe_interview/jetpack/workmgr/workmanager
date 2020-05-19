@@ -1,0 +1,18 @@
+Work Manager(WM)
+WorkManager is intended for tasks that are deferrable—that is, not required to run immediately—and required to run reliably even if the app exits
+or the device restarts.
+For example:
+* Sending logs or analytics to backend services
+* Periodically syncing application data with a server
+
+WM makes it easy to schedule deferrable, asynchronous tasks that are expected to run even if the app exits or device restarts.
+
+Key Features:
+-> Uses JobScheduler on devices with API 23+
+-> Uses a combination of BroadcastReceiver + AlarmManager on devices with API 14-22
+-> Add work constraints like network availability or charging status
+-> Schedule asynchronous one-off or periodic tasks
+-> Monitor and manage scheduled tasks
+-> Chain tasks together
+-> Ensures task execution, even if the app or device restarts
+-> Adheres to power-saving features like Doze mode

@@ -10,7 +10,7 @@ import java.util.function.Consumer;
  */
 public class ForEachTest
 {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         //creating sample Collection
         List<Integer> myList = new ArrayList<Integer>();

@@ -17,7 +17,7 @@ public class PrintDuplicateChars {
 
     private static void printDups(String value) {
         //create an array of size 256 and fill count of every character in it.
-        int countArr[] = new int[NO_OF_CHARS];
+        int[] countArr = new int[NO_OF_CHARS];
 
         //calling method for fillCharCounts
         for (int i = 0; i < value.length(); i++) {

@@ -33,7 +33,6 @@ public class ArraysDemo {
 
         System.out.println(array1.equals(array2));//it will always return false.
 
-
         //arrays class having its own equals method to compare array
         System.out.println(Arrays.equals(array1,array2));
     }

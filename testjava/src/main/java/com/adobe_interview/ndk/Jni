@@ -1,0 +1,43 @@
+https://www.baeldung.com/jni
+
+Reason to use native code:
+* Need to handle some hardware.
+* Performance improvement to a very demanding process.
+* An existing library that we wanted to reuse instead of writing it in Java.
+* Reusable code, that can be run in Android, iOS, Windows platform.
+
+JNI -- is basically a bridge between bytecode running in our JVM and Native Code.
+
+ How It Works
+Native Methods: The JVM Meets Compiled Code
+Java provides the native keyword that's used to indicate that the method implementation will be provided by a native code.
+
+Normally, when making a native executable program, we can choose to use static or shared libs:
+
+Static libs – all library binaries will be included as part of our executable during the linking process. Thus, we won't need the libs anymore,
+                but it'll increase the size of our executable file.
+Shared libs – the final executable only has references to the libs, not the code itself. It requires that the environment in which we run our
+               executable has access to all the files of the libs used by our program.
+
+JNI Elements in Code (Java And C/C++)
+
+Java elements:
+“native” keyword – as we've already covered, any method marked as native must be implemented in a native, shared lib.
+System.loadLibrary(String libname) – a static method that loads a shared library from the file system into memory and makes its exported functions
+                                    available for our Java code.
+
+C/C++ elements (many of them defined within jni.h):
+JNIEXPORT- marks the function into the shared lib as exportable so it will be included in the function table, and thus JNI can find it
+JNICALL – combined with JNIEXPORT, it ensures that our methods are available for the JNI framework
+
+JavaVM – a structure that lets us manipulate a running JVM (or even start a new one) adding threads to it, destroying it, etc…
+
+CMake
+The Android NDK supports using CMake to compile C and C++ code for your application.
+The NDK supports CMake via a toolchain file. Toolchain files are CMake files that customize the behavior of the toolchain for cross-compiling.
+The toolchain file used for the NDK is located in the NDK at <NDK>/build/cmake/android.toolchain.cmake.
+
+Android ABIs
+Different Android devices use different CPUs, which in turn support different instruction sets.
+Each combination of CPU and instruction set has its own Application Binary Interface (ABI).
+

@@ -39,14 +39,14 @@ fun main(args: Array<String>) {
     forInSet()
 }
 
-fun forInSet() {
+private fun forInSet() {
     val sets = setOf<String>("a", "b", "c", "d")
     for (set in sets)
         println(set)
 
 }
 
-fun forInMap() {
+private fun forInMap() {
     var map = mapOf(1 to "Zafar", 2 to "Imam", 3 to "Sani", 4 to "Sami")
 
     // Iterate over the entries as objects that contain the key and the value as properties

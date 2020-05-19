@@ -1,30 +1,24 @@
-package com.patterndemo;
+package com.adobe_interview;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /**
  * Created by zafar.imam on 09-07-2017.
  */
 
-public class PrintPattern {
+public class PrintTrianglesNPattern {
 
-    public static void main(String... arg) throws IOException {
+    public static void main(String... arg) {
         System.out.println("Enter Number : ");
-        int n = 5;
-//        Scanner scanner = new Scanner(System.in);
-//        if(scanner.hasNextInt()){
-//            n = scanner.nextInt();
-//        }
-//      scanner.close();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
+
+        printTriangle(n);
         System.out.println();
         System.out.println();
 
-//        printTriangle(n);
-         printPattern1(n);
+         // printPattern1(n);
         //printPattern2(n);
        // printPattern3(n);
 //        printPattern4(n);

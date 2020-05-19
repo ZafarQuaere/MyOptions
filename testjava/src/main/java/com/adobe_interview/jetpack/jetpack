@@ -1,0 +1,72 @@
+
+https://blog.mindorks.com/what-is-android-jetpack-and-why-should-we-use-it
+
+What is Android Jetpack?
+Android Jetpack is a collection of Android software components which helps us in building great Android apps.
+
+Android Jetpack Components
+Android Jetpack components are a collection of libraries that are individually adoptable and built to work together while taking advantage of Kotlin language features that make us more productive.
+
+These software components have been arranged in 4 categories which are as follows:
+I simplified it with AR-FO-BUI (ARCHITECTURE - FOUNDATION - BEHAVIOUR- UI)
+* Foundation Components
+* Architecture Components
+* Behavior Components
+* UI Components
+
+Foundation Components
+The foundation components provide the following:
+# Backward compatibility
+# Testing
+# Kotlin language support.
+
+All the foundation components are as follows:
+* App Compat: Degrade gracefully on older versions of Android with material design user interface implementation support.
+* Android KTX: Set of Kotlin extensions to write more concise, idiomatic Kotlin code.
+* Multidex: Provide support for multiple dex files for apps.
+* Test: A testing framework for unit and runtime UI tests in Android.
+
+Architecture Components
+The architecture components help us in building:
+# Robust Apps
+# Testable Apps
+# Maintainable Apps
+
+All the architecture components are as follows:
+* Data Binding: Declaratively bind UI elements to in our layout to data sources of our app.
+* Lifecycles: Manages activity and fragment lifecycles of our app.
+* LiveData: Notify views of any database changes.
+* Navigation: Handle everything needed for in-app navigation.
+* Paging: Gradually load information on demand from your data source.
+* Room: Fluent SQLite database access.
+* ViewModel: Manage UI-related data in a lifecycle-conscious way.
+* WorkManager: Manage every background jobs in Android with the circumstances we choose.
+
+Behavior Components
+# The behavior components help in the integration with standard Android services like
+# Notifications
+# Permissions
+# Sharing
+# Assistant
+
+All the behavior components are as follows:
+* Download Manager: Schedule and manage large downloads in background with auto retry support.
+* Media & playback: Backwards compatible APIs for media playback and routing (including Google Cast).
+* Notifications: Provides a backwards-compatible notification API with Wear and Auto support.
+* Permissions: Compatibility APIs for checking and requesting permissions in app.
+* Preferences: Create interactive settings screens for users to configure.
+* Sharing: Provides a share action suitable for an app’s action bar.
+* Slices: Create flexible UI elements that can display app data outside the app and can be extended all the way back to Android 4.4.
+
+UI Components
+# The UI components provide widgets and helpers to make your app not only easy, but delightful to use.
+
+All the UI components are as follows:
+* Animation and transitions: Move widgets and transition between screens.
+* Auto: Components to develop Android Auto apps.
+* Emoji: Enable updated emoji font on older platforms.
+* Fragment: A basic unit of composable UI.
+* Layout: Lay out widgets with different algorithms.
+* Palette: Pull useful information from color palettes.
+* TV: Components to develop Android TV apps.
+* Wear: Components to develop Wear apps.

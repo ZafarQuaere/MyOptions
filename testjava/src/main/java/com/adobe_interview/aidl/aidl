@@ -1,0 +1,14 @@
+AIDL:
+
+● Works like client & server application.
+● Client app initiate some specific action, pass some data/request to server app for process, Server app process the data/request passed by client and return the appropriate result.
+● Possible to pass custom object across apps.
+
+To create a bounded service using AIDL, follow these steps:
+1) Create the .aidl file
+    This file defines the programming interface with method signatures.
+2) Implement the interface
+    The Android SDK tools generate an interface in the Java programming language, based on your .aidl file. This interface has an inner abstract
+    class named Stub that extends Binder and implements methods from your AIDL interface. You must extend the Stub class and implement the methods.
+3) Expose the interface to clients
+    Implement a Service and override onBind() to return your implementation of the Stub class.

@@ -1,4 +1,4 @@
-package com.examples.recursive;
+package com.adobe_interview.recusively;
 
 import java.util.Scanner;
 
