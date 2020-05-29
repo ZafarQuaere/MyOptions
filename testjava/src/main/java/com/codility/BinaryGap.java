@@ -7,14 +7,15 @@ import java.util.Scanner;
 public class BinaryGap {
 
     public static void main(String[] arg) {
-        System.out.println("Enter Any Number ");
-     /*   Scanner scanner = new Scanner(System.in);
+       /* System.out.println("Enter Any Number ");
+        Scanner scanner = new Scanner(System.in);
         BinaryGap obj = new BinaryGap();
-        int i = scanner.nextInt();*/
-       /* int[] binaryArray = decToBinary(i);
+        int i = scanner.nextInt();
+        int[] binaryArray = decToBinary(i);
         for (int j = 0; j < binaryArray.length; j++) {
             System.out.print(binaryArray[j]);
         }*/
+
          convertNumericeToBinary(15);
     }
 

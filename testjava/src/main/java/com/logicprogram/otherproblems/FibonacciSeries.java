@@ -43,12 +43,10 @@ public class FibonacciSeries {
 
     }
 
-    int Fibonacci(int number)
-    {
-
+    int Fibonacci(int number) {
         //next number is a sum of previous two number
         if (number <= 1) return number;
-        System.out.println((number-2) + " " + (number-1));
+        System.out.println((number - 2) + " " + (number - 1));
         return Fibonacci(number - 2) + Fibonacci(number - 1);
     }
 }

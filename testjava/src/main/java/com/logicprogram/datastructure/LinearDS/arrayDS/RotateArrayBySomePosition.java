@@ -10,8 +10,6 @@ import java.util.Arrays;
 public class RotateArrayBySomePosition {
 
     // lets say position will be 3
-
-
     public static void main(String arg[])
     {
         int postion = 3;

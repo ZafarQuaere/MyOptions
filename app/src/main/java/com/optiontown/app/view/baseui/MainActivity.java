@@ -1762,4 +1762,9 @@ public class MainActivity extends BaseActivity implements Communicator {
             dialog = null;
         }
     }
+
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
+    }
 }

@@ -24,12 +24,7 @@ public class ForEachTest
         }
 
         //traversing through forEach method of Iterable with anonymous class
-        myList.forEach(new Consumer<Integer>() {
-
-            public void accept(Integer t) {
-                System.out.println("forEach anonymous class Value::" + t);
-            }
-        });
+        myList.forEach(t -> System.out.println("forEach anonymous class Value::" + t));
 
 
 

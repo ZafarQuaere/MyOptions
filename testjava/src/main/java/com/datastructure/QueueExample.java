@@ -1,4 +1,4 @@
-package com.logicprogram.datastructure.LinearDS;
+package com.datastructure;
 
 /**
  * Created by parasmani.sharma on 09/06/2017.
@@ -31,62 +31,62 @@ class Queue {
     int array[];
 
     public Queue(int capacity) {
-        this.capacity = capacity;
-        front = this.size = 0;
+        capacity = capacity;
+        front = size = 0;
         rear = capacity - 1;
-        array = new int[this.capacity];
+        array = new int[capacity];
 
     }
 
     // Queue is full when size becomes equal to
     // the capacity
-    boolean isFull(Queue queue) {
-        return (queue.size == queue.capacity);
+    boolean isFull() {
+        return (size == capacity);
     }
 
     // Queue is empty when size is 0
-    boolean isEmpty(Queue queue) {
-        return (queue.size == 0);
+    boolean isEmpty() {
+        return (size == 0);
     }
 
     // Method to add an item to the queue.
     // It changes rear and size
     void enqueue(int item) {
-        if (isFull(this))
+        if (isFull())
             return;
-        this.rear = (this.rear + 1) % this.capacity;
-        System.out.print("\n" + this.rear);
+        rear = (rear + 1) % capacity;
+        System.out.print("\n" + rear);
 
-        this.array[this.rear] = item;
-        this.size = this.size + 1;
+        array[rear] = item;
+        size = size + 1;
         System.out.println("\n" + item + " enqueued to queue");
     }
 
     // Method to remove an item from queue.
     // It changes front and size
     int dequeue() {
-        if (isEmpty(this))
+        if (isEmpty())
             return Integer.MIN_VALUE;
 
-        int item = this.array[this.front];
-        this.front = (this.front + 1) % this.capacity;
-        this.size = this.size - 1;
+        int item = array[front];
+        front = (front + 1) % capacity;
+        size = size - 1;
         return item;
     }
 
     // Method to get front of queue
     int front() {
-        if (isEmpty(this))
+        if (isEmpty())
             return Integer.MIN_VALUE;
 
-        return this.array[this.front];
+        return array[front];
     }
 
     // Method to get rear of queue
     int rear() {
-        if (isEmpty(this))
+        if (isEmpty())
             return Integer.MIN_VALUE;
 
-        return this.array[this.rear];
+        return array[rear];
     }
 }

@@ -1,0 +1,69 @@
+https://android.jlelse.eu/architecture-patterns-in-android-abf99f2b6f70
+
+Design Pattern (DP):
+-> A design patterns are well-proved solution for solving the specific problem/task.
+                    OR
+-> A DP is well structured solution for solving the specific problem or complete a task.
+
+There are mainly three types of DP
+1) Creational DP (CDP) -- How you create Objects
+2) Structural DP (SDP) -- How you compose an Objects to form larger structure
+3) Behavioral DP (BDP) -- How you coordinate Object interactions.
+
+Types of CDP
+● Singleton
+● Dependency Injection
+● Builder
+● Factory method
+
+Types of SDP
+● Adapter -- this pattern lets two incompatible classes work together by converting the interface of a class into another interface the client expects.
+● Facade --The Facade pattern provides a higher-level interface that makes a set of other interfaces easier to use.
+
+Types of BDP
+● MVC
+● MVP
+● MVVM
+● Observer
+● Clean Architecture
+
+=====================================================================================================================================================
+MVVM: (For UI representation look the attached img in the same folder)
+● Model: It represents the data and the business logic of the Android Application. It consists of the business logic - local and remote data
+         source, model classes, repository.
+● View: It consists of the UI Code(Activity, Fragment), XML. It sends the user action to the ViewModel but does not get the response back
+        directly. To get the response, it has to subscribe to the observables which ViewModel exposes to it.
+● ViewModel: It is a bridge between the View and Model(business logic). It does not have any clue which View has to use it as it does not
+             have a direct reference to the View. So basically, the ViewModel should not be aware of the view who is interacting with.
+             It interacts with the Model and exposes the observable that can be observed by the View.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+MVP in Android:
+
+MVP is strongly recommended because a lot of developers are using it now. Even, Google also provide its best practice example on Github.
+Definition is not always an interesting part but it is vital. We should even check it out again an again to understand it deeply.
+
+● View = a passive interface that displays data and routes user actions to the Presenter. In Android, it is represented by Activity, Fragment, or View.
+● Model = a layer that holds business logic, controls how data is created, stored, and modified. In Android, it is a data access layer such as database API or
+		remote server API.
+● Presenter = A middle man which retrieves data from Model and show it in the View. It also process user action forwarded to it by the View.
+
+Important points of MVP are:
+    ●View can not access Model.
+    ●Presenter is tied to a single View. (One-to-One relationship)
+    ●View is completely dumb and passive (only retrieve user action and leave all other things for Presenter to handle).
+===============================================================================================================================================================4
+
+Android Design Pattern
+
+Component       -- Design Pattern
+ViewHolder      --      Singleton
+Intent          --      Factory
+Adapter         --      Adapter
+View            --      Composite
+Media           --      Cascade
+Alert Dialog    --      Builder
+Broadcast Receiver --   Observer
+
+
+
+

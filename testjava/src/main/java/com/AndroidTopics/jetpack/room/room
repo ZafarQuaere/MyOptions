@@ -1,0 +1,58 @@
+What is Room?
+The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing
+the full power of SQLite.
+
+Components of Room
+We have 3 components of room.
+* Entity: Instead of creating the SQLite table, we will create the Entity. Entity is nothing but a model class annotated with @Entity.
+        The variables of this class is our columns, and the class is our table.
+* Database: It is an abstract class where we define all our entities.
+* DAO: Stands for Data Access Object. It is an interface that defines all the operations that we need to perform in our database
+
+------------------------------------------
+Entity
+-------------------
+@Entity
+public class User {
+    @PrimaryKey
+    public int uid;
+
+    @ColumnInfo(name = "first_name")
+    public String firstName;
+
+    @ColumnInfo(name = "last_name")
+    public String lastName;
+}
+================================================
+DAO
+================================================
+@Dao
+public interface UserDao {
+    @Query("SELECT * FROM user")
+    List<User> getAll();
+
+    @Query("SELECT * FROM user WHERE uid IN (:userIds)")
+    List<User> loadAllByIds(int[] userIds);
+
+    @Query("SELECT * FROM user WHERE first_name LIKE :first AND " +
+           "last_name LIKE :last LIMIT 1")
+    User findByName(String first, String last);
+
+    @Insert
+    void insertAll(User... users);
+
+    @Delete
+    void delete(User user);
+}
+======================================================================
+Database
+------------------------
+@Database(entities = {User.class}, version = 1)
+public abstract class AppDatabase extends RoomDatabase {
+    public abstract UserDao userDao();
+}
+------------------------
+After creating the files above, you get an instance of the created database using the following code
+
+AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+        AppDatabase.class, "database-name").build();

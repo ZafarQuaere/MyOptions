@@ -4,15 +4,12 @@ package com.logicprogram.datastructure.LinearDS;
  * Created by parasmani.sharma on 07/06/2017.
  */
 
-public class InfixToPostfix
-{
+public class InfixToPostfix {
 
     // A utility function to return precedence of a given operator
     // Higher returned value means higher precedence
-    static int Prec(char ch)
-    {
-        switch (ch)
-        {
+    static int Prec(char ch) {
+        switch (ch) {
             case '+':
             case '-':
                 return 1;
@@ -29,16 +26,14 @@ public class InfixToPostfix
 
     // The main method that converts given infix expression
     // to postfix expression.
-    static String infixToPostfix(String exp)
-    {
+    static String infixToPostfix(String exp) {
         // initializing empty String for result
         String result = new String("");
 
         // initializing empty stack
         Stack stack = new Stack();
 
-        for (int i = 0; i<exp.length(); ++i)
-        {
+        for (int i = 0; i < exp.length(); ++i) {
             char c = exp.charAt(i);
 
             // If the scanned character is an operand, add it to output.
@@ -51,8 +46,7 @@ public class InfixToPostfix
 
                 // If the scanned character is an ')', pop and output from the stack
                 // until an '(' is encountered.
-            else if (c == ')')
-            {
+            else if (c == ')') {
                 while (!stack.isEmpty() && stack.peek() != '(')
                     result += stack.pop();
 
@@ -60,8 +54,7 @@ public class InfixToPostfix
                     return "Invalid Expression"; // invalid expression
                 else
                     stack.pop();
-            }
-            else // an operator is encountered
+            } else // an operator is encountered
             {
                 while (!stack.isEmpty() && Prec(c) <= Prec(stack.peek()))
                     result += stack.pop();
@@ -78,57 +71,42 @@ public class InfixToPostfix
     }
 
 
-
     // Driver method
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String exp = "a+b";
         System.out.println(infixToPostfix(exp));
     }
 
 }
 
-class Stack
-{
-    int max = 100;
-    int top;
-    int[] a = new int[max];
+class Stack {
+    private int max = 100;
+    private int top;
+    private int[] a = new int[max];
 
-    public boolean push(int i) {
-
-        if (top >= max)
-        {
+    void push(int i) {
+        if (top >= max) {
             System.out.println("Stack Overflow");
-            return false;
-        }
-        else
-        {
+        } else {
             a[++top] = i;
-            return true;
         }
-
     }
 
-    int pop()
-    {
-        if (top < 0)
-        {
+    int pop() {
+        if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
-        }
-        else
-        {
+        } else {
             int x = a[top--];
             return x;
         }
     }
 
     public boolean isEmpty() {
-
-        return top == -1 ;
+        return top == -1;
     }
 
-    public char peek() {
+    char peek() {
         return (char) a[top];
     }
 }

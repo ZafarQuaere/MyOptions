@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 class Product {
+    float price;
     private int id;
     private String name;
-    float price;
 
     Product(int id, String name, float price) {
         this.id = id;
@@ -36,8 +36,8 @@ public class JavaStreamExample {
         System.out.println(productPriceList2);
 
         /*
-        *BY simple collection
-        * */
+         *BY simple collection
+         * */
        /* List<Float> productPriceList = new ArrayList<Float>();
         for(Product product: productsList){
 

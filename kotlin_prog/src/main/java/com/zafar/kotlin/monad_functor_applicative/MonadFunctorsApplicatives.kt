@@ -1,4 +1,4 @@
-package com.example.kotlin.MonadFunctorsApplicatives
+package com.zafar.kotlin.monad_functor_applicative
 
 /*fun main(args: Array<String>) {
     listOf(1,2,3)

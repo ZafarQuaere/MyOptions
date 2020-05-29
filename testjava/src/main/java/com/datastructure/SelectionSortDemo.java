@@ -25,7 +25,6 @@ public class SelectionSortDemo {
             for (j = i+1; j<values.length; j++){
                 if (values[j] < values[minValue]){
                     minValue  = j;
-
                 }
             }
             temp = values[minValue];
@@ -34,7 +33,6 @@ public class SelectionSortDemo {
 
             System.out.println("Values while sorting :"+ Arrays.toString(values));
         }
-
         return values;
     }
 }
