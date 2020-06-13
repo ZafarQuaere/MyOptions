@@ -1,4 +1,4 @@
-package com.assertionss;
+package com.assertions;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
    2) assert expression1 : expression2;
  */
 
-public class AssetionDemo {
+public class AssertionDemo {
 
     /*
     Assertion is a statement in java. It can be used to test your assumptions about the program.

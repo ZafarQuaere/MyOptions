@@ -5,6 +5,14 @@ fun main(arg: Array<String>){
     //reverseString();
     //removeSpace();
     removeDuplicate()
+    findSubString();
+}
+
+private fun findSubString() {
+    var str1 = "2.5 MB"
+    var str2 = "500.65 KB"
+    println("Substring of str1 ${str1.substring(0,str1.length-3)}")
+    println("Substring of str1 ${str2.substring(0,str2.length-3)}")
 }
 
 private fun removeDuplicate() {

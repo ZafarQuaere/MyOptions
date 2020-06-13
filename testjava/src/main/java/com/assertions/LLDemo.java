@@ -1,4 +1,4 @@
-package com.assertionss;
+package com.assertions;
 
 /**
  * Created by zafar.imam on 01-07-2017.
