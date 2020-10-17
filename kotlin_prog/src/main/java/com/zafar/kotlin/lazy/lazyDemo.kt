@@ -15,4 +15,14 @@ fun main() {
     println("Before lazy call i and J")
     println(i)
     println(j)
+    println(j)
+
+
+//    println(aVariable)
+//    println(aVariable)
+}
+
+val aVariable by lazy {
+    println("Random stmt ")
+    "Hello"
 }

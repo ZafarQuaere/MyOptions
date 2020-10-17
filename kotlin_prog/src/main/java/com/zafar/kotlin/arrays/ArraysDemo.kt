@@ -22,4 +22,5 @@ private fun removeElement(arr: IntArray,index: Int) {
     val newArray = list.toIntArray();
     println("After removing first 2 ${removedArray.contentToString()}")
     println("After removing first 2 ${newArray.contentToString()}")
+
 }
