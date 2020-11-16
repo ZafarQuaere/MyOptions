@@ -1,0 +1,88 @@
+Scheduler Type
+Operators
+What if nothing is provided while implementing RxJava
+	Scheduler.DEFAULT
+Multicast in RxJava.
+Map vs FlatMap
+SwitchMap
+Subscribe and ObserverOn
+
+Coroutines
+-------------------
+mapping of jvm level thread.
+suspend working
+coroutine context.
+scope
+coroutine dispatcher
+coroutine is single thread or multi thread
+how suspend is different from nornmal functions.
+cancellation of coroutines
+
+
+Architecture and design
+----------------------
+MvvM or Mvp or why MVVM ?
+ViewModel
+Holder fragment
+
+
+Views and Custom views
+--------------------------
+Recyclerview recycle pool
+layout manager, view scrap
+Object animator vs Value animation.
+How inflate works in Android.
+Custom Views
+How does view engine renders the view
+layout manager draw, how do they communicate ?
+
+
+Multithreading & Background processing.
+-------------------------------------
+countdown latch
+how to communicate between two threads
+custom locking - reenrant
+Android Api for networking operation (AsyncTask)
+Service with thread, work manager
+download n images and show progress on main thread.
+difference between thread and asyncTask
+
+RxJava
+-------------
+Types of RxObserver
+Observable
+backpressure strategy
+activity retrain instance
+solid principle
+design patterns
+
+Others
+----------
+Memory leaks and how to protect and detect.
+How to rollout particular feature
+Unit Testing
+Current Project challenges
+ANR, how to detect and protect.
+Crashlytics implementation, what if you need to develop your own crashlytics.
+
+
+Java
+-----------
+Immutability, Singleton
+Memory Management (Types of memory in jvm)
+Variables are created in which memory
+write your own handler functionality using thread or other(plz mention)
+
+Kotlin
+--------
+Coroutines, Suspend vs normal method,
+extention, higher order and inline functions
+
+Android
+-----------
+components,Activitylifecycle
+Livedata, ViewModel,
+Room, Sqlite, Realm,ORMs,
+Dagger/Kodein/Koin
+
+

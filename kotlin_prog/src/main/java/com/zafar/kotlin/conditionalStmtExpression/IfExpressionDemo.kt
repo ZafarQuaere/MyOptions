@@ -1,4 +1,4 @@
-package com.example.kotlin.conditionalStmtExpression
+package com.zafar.kotlin.conditionalStmtExpression
 
 fun main(args: Array<String>) {
     val a : Int = 4
@@ -13,4 +13,5 @@ fun main(args: Array<String>) {
         b
     }
 
+    println("Biggest number $biggestNumber")
 }
