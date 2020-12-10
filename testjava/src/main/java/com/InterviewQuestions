@@ -5,7 +5,7 @@ What if nothing is provided while implementing RxJava
 Multicast in RxJava.
 Map vs FlatMap
 SwitchMap
-Subscribe and ObserverOn
+SubscribeOn and ObserverOn
 
 Coroutines
 -------------------
@@ -53,7 +53,7 @@ Types of RxObserver
 Observable
 backpressure strategy
 activity retrain instance
-solid principle
+solid principle  (Single Responsibility, open/close, liskov substitution, interface, segregation, dependency inversion)
 design patterns
 
 Others
@@ -85,4 +85,17 @@ Livedata, ViewModel,
 Room, Sqlite, Realm,ORMs,
 Dagger/Kodein/Koin
 
+
+==================================================================================================================================================================
+Activities :
+A-B-C-D-E-F
+onBackPressed()
+F-D-C-E-B-A   (HOW TO ACHIEVE THIS)
+
+LruBitmap (Which data structure used)
+how to create Stack from Queue
+
+Git:
+Squash and fixup
+Rebase and merge, and stash
 
