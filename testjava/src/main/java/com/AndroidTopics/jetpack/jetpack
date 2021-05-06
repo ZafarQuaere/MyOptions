@@ -20,6 +20,7 @@ The foundation components provide the following:
 # Testing
 # Kotlin language support.
 
+
 All the foundation components are as follows:
 * App Compat: Degrade gracefully on older versions of Android with material design user interface implementation support.
 * Android KTX: Set of Kotlin extensions to write more concise, idiomatic Kotlin code.
@@ -32,7 +33,7 @@ The architecture components help us in building:
 # Testable Apps
 # Maintainable Apps
 
-All the architecture components are as follows:
+All the architecture components are as follows: (DB,L-L,Navi-Pe,Room,VM,WM)
 * Data Binding: Declaratively bind UI elements to in our layout to data sources of our app.
 * Lifecycles: Manages activity and fragment lifecycles of our app.
 * LiveData: Notify views of any database changes.

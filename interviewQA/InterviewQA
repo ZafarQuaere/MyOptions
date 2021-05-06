@@ -6,7 +6,7 @@ produces one output value for each input value, whereas the flatMap operation pr
 values for each input value.
 
 
-subscribeOn and observeOn()
+subscribeOn() and observeOn()
 -----------------------------
 https://proandroiddev.com/understanding-rxjava-subscribeon-and-observeon-744b0c6a41ea
 
@@ -31,3 +31,8 @@ Squash and fixup ->
 Launch modes in Android**
 https://www.solutelabs.com/blog/android-activity-launch-modes-make-navigation-more-better
 https://android.jlelse.eu/android-activity-launch-mode-e0df1aa72242
+
+Learn in Git:
+1) Shelve Changes.
+2) Stash
+3) Rebase
