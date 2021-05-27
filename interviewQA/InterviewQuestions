@@ -99,3 +99,18 @@ Git:
 Squash and fixup
 Rebase and merge, and stash
 
+Question 1- String are given need to convert it into JavaVaribale and vice-versa
+Example- if given string are: this_is_variable
+Output- thisIsVariable (need to replace _ with empty and next character to _ need to be Capital letter)
+Example – if given string are: thisIsVariable.
+Output: this_is_variable (if java variable are given before capital character need to add _ (underscore) and capital character will be small).
+
+
+Question 2 – Find Majority Element in Given array
+Write a function which takes an array and prints the majority element (if it exists), otherwise prints “No Majority Element”. A majority element in an array A[] of size n is an element that appears more than n/2 times (and hence there is at most one such element).
+https://www.geeksforgeeks.org/majority-element/
+
+
+Question -3 Find character frequency in alphabetical order.
+Given string is- “geekforgeeks”
+Output – e4 f1 g2 k2 01 r1 s1.
