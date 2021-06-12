@@ -4,3 +4,16 @@ https://github.com/MindorksOpenSource/android-interview-questions/blob/master/RE
 
 Fragment transaction:
 https://stackoverflow.com/questions/18634207/difference-between-add-replace-and-addtobackstack
+
+Android Architecture:
+SANA- HALK-PM
+
+S - System Apps  (Dialer, email, calendar, camera ..)
+A - Java Api Framework ( Managers {Activity, Location, package, notification, resource, telephony}, Content Provider )
+N - Native libraries ( OpenGL Es, Media Framework etc)
+A - Android Runtime (ART, Core lib)
+
+HA - Hardware abstraction layer (Audio, Bluetooth, Camera, Sensor)
+LK - Linux kernel (Drivers - Audio, Bluetooth, Camera, sensor, keyboard, USB, WiFi)
+
+PM - Power management.

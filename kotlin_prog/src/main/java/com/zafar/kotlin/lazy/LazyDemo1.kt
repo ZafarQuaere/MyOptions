@@ -1,4 +1,4 @@
-package com.example.kotlin.lazy
+package com.zafar.kotlin.lazy
 
 
 

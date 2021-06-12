@@ -3,7 +3,7 @@ https://blog.mindorks.com/building-android-applications-with-gradle-tutorial
 
 Gradle ?
 gradle is an open source build automation tool which focuses on flexibility and performance.
-in simple word.. it is an automation tool which generate the application build.It is official build tool for Android.
+in simple word.. it is an automation tool which generate the application build. It is official build tool for Android.
 it is an advanced build toolkit, to automate and manage the build process while allowing you to define flexible custom build configurations.
 
 In Android there are 2 types of Gradle.
