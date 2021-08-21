@@ -1,4 +1,4 @@
-package com.string;
+package com.nagarro;
 
 public class ModifyVariableName {
     public static void main(String[] arg) {
@@ -8,14 +8,6 @@ public class ModifyVariableName {
         System.out.println("input is : " + input + " output is " + output);
         String output1 = modifyVarNameJavatoC(input1);
         System.out.println("input is : " + input1 + " output is " + output1);
-        System.out.println("input is : " + input1 + " output is " + output1);
-        System.out.println("15 : " + 6+2);
-        int x = 9;
-        if (x== 9){
-            int x = 8;
-
-        }
-
     }
 
     private static String modifyVarNameJavatoC(String input) {

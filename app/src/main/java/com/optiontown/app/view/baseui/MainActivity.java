@@ -255,6 +255,12 @@ public class MainActivity extends BaseActivity implements Communicator {
 
 
     }
+
+    @Override
+    public Object onRetainCustomNonConfigurationInstance() {
+        return super.onRetainCustomNonConfigurationInstance();
+    }
+
     private void moveToSegSelect()
     {
         Utils.moveToFragment(this, new SegSelectFlightFragment(), null, 0);

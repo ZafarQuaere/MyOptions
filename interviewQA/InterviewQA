@@ -5,6 +5,19 @@ Both map and flatMap can be applied to a Stream<T> and they both return a Stream
 produces one output value for each input value, whereas the flatMap operation produces an arbitrary number (zero or more)
 values for each input value.
 
+Stream.flatMap --> as it can be guessed by its name, is the combination of a map and a flat operation. That means that you first apply a function
+to your elements, and then flatten it.
+
+Stream.map --> only applies a function to the stream without flattening the stream.
+
+To understand what flattening a stream consists in, consider a structure like [ [1,2,3],[4,5,6],[7,8,9] ]
+which has "two levels". Flattening this means transforming it in a "one level" structure : [ 1,2,3,4,5,6,7,8,9 ].]
+
+Without flat map => [1,2],[1,1] => [[1,2],[1,1]] Here two lists are placed inside a list, so the output will be list containing lists
+
+With flat map => [1,2],[1,1] => [1,2,1,1] Here two lists are flattened and only the values are placed in list, so the output will be list containing only elements
+
+Basically it merges all the objects in to one
 
 subscribeOn() and observeOn()
 -----------------------------
@@ -20,8 +33,9 @@ to multiple subscribers it’s called multicasting. But why would I even bother 
 
 Solid Principle
 ----------------
-(Single Responsibility, open/close, liskov substitution, interface, segregation, dependency inversion)
+(Single Responsibility, open/close, liskov substitution, interface segregation, dependency inversion)
 Liskov substitution :-> Ability to replace any instance of parent class with an instance of one of its child classes without negative side effects.
+Dependency inversion : use interfaces and abstraction to avoid tight coupling.
 
 Memory leaks:
 https://android.jlelse.eu/9-ways-to-avoid-memory-leaks-in-android-b6d81648e35e
@@ -36,3 +50,32 @@ Learn in Git:
 1) Shelve Changes.
 2) Stash
 3) Rebase
+
+Job Description:-
+Position Title Android Sr. Developer
+Minimum Qualification Btech
+Total Experience(TEX) 6-9yrs
+Relevant Experience (REX) 6yrs
+Detailed Job Description: ( Must have a JD of 4-5 lines as minimum ask with clear specification of Mandatory and Secondary skills required) "Java/Kotlin Programming skills
+Functional & Object-oriented programming
+Intents, services, activity
+Kotlin basics - Singleton, Data Class, Companion objects, Open/Sealed Class/Public, var & val, Null Safety, coroutines
+Types of views, Containers, Recycler view
+Invoking Kotlin from Java and Vice Versa
+RxJava/ RxAndroid
+OKHttp, Retrofit & Handling models
+GIT, Jenkins/Gradle,  Code Quality - Detekt, SonarQube,
+"
+
+Good to Have Skills (3-4 skills, point wise) "MVVM/MVP/MVC, Singleton/Façade/Observer
+Implementation with example
+Extension function, Lazy initialization,  late init modifier, higher order function , inline function
+Offline, Location, Maps, external device integrations
+Handling Background Tasks
+Exposure to Junit, Mockito, Kotlin test
+Chaining, preventing Man in the middle attacks(security), encryption
+Android Signed Bundle/APK
+Experience in Store Deployments
+SOLID Principle
+Clean Architecture
+Basic of Data Structure"

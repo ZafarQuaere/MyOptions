@@ -65,3 +65,19 @@ The function must be marked with the suspend modifier. So, delay can be invoked 
 both functions(among others) take a suspending lambda as the last parameter—
 a suspending lambda is a lambda marked with the suspend modifier.
 
+
+Dispatcher: It decides on which thread the coroutines will execute.
+
+Dispatcher is of four types
+1. Default -> it is similar to GlobalScope.launch, in separate bg thread
+2. Unconfined -> it will run on Immediate parent of runBlocking coroutine context
+3. Main -> this works on UI object
+4. IO  -> Used for IO operations.
+
+
+launch  -> GlobalScope.launch --> job : Job -> It returns the Job object
+async   -> GlobalScope.async  --> Deferred<String> -> It returns the Deferred Object.
+
+runBlocking
+
+withContext

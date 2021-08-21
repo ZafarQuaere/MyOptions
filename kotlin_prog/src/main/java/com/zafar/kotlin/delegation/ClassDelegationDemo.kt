@@ -12,13 +12,13 @@ interface Person{
 
 class PersonImp(val name: String) : Person{
     override fun printName() {
-        println(name)
+        println("PersonImp: $name")
     }
 }
 
 class User(val person: Person) : Person by person{
     override fun printName() {
-        println("Printing name....")
+        println("User Printing name....")
         person.printName()
     }
 }
