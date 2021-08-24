@@ -1,0 +1,32 @@
+Difference between Android Volley ,retro and AsyncTask
+
+1)A major advantage of Android Volley over AsyncTask is that you can do multiple requests simultaneously without the overhead of thread management. Also I believe retry mechanism is a great feature of volley which gives it an edge over AsynTask.
+
+2)Another advantage of volley over AsyncTask is that it provides you with multiple request types, through which complex requests can be made easily. On the other hand while using AsyncTasks one would have to create this type of request manually.
+
+
+
+3) Retry Mechanism
+One of the great things about volley is that it supports retries on request timeout. While creating requests with volley, we can set a retry policy by using setRetryPolicy method. By default a volley request timeout time is set to 5 seconds. But if you wish to change the policy, it supports that too. You can specify these parameters according to your needs:
+
+Timeout
+Number Of Retries
+Back Off Multiplier
+Retrofit on the other hand does not have a retry mechanism as of now. Although I just saw their road map for 2.0 version, they might have a retry mechanism then. Therefore as of now when comparing Android Volley vs Retrofit, Retrofit loses this one.
+
+4) Caching
+Android Volley library has a very elaborate caching mechanism. This is one of the best features of volley. When a request is made through volley first it is checked in the cache. If an appropriate response is present in cache then it is parsed and returned directly to main thread, else a network request is made. This whole functionality can be customized, to support your requirements. If you wish to learn more about it please go through this document.
+
+Retrofit on the hand, does not support caching. Although it can implement RFC 2616 caching which is the spec for HTTP caching, through the OkHttpClient. As stated in this document. Therefore when comparing caching between Android Volley and Retrofit, Volley takes this one too.
+
+5) Loading Images
+Volley library has a special type of request to get images from network called ImageRequest. When this type of request is made, response is captured as a bitmap. Also it supports the resizing of returned image in the worker thread itself, which saves a lot of coding. Volley also has a NetworkImageView class which can be used with ImageLoader class, to automatically load images, whenever the NetworkImageView appears. Read this tutorial for more information about it.
+
+As of now Retrofit does not support the loading of images, the way they are loaded in Volley. But it can be combined with OkHttpClient to support the loading of images. Hence volley takes this one too.
+
+6) Code Complexity
+Both the libraries Android Volley and Retrofit are very easy to implement. If you compare them with primitive ways of accessing a web API, both of them would come out as a winner as they can phenomenally reduce your code base. But in my opinion when you compare the Android Volley vs Retrofit, the later one- Retrofit wins this one. As there is not much to customize in Retrofit. Its a simple yet powerful library. Volley on the other hand is highly customizable and has a greater code complexity.
+
+
+
+7)  Volley may be a little complex but it offers much more features than Retrofit. Volley not only supports caching of requests but can also load images automatically. But one of the best things about Retrofit is that it supports automatic parsing of responses, to their respective data types. And its light too. 

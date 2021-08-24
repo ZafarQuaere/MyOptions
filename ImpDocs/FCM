@@ -1,0 +1,19 @@
+Firebase Cloud Messaging
+
+Firebase supports 3 types of notification :
+1) Notification msg
+2) Data msg
+3) Msg with both Notification and data payload.
+
+There are 2 conditions for these notification
+i) When application is in background.
+ii) When application is in foreground.
+
+Background: App receive notification payload in notification tray, and handle the data payload when user taps on notification.
+
+ForeGround : App receives the notification msg and payloads.
+
+
+Basically two services are used :
+1) FirebaseInstanceIdService and (onTokenReferesh()).
+2) FirebaseMessagingService. (onMessageReceived()).
