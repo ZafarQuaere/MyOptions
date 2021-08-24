@@ -1,0 +1,29 @@
+Scope functions in Kotlin (L-A-R-W-A)
+
+1) let {} :->
+2) apply{}
+3) run {} :->
+4) with{}
+5) also {}
+
+run{} -> run is a combination of let and with as it prevents from NPE and use this object for manipulation
+    returns : lambda
+    Context : this
+with{} ->
+    returns : lambda
+    Context : this
+let{} ->
+    returns : lambda
+    Context : this
+apply{} ->
+    returns : Context
+    Context : this
+also{} ->
+    returns: Context
+    Context : this
+
+with{} -> if you want to operate on NON-NUllable object
+let{} -> if you want to execute lambda expression on nullable object and want to avoid NPE
+run{} -> if you want to execute lambda expression on nullable object and want to avoid NPE, it is a combination of let and with as it prevents from NPE and execute lambda expression on nullable object.
+apply{} -> if you want to initialize and configure an object.
+also{}-> if you want to do some additional object configuration or operation.

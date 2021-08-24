@@ -1,1 +1,19 @@
 // Have to add all the question answers asked from Kotlin.
+1) Coroutines
+2) Memory leaks and how to protect and detect.
+3) Unit Testing
+4) ANR, how to detect and protect.
+
+
+Kotlin Collections:
+
+filter:- it filter out desired elements from collections.
+map:-> perform operations, modify elements
+
+Predicates or Condition : that returns TRUE or FALSE.
+1) all: do all elements satisfy the predicates conditions
+2) any: do any elements ....
+3) count: total elements that satisfy the predicates.
+4) find: returns the FIRST element that satisfy predicates.
+
+

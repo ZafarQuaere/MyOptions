@@ -1,24 +1,44 @@
 package com.example.kotlin.coroutines
 
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
-fun main(args: Array<String>) = runBlocking{
-   /* launch {
-        delay(1000)
-        println("World !")
+fun main(args: Array<String>) = runBlocking {
+
+    val myVal: Int by lazy { 10 }
+
+    GlobalScope.launch {
+
+        println("Thread name : ${Thread.currentThread().name}")
+
+        val job: Job = launch(Dispatchers.Unconfined) {
+            delay(1000)
+            println("Kotlin !")
+            println("Thread name : ${Thread.currentThread().name}")
+        }
+        print("Hello ")
+        job.join()
+        println("Job object finish")
+
+        val deferred: Deferred<String> = async (Dispatchers.Default){
+            delay(1000)
+            "Zafar"
+//       5
+        }
+
+        val str = deferred.await()
+        println("Return of async $str")
     }
-    print("Hello ")
-    delay(2000)
-*/
-    val job = launch {
-        delay(1000)
-        println("Kotlin !")
-    }
-    print("Hello ")
-    job.join()
+    checkAsync()
 }
+
+suspend fun checkAsync() {
+    val defObj: Deferred<String> = GlobalScope.async {
+        print("GlobalScope.async")
+        delay(1000)
+        "Zafar"
+    }
+}
+
 
 /*
 runBlocking: This function creates a coroutine and blocks the current Thread until the coroutine

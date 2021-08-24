@@ -109,7 +109,6 @@ import java.util.Random;
  */
 public class MainActivity extends BaseActivity implements Communicator {
 
-
     AppDialogLoader loader = null;
     OTTextView txt_nav_changecountry, txt_nav_heading_buyflightpass, txt_nav_upgrade, txt_nav_flightpass, txt_nav_payless,
             txt_nav_emptyseat, txt_nav_preferredseat, txt_nav_extrabaggage, txt_nav_extrabag_sub, txt_nav_loungeaccess,
@@ -255,6 +254,12 @@ public class MainActivity extends BaseActivity implements Communicator {
 
 
     }
+
+    @Override
+    public Object onRetainCustomNonConfigurationInstance() {
+        return super.onRetainCustomNonConfigurationInstance();
+    }
+
     private void moveToSegSelect()
     {
         Utils.moveToFragment(this, new SegSelectFlightFragment(), null, 0);
