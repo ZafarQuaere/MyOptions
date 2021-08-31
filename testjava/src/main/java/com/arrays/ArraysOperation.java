@@ -12,7 +12,7 @@ public class ArraysOperation {
 //        findMinMax();
 //        compareArrayFindIndexOfDiffElement();
         findDuplicateElement();
-        remove2fromElement();
+//        remove2fromElement();
     }
 
     private static void remove2fromElement() {
