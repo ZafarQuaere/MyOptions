@@ -61,12 +61,12 @@ REST :
 1) Describe set of architectural principle by which data can be transmitted over
    standardize interface such as HTTP.
 2) REST is always going to be faster, coz it is much more lightweight and can be
-   implemented using almost any tool,leading to lower bandwith and shorter learning curve.
+   implemented using almost any tool,leading to lower bandwidth and shorter learning curve.
 3) In REST the clients have to know what to send and what to expect.
 4) If the Api is simple and existing calls are not likely to change,then REST is fine.
 
 ----------------------------------------------------------------------------------------------
-Task : A task is collection of activities that user intract with while performing a certain job.
+Task : A task is collection of activities that user interact with while performing a certain job.
 OR : A task is collection of apps that user traverse while performing some job.
 Ex : while sending msg, he starts with msging application and may move to gallery or camera to attach
 	pictures to send.=

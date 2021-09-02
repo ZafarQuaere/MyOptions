@@ -1,5 +1,14 @@
 package com.example.kotlin.functions.inlineFun
 
+/*
+Inline functions :  when we declare the function as inline compiler copies the function at call side avoiding creating
+the new function object
+When using inline function you are not allowed to keep function as a parameter or pass it  or a diff function
+To decrease the memory allocation caused by lambda expressions use the inline function
+
+Make sure to use it small functions that they take lambda as parameter
+If want to have the reference to the lambda function or pass it to other function as parameter use no-inline keyword
+ */
 fun <T> time(body : () -> T): Pair<() -> T, Long> {
     val startTime = System.nanoTime()
     val v = body;

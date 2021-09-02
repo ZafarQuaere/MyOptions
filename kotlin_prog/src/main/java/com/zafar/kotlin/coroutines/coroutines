@@ -40,9 +40,6 @@ There are two functions in Kotlin to start the coroutines which are as follows:
 
 launch{}
 async{}
-Launch vs Async in Kotlin Coroutines
-The difference is that the launch{} does not return anything and the async{}returns an instance of Deferred<T>, which has an await()function
-that returns the result of the coroutine like we have future in Java in which we do future.get() to the get the result.
 
 launch --> runs in the local scope, if we press back button from B activity then associated coroutine of B activity also gets destroyed.
 GlobalScope.launch -->are top level coroutines and can survive the entire life of the application.
@@ -57,7 +54,7 @@ finishes, returning its result value (Unit in this case).
 
 launch: This function creates a new coroutine without blocking the current Thread and returns Job (ignored here).
 
-delay: This function is a suspending (more on this later) function that delays the current coroutine without blocking the current thread.
+delay: This function is a suspending function that delays the current coroutine without blocking the current thread.
 
 suspend: A suspending function is a function that may suspend the execution of a coroutine,
 without blocking the current Thread; therefore a suspending function must be called inside a coroutine—it can't be invoked from normal code.
