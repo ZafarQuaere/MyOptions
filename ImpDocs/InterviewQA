@@ -11,15 +11,34 @@ to your elements, and then flatten it.
 Stream.map --> only applies a function to the stream without flattening the stream.
 
 To understand what flattening a stream consists in, consider a structure like [ [1,2,3],[4,5,6],[7,8,9] ]
-which has "two levels". Flattening this means transforming it in a "one level" structure : [ 1,2,3,4,5,6,7,8,9 ].]
+which has "two levels". Flattening this means transforming it in a "one level" structure : [ 1,2,3,4,5,6,7,8,9 ].
 
 Without flat map => [1,2],[1,1] => [[1,2],[1,1]] Here two lists are placed inside a list, so the output will be list containing lists
 
 With flat map => [1,2],[1,1] => [1,2,1,1] Here two lists are flattened and only the values are placed in list, so the output will be list containing only elements
 
 Basically it merges all the objects in to one
+---------------------------------------------------------------
+subscribeOn() and observeOn() :
 
-subscribeOn() and observeOn()
+subscribeOn affects upstream operators (operators above the subscribeOn)
+observeOn affects downstream operators (operators below the observeOn)
+
+If only subscribeOn is specified, all operators will be be executed on that thread
+If only observeOn is specified, all operators will be executed on the current thread and only operators
+below the observeOn will be switched to thread specified by the observeOn
+for instance:
+Observable.just("long", "longer", "longest")
+    .subscribeOn(Schedulers.io())
+    .map(String::length)
+    .observeOn(Schedulers.computation())
+    .filter { it > 6 }
+    .subscribe { length -> println("item length $length") }
+}
+
+Data emission just and the map operator will be executed on the io scheduler as directed by the upstream operator subscribeOn.
+filter will be executed on the computation scheduler as directed by the downstream operator observeOn.
+
 -----------------------------
 https://proandroiddev.com/understanding-rxjava-subscribeon-and-observeon-744b0c6a41ea
 

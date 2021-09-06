@@ -20,7 +20,7 @@ coroutine context.
 scope
 coroutine dispatcher
 coroutine is single thread or multi thread
-how suspend is different from nornmal functions.
+how suspend is different from normal functions.
 cancellation of coroutines
 
 
