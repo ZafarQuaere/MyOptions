@@ -19,7 +19,6 @@ public class StringBreak {
         steps = label.split("##");
 
         for (int i = 0; i < steps.length; i++) {
-
             stepss.append("\n• ").append(steps[i]);
             if (i == 1) {
                 System.out.print(stepss.toString());

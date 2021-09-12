@@ -35,50 +35,37 @@ public class TestJava {
         out[1] = 0;
 
 
-        if(out != null)
-        {
-            if(out[0] == 1 && getISO().equals("i"))
-            {
+        if (out != null) {
+            if (out[0] == 1 && getISO().equals("i")) {
                 System.out.println("showing i:)");
-            }
-            else if(out[1] == 1 && getISO().equals("u"))
-            {
+            } else if (out[1] == 1 && getISO().equals("u")) {
                 System.out.println("showing u:)");
-            }
-            else
-            {
+            } else {
                 System.out.println("hiding :)");
             }
-        }
-        else
-        {
+        } else {
             System.out.println("showing");
         }
 
 
-
     }
 
-    public static String getISO()
-    {
+    public static String getISO() {
         return "i";
     }
 
-    public static StringBuilder readFromAssets()
-    {
+    public static StringBuilder readFromAssets() {
         BufferedReader reader = null;
-        StringBuilder builder =  new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
-        try
-        {
+        try {
             URL url = new URL("http://stackoverflow.com/questions/15050499/android-custom-view-redraw");
             //URL url = new URL("http://stackoverflow.com/questions/24852219/android-buildscript-repositories-jcenter-vs-mavencentral");
 
             reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
             // do reading, usually loop until end of file reading
             String mLine;
-            while ((mLine = reader.readLine()) != null)
-            {
+            while ((mLine = reader.readLine()) != null) {
                 //System.out.println(mLine);
                 builder.append(mLine);
             }
@@ -104,12 +91,11 @@ public class TestJava {
         if (password.length() > 5 && password.length() < 20) {
             if (Character.isDigit(password.charAt(0)) || Character.isLetter(password.charAt(0))) {
                 if (Character.isDigit(password.charAt(pos_lastLetter)) || Character.isLetter(password.charAt(pos_lastLetter))) {
-                    for(int i =0 ; i< password.length(); i++)
-                    {
-                        if(Character.isLetter(password.charAt(i)) || Character.isDigit(password.charAt(i)) || password.charAt(i) == '@' || password.charAt(i) == '.' || password.charAt(i) == '_' || password.charAt(i) == '-'){
+                    for (int i = 0; i < password.length(); i++) {
+                        if (Character.isLetter(password.charAt(i)) || Character.isDigit(password.charAt(i)) || password.charAt(i) == '@' || password.charAt(i) == '.' || password.charAt(i) == '_' || password.charAt(i) == '-') {
 
-                        }else{
-                           return false;
+                        } else {
+                            return false;
                         }
                     }
                     return true;
@@ -128,22 +114,17 @@ public class TestJava {
     }
 
 
-
-
-    private static String getHTML(String txtSuggestion, String txtEntered)
-    {
+    private static String getHTML(String txtSuggestion, String txtEntered) {
 
         StringBuilder finalText = new StringBuilder(txtSuggestion);
         try {
             String[] split = txtSuggestion.toLowerCase().split(txtEntered.toLowerCase());
             int count = 0;
             System.out.println(split.length - 1);
-            for (int index = 0; index < split.length; index++)
-            {
+            for (int index = 0; index < split.length; index++) {
                 int indexOf = txtSuggestion.toLowerCase().indexOf(txtEntered.toLowerCase(), count);
                 System.out.println("indexOf : " + indexOf);
-                if(indexOf == -1)
-                {
+                if (indexOf == -1) {
                     System.out.println("getHTML >> " + txtSuggestion + "/" + txtEntered + " > " + finalText.toString());
                     return finalText.toString();
                 }
@@ -151,22 +132,19 @@ public class TestJava {
                 System.out.println("temp : " + temp);
                 String re = "<font color='red'>" + temp + "</font>";
                 System.out.println(finalText.toString());
-                finalText.replace(index == 0 ? indexOf : indexOf + re.length() - 2, indexOf + txtEntered.length() + + re.length() - 2, re);
+                finalText.replace(index == 0 ? indexOf : indexOf + re.length() - 2, indexOf + txtEntered.length() + +re.length() - 2, re);
 
                 System.out.println(finalText.toString());
-                if(index == 0)
-                {
-                   //return "";
+                if (index == 0) {
+                    //return "";
                 }
-
 
 
                 count = indexOf + txtEntered.length();
                 System.out.println("count: " + count);
 
             }
-        }catch (Exception e)
-        {
+        } catch (Exception e) {
             System.out.println("getHTML >> " + txtSuggestion + "/" + txtEntered + " > " + txtSuggestion);
             return txtSuggestion;
         }
@@ -174,8 +152,7 @@ public class TestJava {
         return finalText.toString();
     }
 
-    private static void testComparator()
-    {
+    private static void testComparator() {
         ArrayList<PriceData> list = new ArrayList<>();
 
         PriceData d1 = new PriceData();
@@ -207,18 +184,12 @@ public class TestJava {
 
         Collections.sort(list, new Comparator<PriceData>() {
             @Override
-            public int compare(PriceData o1, PriceData o2)
-            {
-                if(o1.getPrice() == o2.getPrice())
-                {
+            public int compare(PriceData o1, PriceData o2) {
+                if (o1.getPrice() == o2.getPrice()) {
                     return 0;
-                }
-                else if(o1.getPrice() > o2.getPrice())
-                {
+                } else if (o1.getPrice() > o2.getPrice()) {
                     return 1;
-                }
-                else
-                {
+                } else {
                     return -1;
                 }
 
@@ -238,7 +209,6 @@ public class TestJava {
 
             Calendar cal = Calendar.getInstance();
             cal.setTime(date);
-
             return String.format("%02d", (cal.get(Calendar.MONTH) + 1));
 
         } catch (ParseException e) {
@@ -247,15 +217,9 @@ public class TestJava {
         return "";
     }
 
-    public static void testSplit(String string)
-    {
+    public static void testSplit(String string) {
         String[] ary = string.split("\\$");
-
         System.out.println(ary[0]);
-
     }
-
-
-
 
 }

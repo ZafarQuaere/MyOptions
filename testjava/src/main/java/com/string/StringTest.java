@@ -74,7 +74,6 @@ public class StringTest
             }
 
         }
-
         return builder;
     }
 }
