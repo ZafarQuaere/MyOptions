@@ -1,9 +1,20 @@
+
+
 Sealed Class :
 https://android.jlelse.eu/kotlin-what-is-a-sealed-classe-1e535c416519
+It’s a kind of ADT(Algebraic Data Type), used for representing restricted class hierarchies, also allowing a datatype to be
+one of a predefined set of types.
 
-It’s a kind of ADT(Algebraic Data Type), used for representing restricted class hierarchies, also allowing a datatype to be one of a predefined set of types.
 
-In Kotlin context we can also use sealed classes combined with when expression. Allowing compiler to verify all branch statements, making the statement else unnecessary.
+Sealed classes have another distinct feature, their constructors are private by default. A sealed class is implicitly
+abstract and hence it cannot be instantiated. Like abstract classes, sealed classes allow us to represent hierarchies,
+child classes can be of any type, data class, object class, any regular class, or even another sealed class. But unlike abstract
+classes, we need to define these hierarchies in the same file or as nested classes.
+
+
+
+In Kotlin context we can also use sealed classes combined with when expression. Allowing compiler to verify all branch statements,
+making the statement else unnecessary.
 
 An example of that:
 sealed class Intention {

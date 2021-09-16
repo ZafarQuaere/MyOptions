@@ -58,7 +58,7 @@ Types of RxObserver
 Observable
 backpressure strategy
 activity retrain instance
-solid principle  (Single Responsibility, open/close, liskov substitution, interface, segregation, dependency inversion)
+solid principle  (Single Responsibility, open/close, liskov substitution, interface segregation, dependency inversion)
 design patterns
 
 Others

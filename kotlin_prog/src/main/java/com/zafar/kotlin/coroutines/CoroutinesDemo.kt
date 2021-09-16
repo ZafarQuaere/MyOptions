@@ -45,9 +45,12 @@ runBlocking: This function creates a coroutine and blocks the current Thread unt
 finishes, returning its result value (Unit in this case).
 
 launch: This function creates a new coroutine without blocking the current Thread and
-returns Job (ignored here).
+returns Job.
 
-delay: This function is a suspending (more on this later) function that delays the current
+async: This function creates a new coroutine without blocking the current Thread and
+returns Deferred<T> object.
+
+delay: This function is a suspending function that delays the current
 coroutine without blocking the current thread.
 
 suspend: A suspending function is a function that may suspend the execution of a coroutine,
