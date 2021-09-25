@@ -1,4 +1,4 @@
-Scope functions in Kotlin (L-A-R-W-A)
+Scope functions in Kotlin (L-A-R-W-A) Let's run with apply also.
 
 1) let {} :->
 2) apply{}
@@ -27,3 +27,28 @@ let{} -> if you want to execute lambda expression on nullable object and want to
 run{} -> if you want to execute lambda expression on nullable object and want to avoid NPE, it is a combination of let and with as it prevents from NPE and execute lambda expression on nullable object.
 apply{} -> if you want to initialize and configure an object.
 also{}-> if you want to do some additional object configuration or operation.
+
+There are mainly two differences among these functions:
+
+Way of referring to a context object (i.e. using either ‘this’ or ‘it’ keyword)
+return value (i.e. returns either ‘context object’ or ‘lambda result’)
+
+
+Function        Object Reference        Return Value
+let             it                      Lambda result
+run             this                    Lambda result
+with            this                    Lambda result
+
+apply           this                    Context object
+also            it                      Context object
+
+Summary
+Scope functions make code more readable, clear and concise.
+Object reference – ‘this’ and ‘it’.
+Return value – context object and lambda result.
+
+let   : working with nullable objects to avoid NullPointerException.
+run   : operate on nullable object, executing lambda expressions.
+with  : operating on non-null objects.
+apply : changing object configuration.
+also  : adding additional operations.

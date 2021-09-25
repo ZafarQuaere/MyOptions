@@ -3,7 +3,6 @@ package com.zafar.kotlin.lazy
 import kotlin.properties.Delegates
 
 fun main() {
-    lateinit var lateVar : Int
     val i by lazy {
         println("inside lazy")
         1

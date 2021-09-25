@@ -4,10 +4,10 @@ Refer:->  http://blog.nimbledroid.com/2016/05/23/memory-leaks.html
 What are the exceptions you gone through in android ?
 1.) InflateException : This exception is thrown When an error conditions are occurred.
 2.) Surface.OutOfResourceException: This exception is thrown When a surface is not created or resized.
-3.) WindowManager.BadTokenExcetion: This exception is thrown at the time of trying to add view an invalid WindowManager.LayoutParamstoken.
+3.) WindowManager.BadTokenException: This exception is thrown at the time of trying to add view an invalid WindowManager.LayoutParamstoken.
 4.) ActivityNotFoundException
 5.) WindowManager.InvalidDisplayException
-6..) ArithmeticExceptoin
+6..) ArithmeticException
 7.) ArrayIndexOutOfBoundException
 ----------------------------------------------------------------
 What are the core building blocks of android?
@@ -21,7 +21,7 @@ o	Fragment etc.
 
 ------------------------------
 1) Explain Android Activity lifecycle ?
-2) Explain Android Fragment lifecyle ?
+2) Explain Android Fragment lifecycle ?
 3) Why Fragments are preferred more than activity ?
 4) What are Android App Components ?
 5) Difference btw Jcenter and MavenCentral Repositories ?

@@ -31,7 +31,7 @@ Data Structure consist of following classes and interfaces.
 
 1) Enumeration --> retrieve successive data by using nextElements()
 2) BitSet --> It create special type of Array which holds bit values. This array size can increase as per needed.
-3) Vector --> It is similar to Traditional Array. but the size of Vector can be automatically shrink and expand if neccessary.
+3) Vector --> It is similar to Traditional Array. but the size of Vector can be automatically shrink and expand if necessary.
 4) Stack --> It works on the theorem of Last in first Out (Lifo) process.
 5) Dictionary --> It is an abstract class, It is defined a data structure for mapping key to values.
 6) Hashtable --> It provides the way of organizing data based on some key structure.
