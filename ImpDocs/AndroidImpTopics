@@ -7,7 +7,7 @@ What are the exceptions you gone through in android ?
 3.) WindowManager.BadTokenException: This exception is thrown at the time of trying to add view an invalid WindowManager.LayoutParamstoken.
 4.) ActivityNotFoundException
 5.) WindowManager.InvalidDisplayException
-6..) ArithmeticException
+6.) ArithmeticException
 7.) ArrayIndexOutOfBoundException
 ----------------------------------------------------------------
 What are the core building blocks of android?

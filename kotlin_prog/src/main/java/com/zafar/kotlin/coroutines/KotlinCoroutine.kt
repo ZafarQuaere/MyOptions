@@ -26,7 +26,6 @@ fun main() {
         delay(2000) // delay for 2 seconds to keep jvm alive
 
     }
-
 //    mySuspendFun(2000)
 }
 

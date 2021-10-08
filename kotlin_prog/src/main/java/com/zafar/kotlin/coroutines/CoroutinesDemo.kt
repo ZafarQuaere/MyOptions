@@ -6,7 +6,7 @@ fun main(args: Array<String>) = runBlocking {
 
     val myVal: Int by lazy { 10 }
 
-    GlobalScope.launch {
+    GlobalScope.launch{
 
         println("Thread name : ${Thread.currentThread().name}")
 
@@ -37,6 +37,8 @@ suspend fun checkAsync() {
         delay(1000)
         "Zafar"
     }
+
+    println("RunBlocking: ${defObj.await()}")
 }
 
 

@@ -12,22 +12,21 @@ child classes can be of any type, data class, object class, any regular class, o
 classes, we need to define these hierarchies in the same file or as nested classes.
 
 
+The concept of Sealed classes is pretty similar to that of enums, sealed classes represent restricted class hierarchies,
+i.e, our class can have a specific number of subclasses
 
-In Kotlin context we can also use sealed classes combined with when expression. Allowing compiler to verify all branch statements,
-making the statement else unnecessary.
+Unlike the Enum class, the sealed class can have states, as we can have several objects of the same class.
 
-An example of that:
-sealed class Intention {
-  class Refresh : Intention() 
-  class LoadMore : Intention()
+
+In Kotlin context we can also use sealed classes combined with when expression.
+
+sealed class NetworkResult<T>(val data: T? = null, val message: String? = null) {
+
+    class Success<T>(data: T) : NetworkResult<T>(data)
+    class Error<T>(message: String, data: T? = null) : NetworkResult<T>(data, message)
+    class Loading<T> : NetworkResult<T>()
 }
-fun main(args: Array<String>) {
-  val intention: Intention = Intention.LoadMore()
-  val output = when (intention) {
-    is Intention.Refresh -> "refresh"
-    is Intention.LoadMore -> "load more"
-  }
-  println(output)
-}
+
+
 Maybe you’re asking yourself: “Does the sealed classes have the same behavior as enum classes?” The answer is almost yes.
 

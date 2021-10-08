@@ -1,0 +1,57 @@
+map and flatmap are intermediate stream operations.
+map returns list of list and flatmap returns list of values.
+
+ switchMap
+The switchMap operator is similar to flatMap, except that it retains the result of only the latest observable, discarding the previous ones.
+
+RxJava Schedulers : https://proandroiddev.com/understanding-rxjava-subscribeon-and-observeon-744b0c6a41ea
+
+Threading in RxJava is done with help of Schedulers. Scheduler can be thought of as a thread pool managing 1 or more threads.
+Whenever a Scheduler needs to execute a task, it will take a thread from its pool and run the task in that thread.
+
+Scheduler types:
+1) Schedulers.io()
+2) Schedulers.computation
+3) Schedulers.newThread()
+4) Schedulers.from(Executor executor)
+5) AndroidSchedulers.mainThread()
+
+Let’s summarize available Scheduler types and their common uses:
+
+Schedulers.io() is backed by an unbounded thread pool. It is used for non CPU-intensive I/O type work including interaction with
+                the file system, performing network calls, database interactions, etc. This thread pool is intended to be used for asynchronously performing blocking IO.
+
+Schedulers.computation() is backed by a bounded thread pool with size up to the number of available processors. It is used for computational
+                or CPU-intensive work such as resizing images, processing large data sets, etc. Be careful: when you allocate more
+                computation threads than available cores, performance will degrade due to context switching and thread creation overhead as threads vie for processors’ time.
+
+Schedulers.newThread() creates a new thread for each unit of work scheduled. This scheduler is expensive as new thread is spawned every
+            time and no reuse happens.
+
+Schedulers.from(Executor executor) creates and returns a custom scheduler backed by the specified executor. To limit the number of simultaneous
+                threads in the thread pool, use Scheduler.from(Executors.newFixedThreadPool(n)). This guarantees that if a task is scheduled when all threads are occupied, it will be queued. The threads in the pool will exist until it is explicitly shutdown.
+
+Main thread or AndroidSchedulers.mainThread() is provided by the RxAndroid extension library to RxJava. Main thread (also known as UI thread)
+            is where user interaction happens. Care should be taken not to overload this thread to prevent janky non-responsive UI or, worse, Application Not Responding” (ANR) dialog.
+
+Schedulers.single() is new in RxJava 2. This scheduler is backed by a single thread executing tasks sequentially in the order requested.
+
+Schedulers.trampoline() executes tasks in a FIFO (First In, First Out) manner by one of the participating worker threads. It’s often used when implementing
+            recursion to avoid growing the call stack.
+
+--------------------------------------------------------------
+subscribeOn and observeOn
+---------------------------
+We can specify a thread to execute any operator by using subscribeOn and/or observeOn.
+subscribeOn affects upstream operators (operators above the subscribeOn)
+observeOn affects downstream operators (operators below the observeOn)
+If only subscribeOn is specified, all operators will be be executed on that thread
+If only observeOn is specified, all operators will be executed on the current thread and only operators below the observeOn will be switched to thread specified by the observeOn
+
+subscribeOn() operator tells the source Observable which thread to emit and push items on all the way down to Observer (hence, it affects both upstream and downstream operators).
+            It does not matter where you put the subscribeOn() in your Observable chain of operators.
+
+subscribeOn() specifies a Scheduler (thread pool) where the work will be performed after subscription is made in subscribe().
+
+The results of transformation are received on the same thread as the thread that did the actual work. This can be changed using observeOn()
+    as we’ll see soon.

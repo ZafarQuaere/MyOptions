@@ -1,0 +1,99 @@
+1) Apply signature-based permissions
+When sharing data between two apps that you control or own, use signature-based permissions. These permissions don't require
+user confirmation and instead check that the apps accessing the data are signed using the same signing key. Therefore, these
+permissions offer a more streamlined, secure user experience.
+
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapp">
+    <permission android:name="my_custom_permission_name"
+                android:protectionLevel="signature" />
+
+2) Disallow access to your app's content providers
+         <provider
+              android:name="android.support.v4.content.FileProvider"
+              android:authorities="com.example.myapp.fileprovider"
+              ...
+              android:exported="false"> // it will not be visible to other application
+              <!-- Place child elements of <provider> here. -->
+         </provider>
+
+3) Ask for credentials before showing sensitive information
+    When requesting credentials from users so that they can access sensitive information or premium content in your app,
+    ask for either a PIN/password/pattern or a biometric credential, such as using face recognition or fingerprint recognition.
+
+4) Apply network security measures
+
+    a) Use SSL traffic
+       If your app communicates with a web server that has a certificate issued by a well-known, trusted CA, the HTTPS request
+       is very simple:
+
+       val url = URL("https://www.google.com")
+       val urlConnection = url.openConnection() as HttpsURLConnection
+       urlConnection.connect()
+       urlConnection.inputStream.use {
+           ...
+       }
+
+    b) Add a network security configuration
+        If your app uses new or custom CAs, you can declare your network's security settings in a configuration file. This process allows you
+        to create the configuration without modifying any app code.
+
+        To add a network security configuration file to your app, follow these steps:
+
+        Declare the configuration in your app's manifest:
+        <manifest ... >
+            <application
+                android:networkSecurityConfig="@xml/network_security_config"
+                ... >
+                <!-- Place child elements of <application> element here. -->
+            </application>
+        </manifest>
+
+        Add an XML resource file, located at res/xml/network_security_config.xml.
+
+        Specify that all traffic to particular domains should use HTTPS by disabling clear-text:
+        <network-security-config>
+            <domain-config cleartextTrafficPermitted="false">
+                <domain includeSubdomains="true">secure.example.com</domain>
+                ...
+            </domain-config>
+        </network-security-config>
+
+        During the development process, you can use the <debug-overrides> element to expliticly allow user-installed certificates. This element
+        overrides your app's security-critical options during debugging and testing without affecting the app's release configuration.
+        The following snippet shows how to define this element in your app's network security configuration XML file:
+        <network-security-config>
+            <debug-overrides>
+                <trust-anchors>
+                    <certificates src="user" />
+                </trust-anchors>
+            </debug-overrides>
+        </network-security-config>
+
+
+ for more info check here: https://developer.android.com/topic/security/best-practices#kotlin
+ https://quickbirdstudios.com/blog/mobile-app-security-best-practices-android-ios/
+
+
+Some of the other points:
+# Only collect data you actually need
+# Use higher levels APIs provided by the OS if possible
+# Secure your storage on less secure OS-versions manually
+# Store very sensitive information like credentials and certificates in the Keychain / Keystore
+# Don’t build your own encryption mechanisms
+# Use HTTPS for any kind of communication between client and server
+# Avoid 3rd party SDKs if you cannot trust them 100%
+# Consult a second-party to validate your security concept
+
+Types of encryption in Android
+the seven most popular encryption methods for Android:
+1) symmetric encryption
+2) asymmetric encryption
+3) hashing
+4) digital signature
+5) end-to-end encryption
+6) elliptic-curve cryptography
+7) HMAC
+
+for more info check: https://www.apriorit.com/dev-blog/612-mobile-cybersecurity-encryption-in-android
