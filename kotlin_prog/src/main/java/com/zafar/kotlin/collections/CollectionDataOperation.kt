@@ -1,4 +1,4 @@
-package com.example.kotlin.collections
+package com.zafar.kotlin.collections
 
 import kotlin.math.roundToInt
 import kotlin.math.sqrt

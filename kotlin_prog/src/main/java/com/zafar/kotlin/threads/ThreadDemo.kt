@@ -1,4 +1,4 @@
-package threads
+package com.zafar.kotlin.threads
 
 fun main(args: Array<String>) {
     val t1 = MyThread()

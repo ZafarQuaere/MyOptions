@@ -15,6 +15,7 @@ fun evaluate(sealedType: SealedDemo): Float = when (sealedType) {
     is Sum -> evaluate(sealedType.value1) + evaluate(sealedType.value2)
     is Sub -> evaluate(sealedType.value2) - evaluate(sealedType.value1)
     NumVal -> Float.NaN
+    else -> 1f
 }
 
 

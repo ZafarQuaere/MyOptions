@@ -1,4 +1,4 @@
-package com.example.kotlin.variables
+package com.zafar.kotlin.variables
 
 fun main(args: Array<String>){
     val a: Int = 10000
@@ -8,12 +8,12 @@ fun main(args: Array<String>){
     val s: Short = 10
     val b: Byte = 1
 
-    println("Your Int Value is "+a);
-    println("Your Double  Value is "+d);
-    println("Your Float Value is "+f);
-    println("Your Long Value is "+l);
+    println("Your Int Value is $a");
+    println("Your Double  Value is $d");
+    println("Your Float Value is $f");
+    println("Your Long Value is $l");
     println("Your Short Value is $s");
-    println("Your Byte Value is "+b);
+    println("Your Byte Value is $b");
 
     println("\n\nBiggest Int is "+Int.MAX_VALUE)
     println("Lowest Int is "+Int.MIN_VALUE)

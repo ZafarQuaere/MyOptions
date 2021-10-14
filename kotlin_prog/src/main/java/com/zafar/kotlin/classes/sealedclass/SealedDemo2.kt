@@ -10,6 +10,7 @@ fun main(args : Array<String>){
     val output = when (sealedDemo2){
         is SealedDemo2.Refresh -> "Refresh"
         is SealedDemo2.LoadMore -> "Load More"
+        else -> null
     }
     println("Output value : ${output}")
 }

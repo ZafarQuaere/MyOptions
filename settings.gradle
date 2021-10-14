@@ -1,2 +1,3 @@
 include ':app', ':testjava'
 include ':kotlin_prog'
+include ':assignments'

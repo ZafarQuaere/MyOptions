@@ -1,5 +1,7 @@
 package com.example.kotlin.functionalCollections
 
+
+
 val numbers: List<Int> = listOf(1, 2, 3, 4, 5)
 
 fun main(args: Array<String>) {

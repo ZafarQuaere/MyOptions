@@ -60,7 +60,7 @@ permissions offer a more streamlined, secure user experience.
             </domain-config>
         </network-security-config>
 
-        During the development process, you can use the <debug-overrides> element to expliticly allow user-installed certificates. This element
+        During the development process, you can use the <debug-overrides> element to explicitly allow user-installed certificates. This element
         overrides your app's security-critical options during debugging and testing without affecting the app's release configuration.
         The following snippet shows how to define this element in your app's network security configuration XML file:
         <network-security-config>
