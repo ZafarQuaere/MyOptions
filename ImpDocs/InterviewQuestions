@@ -114,3 +114,5 @@ state hence when a back button is pressed onCreateView is not called for the exi
 
 In terms of fragment's life cycle events  onPause, onResume, onCreateView and other life cycle events will be invoked in case of replace
 but they wont be invoked in case of add.
+
+for more info plz check here : https://stackoverflow.com/questions/18634207/difference-between-add-replace-and-addtobackstack
