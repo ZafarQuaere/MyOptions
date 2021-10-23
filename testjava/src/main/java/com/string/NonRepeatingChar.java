@@ -33,7 +33,7 @@ public class NonRepeatingChar {
         //find index of first non repeating character by comparing chars.
         findCharCount(str);
         int index = -1, i;
-        for ( i = 0; i < str.length(); i++) {
+        for (i = 0; i < str.length(); i++) {
             if (count[str.charAt(i)] == 1 ){
                 index = i;
                 break;

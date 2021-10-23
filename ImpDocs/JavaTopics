@@ -52,3 +52,16 @@ Common Example of Linear DS are :
 2) Stack
 3) Queues
 4) Linked List.
+
+1) Explain Oops concept
+2) How is abstract class is different from Interface.
+3) What are access modifiers in Java. Difference between public and protected.
+4) How to create a Singleton class
+5) What is difference between int I = 10 and Integer i = new Integer(10)
+6) Difference among String, StringBuilder and StringBuffer.
+7) Why and where we use synchronise keyword.
+8) What is transient modifier.
+9) What are final, finally and finalize
+10) What does static means in Java.
+
+Collections
