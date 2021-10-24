@@ -67,6 +67,5 @@ fun reverseNumber(mVal: Int): Int {
         reverse += n % 10
         n /= 10
     }
-
     return reverse
 }
