@@ -88,8 +88,8 @@ Some of the other points:
 
 Types of encryption in Android
 the seven most popular encryption methods for Android:
-1) symmetric encryption
-2) asymmetric encryption
+1) symmetric encryption (based on AES(Advance encryption standard))
+2) asymmetric encryption (based on RSA-2048)
 3) hashing
 4) digital signature
 5) end-to-end encryption
@@ -97,3 +97,18 @@ the seven most popular encryption methods for Android:
 7) HMAC
 
 for more info check: https://www.apriorit.com/dev-blog/612-mobile-cybersecurity-encryption-in-android
+
+Symmetric encryption
+Symmetric encryption is based on the Advanced Encryption Standard (AES). The AES algorithm is a symmetric
+block cipher that can encrypt (encipher) and decrypt (decipher) information. It uses only one secret key
+to encrypt plain data, and uses 128-, 192-, and 256-bit keys to process 128-bit data locks.
+This algorithm receives data and encrypts it using a password. The same password is used to decipher the
+data with a decryption algorithm (or the same encryption algorithm, in some cases).
+
+
+Asymmetric encryption
+Asymmetric encryption, or public key encryption, is a type of encryption algorithm that uses a pair of keys:
+open (or public) and closed (or private). The public key is commonly known to everyone in the network,
+while the private key is stored on the server or on other key owner’s side and must be kept secret.
+Asymmetric encryption is often based on the RSA-2048 algorithm. RSA keys are currently recommended to
+be at least 2048 bits long.

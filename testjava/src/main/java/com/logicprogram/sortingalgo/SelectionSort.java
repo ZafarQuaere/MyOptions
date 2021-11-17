@@ -2,7 +2,6 @@ package com.logicprogram.sortingalgo;
 
 import java.util.Scanner;
 
-import static jdk.nashorn.internal.objects.NativeArray.sort;
 
 /**
  * Created by parasmani.sharma on 16/06/2017.

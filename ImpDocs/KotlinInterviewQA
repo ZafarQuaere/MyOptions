@@ -3,6 +3,7 @@
 2) Memory leaks and how to protect and detect.
 3) Unit Testing
 4) ANR, how to detect and protect.
+5) Scope functions (*)
 
 
 Kotlin Collections:
