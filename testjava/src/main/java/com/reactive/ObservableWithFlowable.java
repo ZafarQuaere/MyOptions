@@ -50,6 +50,7 @@ public class ObservableWithFlowable {
             @Override
             public void onNext(Integer integer) {
                 System.out.println("onNext(), "+integer);
+                delay(100);
                 if (counter.incrementAndGet()%5 == 0){
                     mSubscription.request(5);
                 }
@@ -65,9 +66,12 @@ public class ObservableWithFlowable {
                 System.out.println("onComplete(), ");
             }
         });
+        delay(10000);
+    }
 
+    private static void delay(long i) {
         try {
-            Thread.sleep(60000);
+            Thread.sleep(i);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -106,4 +106,11 @@ import java.util.Random;
             return r.nextInt((max - min) + 1) + min;
         }
 
+        public static void sleep(Long time){
+            try {
+                Thread.sleep(time);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
