@@ -1,0 +1,31 @@
+Service:
+It is one of the component of the Android.
+Here application either can perform a longer running task without the interaction of user
+or supply any functionality for other apps to use.
+
+Services can be started using Context.startService() and Context.bindService().
+
+Context.startService():-> When a long running operation runs in the background(User is not directly interacting with the application).
+						Context.startService() ask the system to schedule a work of service to be run until service or someone else
+						explicitly stop it.
+						
+Context.bindService():-> Using this an application exposes some of its functionality to other applications.
+						It allows long standing connection to be made to the service in order to interact with it.
+						
+Service Lifecycle:
+	Context.startService()--> onCreate(){if needed}--> onStartCommand() --> Context.stopService()/stopSelf().
+	
+For started Service there are two major mode of operations depending upon onStartCommand() return value.
+1) START_STICKY:	It is used for the services that are explicitly started and stopped as needed.
+2) START_NOT_STICKY  
+   or START_REDELIVER_INTENT: It is used for the services that should only remain running while processing any commmand sent to them.
+   
+   
+Context.bindService():-> It is used to obtain persistent connection to a service.
+Lifecycle
+Context.bindService() --> onCreate() --> onBind()// it doesn't call onStartCommand().
+
+-------------------------------------------------------------------------------------
+Handler,Looper,messageQueue.
+https://betterprogramming.pub/a-detailed-story-about-handler-thread-looper-message-queue-ac2cd9be0d78
+https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a

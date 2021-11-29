@@ -1,0 +1,13 @@
+WorkManager(WM):-> 
+::-> It is an API that is used to schedule reliable, asynchronous tasks that are expected
+   to run even if app exits or device restart.
+:-> It is suitable & recommended replacement of all previous Background scheduling APIs as GCMNetworkManager
+	FirebaseJobDispatcher etc.
+	
+WorkManager has number of other key benefits as belows:
+1) Work Constraints : example-- Run only when the device is on wifi, or idle,or when it has sufficient storage space etc.
+2) Robust Scheduling : It schedule work to run "one time" or "repeatedly" using flexible scheduling windows. 
+					   Schedule work is stored in internally managed sqlite DB and WM takes care of ensuring that this 
+					   work persistently and reschedule across the device reboot.
+3) Flexible Retry policy: Retry policy 
+4) Work Chaining.
