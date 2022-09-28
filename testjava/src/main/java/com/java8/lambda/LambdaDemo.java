@@ -11,13 +11,13 @@ public class LambdaDemo {
         //( paramlist ) -> { method body };
 
 
-        //Ordinary way to call interface
+        //Ordinary way to initiate interface
         LambdaMessage lambdaMessage = new LambdaMessage() {
             @Override
             public String message(String message) { return "HI"; }
         };
 
-        //Lambda way to call interface
+        //Lambda way to initiate interface
         LambdaMessage lm = message -> message+" Hi Stupid ";
         System.out.println(lm.message("Lambda bola!") );
 

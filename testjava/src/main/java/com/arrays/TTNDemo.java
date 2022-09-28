@@ -6,9 +6,9 @@ import java.util.Arrays;
 
 /*
 The girl keeps track of goals she scores in each game
-WAP
-
+Write a program for best and worst goal count of her.
  */
+
 public class TTNDemo {
    static int[] noOfGoals = {2,3,6,3,4,1,2};
    static int bestCount = 0; //

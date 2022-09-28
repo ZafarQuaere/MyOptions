@@ -25,6 +25,7 @@ public class LTV {
         };
         int theLandCount = findTheLandCount(gridArray);
         System.out.println(theLandCount);
+
     }
 
     private static int findTheLandCount(int[][] gridArray) {

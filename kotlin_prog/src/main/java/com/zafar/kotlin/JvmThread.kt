@@ -21,4 +21,11 @@ fun main(args: Array<String>) {
         }
     }
     executor.shutdown()
+
+    println(::add.invoke(5,3))
+    println(::add)
+}
+
+fun add(a:Int, b:Int): Int{
+    return a+b
 }

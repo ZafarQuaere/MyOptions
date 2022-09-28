@@ -48,9 +48,9 @@ Definition is not always an interesting part but it is vital. We should even che
 ● Presenter = A middle man which retrieves data from Model and show it in the View. It also process user action forwarded to it by the View.
 
 Important points of MVP are:
-    ●View can not access Model.
-    ●Presenter is tied to a single View. (One-to-One relationship)
-    ●View is completely dumb and passive (only retrieve user action and leave all other things for Presenter to handle).
+    ● View can not access Model.
+    ● Presenter is tied to a single View. (One-to-One relationship)
+    ● View is completely dumb and passive (only retrieve user action and leave all other things for Presenter to handle).
 ===============================================================================================================================================================4
 
 Android Design Pattern
