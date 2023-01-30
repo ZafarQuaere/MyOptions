@@ -1,4 +1,4 @@
-Optimization of layout hierarchy:
+# Optimization of layout hierarchy:
 1) Use Constraint or Relative layout rather than linear to avoid nested.
 2) Use Lint
     A.	Use compound drawables - A LinearLayout which contains an ImageView and a TextView can be more efficiently handled as a
