@@ -4,7 +4,7 @@ We must all have heard about the <b>S.O.L.I.D</b> principle when developing soft
 
 So let's begin by stating the 5 principles of <b>S.O.L.I.D</b>.
 
- * <b>The Single Responsibility Principle (SRP)</b>: </br>
+ * <b>The Single Responsibility Principle(SRP)</b>: </br>
       * This principle states that <i>"A class should have only one reason to change"</i>
       * This means that one class should only have one responsibility.
       * For instance: let's take the ```OnBindViewHolder``` method in ```RecyclerView.Adapter``` class. The role of the ```OnBindViewHolder``` is to map an list item to a view. There should be no logic in this method.
