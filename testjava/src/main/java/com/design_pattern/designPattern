@@ -6,7 +6,7 @@ Design Pattern (DP):
 -> A DP is well structured solution for solving the specific problem or complete a task.
 
 There are mainly three types of DP
-1) Creational DP (CDP) -- How you create Objects
+1) Creational DP (CDP) -- How you create Objects or instantiate it.
 2) Structural DP (SDP) -- How you compose an Objects to form larger structure
 3) Behavioral DP (BDP) -- How you coordinate Object interactions.
 
@@ -17,8 +17,8 @@ Types of CDP
 ● Factory method
 
 Types of SDP
-● Adapter -- this pattern lets two incompatible classes work together by converting the interface of a class into another interface the client expects.
-● Facade --The Facade pattern provides a higher-level interface that makes a set of other interfaces easier to use.
+● Adapter -- This pattern lets two incompatible classes work together by converting the interface of a class into another interface the client expects.
+● Facade -- The Facade pattern provides a higher-level interface that makes a set of other interfaces easier to use.
 
 Types of BDP
 ● MVC
