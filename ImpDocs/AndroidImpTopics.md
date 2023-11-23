@@ -2,7 +2,7 @@ How do you find memory leaks in android Application?
 Refer:->  http://blog.nimbledroid.com/2016/05/23/memory-leaks.html
 
 What are the exceptions you gone through in android ?
-1.) InflateException : This exception is thrown When an error conditions are occurred.
+1.) InflateException : This exception is thrown When an error conditions are occurred due to some error in xml file.
 2.) Surface.OutOfResourceException: This exception is thrown When a surface is not created or resized.
 3.) WindowManager.BadTokenException: This exception is thrown at the time of trying to add view an invalid WindowManager.LayoutParamstoken.
 4.) ActivityNotFoundException
@@ -38,6 +38,7 @@ http://www.androidhub4you.com/2013/03/how-to-inegrate-in-app-purchase-billing.ht
 ----------------------------------------------------------------------------
 Android Sandbox : Android Application Sandbox isolates your app data and code executions from other apps.
 * Every apps runs in secure sandbox environment, so that other process in the system cannot access your code or private data.
+* To do this, android assigns a unique user id (UID) at kernel level to each android application and runs it is in its own process.
 * The application sandbox is implemented at the OS Level.
 -------------------------------------------------------------------------------------------------------------------
 Android Namespace :
@@ -68,7 +69,7 @@ REST :
 ----------------------------------------------------------------------------------------------
 Task : A task is collection of activities that user interact with while performing a certain job.
 OR : A task is collection of apps that user traverse while performing some job.
-Ex : while sending msg, he starts with msging application and may move to gallery or camera to attach
+Ex : while sending msg, he starts with messaging application and may move to gallery or camera to attach
 	pictures to send.=
 
 Process : Activities,Services and other Components of application runs in a single process.There

@@ -1,4 +1,4 @@
-package com.example.kotlin.Enums
+package com.zafar.kotlin.enums
 
 fun main(args: Array<String>) {
 

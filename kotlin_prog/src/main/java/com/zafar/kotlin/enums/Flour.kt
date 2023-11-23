@@ -1,4 +1,6 @@
-package com.example.kotlin.Enums
+package com.zafar.kotlin.enums
+
+import com.zafar.kotlin.enums.Exotic
 
 enum class Flour : Exotic {
     /* WHEAT,CORN,CASSAVA*/

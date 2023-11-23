@@ -1,4 +1,4 @@
-package enums
+package com.zafar.kotlin.enums
 
 enum class Direction{
     NORTH,SOUTH,EAST,WEST
