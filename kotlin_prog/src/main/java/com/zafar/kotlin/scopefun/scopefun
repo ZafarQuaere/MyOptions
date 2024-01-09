@@ -9,18 +9,20 @@ Scope functions in Kotlin (L-A-R-W-A) Let's run with apply also.
 run{} -> run is a combination of let and with as it prevents from NPE and use this object for manipulation
     returns : lambda
     Context : this
-with{} ->
-    returns : lambda
+
+with{} -> if you want to operate on non null object
+    returns : lambda (last statement of lambda function)
     Context : this
+
 let{} ->
     returns : lambda
-    Context : this
+    Context : it
 apply{} ->
-    returns : Context
+    returns : Context (Object)
     Context : this
 also{} ->
-    returns: Context
-    Context : this
+    returns: Context (Object)
+    Context : it
 
 with{} -> if you want to operate on NON-NUllable object
 let{} -> if you want to execute lambda expression on nullable object and want to avoid NPE

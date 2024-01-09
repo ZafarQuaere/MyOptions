@@ -1,7 +1,5 @@
 package com.zafar.kotlin.leetcode
 
-import java.util.*
-
 
 fun main(args: Array<String>) {
     val nums = intArrayOf(2, 7, 11, 15)
